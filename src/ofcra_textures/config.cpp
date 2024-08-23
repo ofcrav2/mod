@@ -12,9 +12,9 @@ class CfgPatches
 
 class cfgFactionClasses
 {
-	class OFCRA_Spain_Faction
+	class OFCRA
 	{
-		displayName = "Spain";
+		displayName = "OFCRA";
 		priority = 1;
 		side = 1;
 		icon = "";
@@ -25,7 +25,7 @@ class cfgFactionClasses
 class cfgWeapons
 {
 	class V_PlateCarrier1_blk;
-	class wombat_spain_arid_vest: V_PlateCarrier1_blk
+	class OFCRA_spain_arid_vest: V_PlateCarrier1_blk
 	{
 		author="wombat";
 		scope=2;
@@ -37,7 +37,7 @@ class cfgWeapons
 	};
 
 	class H_HelmetIA;
-	class wombat_spain_arid_helmet: H_HelmetIA
+	class OFCRA_spain_arid_helmet: H_HelmetIA
 	{
 		author="wombat";
 		displayName="Spanish Arid Helmet";
@@ -47,11 +47,34 @@ class cfgWeapons
 		};
 	};
 
+
+	class U_B_CombatUniform_mcam;
+	class UniformItem;
+	class OFCRA_spain_CombatUniform_item_arid: U_B_CombatUniform_mcam
+	{
+		author="wombat";
+		scope=2;
+		displayName="Spanish Arid";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="OFCRA_spain_combatuniform_arid";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+
+
 // If BW mod is not loaded this does nothing...
 	class BWA3_Leopard2_Tropen;
 	class OFCRA_arid_Leopard2: BWA3_Leopard2_Tropen
 	{
-		faction="Spain_Faction";
+		faction="OFCRA";
 		side=1;
 		author="wombat";
 		displayName="Spanish Arid Leopard2";
@@ -80,7 +103,7 @@ class CfgVehicles
 	class OFCRA_spain_uniform_base: Underwear_F
 	{
 		author="wombat";
-		faction="OFCRA_Spain_Faction";
+		faction="OFCRA";
 		scope=1;
 		vehicleClass="Uniforms";
 		uniformAccessories[]={};
@@ -100,8 +123,9 @@ class CfgVehicles
 	{
 		author="wombat";
 		displayName="OFCRA Spanish Arid";
+		_generalMacro="OFCRA_spain_combatuniform_arid";
 		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		uniformClass="wombat_spain_brilat_CombatUniform_item_d";
+		uniformClass="OFCRA_spain_CombatUniform_item_arid";
 		hiddenSelections[]=
 		{
 			"Camo",
@@ -114,26 +138,5 @@ class CfgVehicles
 	};
 	
 };
-class cfgWeapons
-{
-	class U_B_CombatUniform_mcam;
-	class UniformItem;
-	class wombat_spain_brilat_CombatUniform_item_arid: U_B_CombatUniform_mcam
-	{
-		author="wombat";
-		scope=2;
-		displayName="Spanish Arid";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="OFCRA_spain_combatuniform_arid";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	
-};
+
+
