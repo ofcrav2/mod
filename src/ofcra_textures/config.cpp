@@ -27,7 +27,7 @@ class cfgWeapons
 	{
 		author="wombat";
 		scope=2;
-		displayName="Spanish Arid Vest";
+		displayName="OFCRA Spanish Arid";
 		hiddenSelectionsTextures[]=
 		{
 			"\ofcra_textures\spain\arid_vest.paa"
@@ -38,7 +38,7 @@ class cfgWeapons
 	class OFCRA_spain_arid_helmet: H_HelmetIA
 	{
 		author="wombat";
-		displayName="Spanish Arid Helmet";
+		displayName="OFCRA Spanish Arid";
 		hiddenSelectionsTextures[]=
 		{
 			"\ofcra_textures\spain\arid_helmet.paa"
@@ -51,7 +51,7 @@ class cfgWeapons
 	{
 		author="wombat";
 		scope=2;
-		displayName="Spanish Arid";
+		displayName="OFCRA Spanish Arid";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -59,11 +59,31 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="OFCRA_spain_combatuniform_arid";
+			uniformClass="OFCRA_spain_soldier_arid";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
+
+	class OFCRA_FORAD_uniform: U_B_CombatUniform_mcam
+	{
+		author="wombat";
+		scope=2;
+		displayName="OFCRA FORAD";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="OFCRA_FORAD_soldier";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+
 
 // If BW mod is not loaded this does nothing...
 // TODO move to separate PBO
@@ -94,7 +114,7 @@ class CfgVehicles
 	{
 		class EventHandlers;
 	};
-	class OFCRA_spain_uniform_base: Underwear_F
+	class OFCRA_soldier_base: Underwear_F
 	{
 		author="wombat";
 		faction="OFCRA";
@@ -111,23 +131,37 @@ class CfgVehicles
 		{
 			init="";
 		};
-	};
-
-	class OFCRA_spain_combatuniform_arid: OFCRA_spain_uniform_base
-	{
-		author="wombat";
-		displayName="OFCRA Spanish Arid";
-		_generalMacro="OFCRA_spain_combatuniform_arid";
-		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		uniformClass="OFCRA_spain_CombatUniform_item_arid";
 		hiddenSelections[]=
 		{
 			"Camo",
 			"insignia"
 		};
+	};
+
+	class OFCRA_spain_soldier_arid: OFCRA_soldier_base
+	{
+		author="wombat";
+		displayName="OFCRA Spanish Arid";
+		_generalMacro="OFCRA_spain_soldier_arid";
+		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		uniformClass="OFCRA_spain_CombatUniform_item_arid";
+
 		hiddenSelectionsTextures[]=
 		{
 			"\ofcra_textures\spain\arid_uniform.paa"
+		};
+	};
+
+	class OFCRA_FORAD_soldier: OFCRA_soldier_base
+	{
+		author="wombat";
+		displayName="OFCRA FORAD";
+		_generalMacro="OFCRA_FORAD_soldier";
+		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		uniformClass="OFCRA_FORAD_uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"\ofcra_textures\FORAD\uniform.paa"
 		};
 	};
 };
