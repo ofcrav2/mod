@@ -164,4 +164,41 @@ class CfgVehicles
 			"\ofcra_textures\FORAD\uniform.paa"
 		};
 	};
+
+
+	class FlagCarrier;
+	class OFCRA_Scotland_Flag_F: FlagCarrier
+	{
+		author="wombat";
+		scope=2;
+		displayName="Flag (Scotland)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\ofcra_textures\flags\scotland.paa'";
+		};
+		scopeCurator=2;
+	};
+
+};
+
+
+class CfgMarkers
+{
+	
+	class Flag;
+
+	class OFCRA_Scotland_Flag: Flag
+	{
+		markerClass="Flags";
+		name="Scotland Flag";
+		icon="\ofcra_textures\flags\scotland_marker.paa";
+		texture="\ofcra_textures\flags\scotland_marker.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow=0;
+		scope=1;
+	};
+
+	
+
 };
