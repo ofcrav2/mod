@@ -9,7 +9,6 @@ class CfgPatches
 	};
 };
 
-
 class cfgFactionClasses
 {
 	class OFCRA
@@ -19,7 +18,6 @@ class cfgFactionClasses
 		side = 1;
 		icon = "";
 	}
-
 };
 
 class cfgWeapons
@@ -47,7 +45,6 @@ class cfgWeapons
 		};
 	};
 
-
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class OFCRA_spain_CombatUniform_item_arid: U_B_CombatUniform_mcam
@@ -68,9 +65,8 @@ class cfgWeapons
 		};
 	};
 
-
-
 // If BW mod is not loaded this does nothing...
+// TODO move to separate PBO
 	class BWA3_Leopard2_Tropen;
 	class OFCRA_arid_Leopard2: BWA3_Leopard2_Tropen
 	{
@@ -90,8 +86,6 @@ class cfgWeapons
 		};
 	};
 };
-
-
 
 class CfgVehicles
 {
@@ -136,7 +130,4 @@ class CfgVehicles
 			"\ofcra_textures\spain\arid_uniform.paa"
 		};
 	};
-	
 };
-
-
