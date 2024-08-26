@@ -65,26 +65,6 @@ class cfgWeapons
 		};
 	};
 
-	class OFCRA_FORAD_uniform: U_B_CombatUniform_mcam
-	{
-		author="wombat";
-		scope=2;
-		displayName="OFCRA FORAD";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="OFCRA_FORAD_soldier";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-
-
-
 // If BW mod is not loaded this does nothing...
 // TODO move to separate PBO
 	class BWA3_Leopard2_Tropen;
@@ -152,20 +132,6 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_FORAD_soldier: OFCRA_soldier_base
-	{
-		author="wombat";
-		displayName="OFCRA FORAD";
-		_generalMacro="OFCRA_FORAD_soldier";
-		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		uniformClass="OFCRA_FORAD_uniform";
-		hiddenSelectionsTextures[]=
-		{
-			"\ofcra_textures\FORAD\uniform.paa"
-		};
-	};
-
-
 	class FlagCarrier;
 	class OFCRA_Scotland_Flag_F: FlagCarrier
 	{
@@ -198,7 +164,5 @@ class CfgMarkers
 		shadow=0;
 		scope=1;
 	};
-
-	
 
 };
