@@ -45,8 +45,21 @@ class CfgVehicles
 			};
 		}
 	}
-
-
+	class Offroad_01_armed_base_F : Offroad_01_military_base_F
+	{
+		class TextureSources
+		{
+			class OFCRA_FORAD
+			{
+				displayName = "OFCRA FORAD";
+				textures[] = {
+					"\ofcra_textures\FORAD\offroad.paa",
+					"\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE03_CO.paa"
+				};
+				factions[] = {};
+			};
+		}
+	}
 
 
 
@@ -82,8 +95,15 @@ class CfgVehicles
 class cfgWeapons
 {
 
-
-	class V_PlateCarrier1_blk;
+	class Vest_Camo_Base
+	{
+		class ItemInfo;
+	};	
+	
+	class V_PlateCarrier1_blk : Vest_Camo_Base
+	{
+		class ItemInfo : ItemInfo {};
+	};
 	class OFCRA_FORAD_vest: V_PlateCarrier1_blk
 	{
 		author="wombat";
@@ -93,6 +113,7 @@ class cfgWeapons
 		{
 			"\ofcra_textures\FORAD\forad_vest.paa"
 		};
+		class ItemInfo : ItemInfo {};
 	};
 	class OFCRA_FORED_vest: OFCRA_FORAD_vest
 	{
@@ -102,12 +123,80 @@ class cfgWeapons
 			"\ofcra_textures\FORAD\fored_vest.paa"
 		};
 	};
+	class OFCRA_FORAD_vest_light: OFCRA_FORAD_vest
+	{
+		displayName="OFCRA FORAD Vest Light";
+		class ItemInfo: ItemInfo
+		{
+			mass=40;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=8;
+					PassThrough=0.5;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=8;
+					PassThrough=0.5;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=8;
+					PassThrough=0.5;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.5;
+				};
+			};
+		};
+	};
+	class OFCRA_FORAD_vest_heavy: OFCRA_FORAD_vest
+	{
+		displayName="OFCRA FORAD Vest Heavy";
+		class ItemInfo: ItemInfo
+		{
+			mass=100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.2;
+				};
+			};
+		};
+	};
 
 	class H_HelmetIA;
 	class OFCRA_FORAD_helmet: H_HelmetIA
 	{
 		author="wombat";
-		displayName="OFCRA OFARAD Helmet";
+		displayName="OFCRA FORAD Helmet";
 		hiddenSelectionsTextures[]=
 		{
 			"\ofcra_textures\FORAD\forad_helmet.paa"
