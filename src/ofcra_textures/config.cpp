@@ -64,6 +64,41 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class OFCRA_amongus_CombatUniform_item_bright: U_B_CombatUniform_mcam
+	{
+		author="wombat";
+		scope=2;
+		displayName="OFCRA Amongus Bright";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="OFCRA_amongus_soldier_bright";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class OFCRA_amongus_CombatUniform_item_dark: U_B_CombatUniform_mcam
+	{
+		author="wombat";
+		scope=2;
+		displayName="OFCRA Amongus Dark";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="OFCRA_amongus_soldier_dark";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
 
 // If BW mod is not loaded this does nothing...
 // TODO move to separate PBO
@@ -107,6 +142,7 @@ class CfgVehicles
 		respawnitems[]={};
 		linkedItems[]={};
 		respawnLinkedItems[]={};
+		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		class EventHandlers: EventHandlers
 		{
 			init="";
@@ -120,17 +156,38 @@ class CfgVehicles
 
 	class OFCRA_spain_soldier_arid: OFCRA_soldier_base
 	{
-		author="wombat";
 		displayName="OFCRA Spanish Arid";
 		_generalMacro="OFCRA_spain_soldier_arid";
-		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformClass="OFCRA_spain_CombatUniform_item_arid";
-
 		hiddenSelectionsTextures[]=
 		{
 			"\ofcra_textures\spain\arid_uniform.paa"
 		};
 	};
+
+	
+	class OFCRA_amongus_soldier_bright: OFCRA_soldier_base
+	{
+		displayName="OFCRA Amongus Bright";
+		_generalMacro="OFCRA_amongus_soldier_bright";
+		uniformClass="OFCRA_amongus_CombatUniform_item_bright";
+		hiddenSelectionsTextures[]=
+		{
+			"\ofcra_textures\amongus\bright.paa"
+		};
+	};
+	class OFCRA_amongus_soldier_dark: OFCRA_soldier_base
+	{
+		displayName="OFCRA Amongus Dark";
+		_generalMacro="OFCRA_amongus_soldier_dark";
+		uniformClass="OFCRA_amongus_CombatUniform_item_dark";
+		hiddenSelectionsTextures[]=
+		{
+			"\ofcra_textures\amongus\dark.paa"
+		};
+
+	};
+
 
 	class FlagCarrier;
 	class OFCRA_Scotland_Flag_F: FlagCarrier
