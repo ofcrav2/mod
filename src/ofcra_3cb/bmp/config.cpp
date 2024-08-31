@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class ofcra_rhs_afrf_bmp
+	class ofcra_3cb_bmp
 	{
 		author = "OFCRA Wombat";
 		skipWhenMissingDependencies=1;
@@ -12,6 +12,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"rhs_main_loadorder",
+			"UK3CB_Factions_Vehicles_Tseries",
 			"ofcra_textures"
 		};
 	};
@@ -19,8 +20,9 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Tank_F;
-	class rhs_bmp1tank_base: Tank_F
+
+	class rhs_bmp1tank_base;
+	class UK3CB_BMP1Tank_Base: rhs_bmp1tank_base
 	{
 		class textureSources
 		{

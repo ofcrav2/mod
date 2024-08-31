@@ -18,16 +18,6 @@ class CfgPatches
 
 class CfgVehicles
 {
-
-	//["UK3CB_O_MTLB_PKT_MEE","UK3CB_MTLB_PKT","UK3CB_MTLB_ARMED_BASE","UK3CB_MTLB_BASE","APC_Tracked_01_base_F","Tank_F","Tank","LandVehicle","Land","AllVehicles","All"]
-	
-
-	/*
-	textures[] = {
-		"UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_mtlb\data\aaf_body_1_co.paa",
-		"UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_mtlb\data\aaf_pk_mod_co.paa"};
-		*/
-
 	class APC_Tracked_01_base_F;
 	class UK3CB_MTLB_BASE : APC_Tracked_01_base_F
 	{
@@ -45,5 +35,40 @@ class CfgVehicles
 			};
 		}
 	};
+
+	class UK3CB_MTLB_ARMED_BASE : UK3CB_MTLB_BASE
+	{
+		class TextureSources
+		{
+			class OFCRA_WOODLAND	
+			{
+				displayName = "OFCRA WOODLAND";
+				textures[] = {
+					"\ofcra_textures\rhs_afrf\mtlb_woodland.paa",
+					"UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_mtlb\data\aaf_pk_mod_co.paa"
+					
+				};
+				factions[] = {};
+			};
+		}
+	};
+
+	class UK3CB_MTLB_PKT : UK3CB_MTLB_ARMED_BASE
+	{
+		class TextureSources
+		{
+			class OFCRA_WOODLAND	
+			{
+				displayName = "OFCRA WOODLAND";
+				textures[] = {
+					"\ofcra_textures\rhs_afrf\mtlb_woodland.paa",
+					"UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_mtlb\data\aaf_pk_mod_co.paa"
+					
+				};
+				factions[] = {};
+			};
+		}
+	};
+
 
 };
