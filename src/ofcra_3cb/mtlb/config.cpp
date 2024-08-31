@@ -71,9 +71,6 @@ class CfgVehicles
 		}
 	};
 
-//["uk3cb_factions\addons\uk3cb_factions_vehicles\apc\uk3cb_factions_vehicles_mtlb\data\sov_body_1_co.paa",
-"uk3cb_factions\addons\uk3cb_factions_vehicles\apc\uk3cb_factions_vehicles_mtlb\data\sov_pk_mod_co.paa",
-"uk3cb_factions\addons\uk3cb_factions_vehicles\uk3cb_factions_vehicles_common\data\btr60\oli_mtlb_btr60_body_co.paa"]
 	class UK3CB_MTLB_KPVT : UK3CB_MTLB_ARMED_BASE
 	{
 		class TextureSources
