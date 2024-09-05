@@ -6,6 +6,10 @@ class CfgPatches
 		author = "wombat";
 		url = "http://example.com";
         requiredVersion=0.1;
+
+		units[] = {};
+		weapons[] = {};
+		ammo[]={};
 	};
 };
 
