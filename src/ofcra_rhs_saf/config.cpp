@@ -9,7 +9,9 @@ class CfgPatches
 			"rhssaf_main_loadorder",
 			"ofcra_textures"
 		};
-
+		units[] = {};
+		weapons[] = {};
+		ammo[]={};
 	};
 };
 
