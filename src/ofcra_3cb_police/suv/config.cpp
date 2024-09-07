@@ -89,7 +89,7 @@ class CfgVehicles
 		crew = "B_G_soldier_F";
 		faction = "OFCRA_Police_Faction";
 		scope = 2;
-	}
+	};
 
 	class OFCRA_POLICE_SUV_GENERIC: UK3CB_SUV_Pol
 	{
@@ -152,6 +152,24 @@ class CfgVehicles
 		crew = "B_G_soldier_F";
 		faction = "OFCRA_Police_Faction";
 		scope = 2;
-	}
+	};
+
+	class OFCRA_POLICE_SUV_Armoured_GENERIC: UK3CB_SUV_Armoured_Base
+	{
+		displayName = "Police SUV Armoured (Generic)";
+		author = "wombat";
+		hiddenSelectionsTextures[] = {
+			"\ofcra_3cb_police\suv\generic.paa",
+		};
+		textureList[] = {"OFCRA_POLICE_GENERIC",1};
+	};
+
+	class OFCRA_B_POLICE_SUV_Armoured_GENERIC: OFCRA_POLICE_SUV_Armoured_GENERIC
+	{
+		side = 1;
+		crew = "B_G_soldier_F";
+		faction = "OFCRA_Police_Faction";
+		scope = 2;
+	};
 	
 };

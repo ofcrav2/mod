@@ -134,4 +134,5 @@ class CfgVehicles
 		faction = "OFCRA_Police_Faction";
 		scope = 2;
 	};
+	
 };
