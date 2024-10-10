@@ -54,6 +54,18 @@ class CfgAmmo
 		caliber=0.6; 
 	};
 
+	class Smoke_82mm_AMOS_White;
+	class OFCRA_SMOKE_MAIN: Smoke_82mm_AMOS_White
+	{
+		submunitionAmmo="OFCRA_SMOKE_SHELL";
+	};
+
+	class SmokeShellArty;
+	class OFCRA_SMOKE_SHELL : SmokeShellArty
+	{
+		effectsSmoke="OFCRA_MortarSmokeEffect";
+	}
+
 
 	class OFCRA_HE_LOW_DAMAGE : OFCRA_HE_LOW_DAMAGE_SMALL_NO_ARMOUR
 	{
@@ -224,6 +236,17 @@ class CfgMagazines
 	{
 		count=32; //32 seems to be standard for artillery
 	};
+
+
+	class 8Rnd_82mm_Mo_Smoke_white;
+	class OFCRA_SMOKE_MAGAZINE: 8Rnd_82mm_Mo_Smoke_white
+	{
+		initSpeed=600;
+		displayName="OFCRA Smoke";
+		displayNameShort="OFCRA Smoke";
+		ammo="OFCRA_SMOKE_MAIN";
+		count=32; 
+	}
 };
 
 
@@ -336,6 +359,42 @@ class OFCRA_CRATER
 
 class OFCRA_MortarSmokeEffect
 {
+
+
+	class SmokeShell
+	{
+		simulation="particles";
+		type="SmokeShellWhite";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+	};
+	class SmokeShell2
+	{
+		simulation="particles";
+		type="SmokeShellWhite2";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+	};
+	class SmokeShellUW
+	{
+		simulation="particles";
+		type="SmokeShellWhiteUW";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+	};
+	class SmokeShell2UW
+	{
+		simulation="particles";
+		type="SmokeShellWhite2UW";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+	};
+
+
    	class OFCRA_SmokeShellWhite
 	{
 		simulation="particles";
@@ -344,6 +403,9 @@ class OFCRA_MortarSmokeEffect
 		intensity=1;
 		interval=1;
 	};
+
+
+
 };
 
 
@@ -352,23 +414,23 @@ class CfgCloudlets
 	class SmokeShellWhiteSmall;
 	class OFCRA_SmokeShellWhite: SmokeShellWhiteSmall
 	{
-		weight=1.276; //from 1.26 ... air is 1.293
-		interval=0.15;  //time between spawning particles from 0.2
-		lifeTime=28; //per particle life,  from 14
+		weight=1.271; //from 1.26 ... air is 1.293
+		interval=0.05;  //time between spawning particles from 0.2
+		lifeTime=30; //per particle life,  from 14
 		moveVelocity[]={0.1,0.25000001,0.1};
-		size[]={0.86,4.5,18};
-		MoveVelocityVar[]={1,0.3,1};
-		rubbing=0.03;  //less effected by wind than normal smoke (0.05)
+		size[]={1.66,6.5,27};
+		MoveVelocityVar[]={0.5,0.15,0.5};
+		rubbing=0.02;  //less effected by wind than normal smoke (0.05)
 
 		color[]=
 		{
 			{0.69999999,0.69999999,0.69999999,0.9},
 			{0.69999999,0.69999999,0.69999999,0.85},
 			{0.69999999,0.69999999,0.69999999,0.8},
-			{0.69999999,0.69999999,0.69999999,0.75},
 			{0.69999999,0.69999999,0.69999999,0.7},
 			{0.69999999,0.69999999,0.69999999,0.6},
-			{0.69999999,0.69999999,0.69999999,0.3}
+			{0.69999999,0.69999999,0.69999999,0.4},
+			{0.69999999,0.69999999,0.69999999,0.2}
 		};
 	};
 

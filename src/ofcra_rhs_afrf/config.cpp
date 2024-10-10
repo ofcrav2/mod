@@ -57,6 +57,8 @@ class CfgMagazines
 		initSpeed=850;
 		tracersEvery=0;
 	};
+
+
 };
 
 class CfgVehicles
@@ -79,7 +81,7 @@ class CfgWeapons
 	class rhs_weap_2a33: mortar_155mm_AMOS
 	{
 		magazines[]+={
-			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32"
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
 		};
 		class Single1 : Mode_SemiAuto
 		{
@@ -97,10 +99,11 @@ class CfgWeapons
 		};
 	};
 
+
 	class rhs_weap_d30: mortar_155mm_AMOS
 	{
 		magazines[]+={
-			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32"
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
 		};
 		class Single1: Mode_SemiAuto
 		{
