@@ -7,7 +7,7 @@ class CfgPatches
 		url = "http://example.com";
         requiredVersion=0.1;
 
-		//skipWhenMissingDependencies=1;
+		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
 			"simc_nv_67_assets",
 			"ofcra_textures"
@@ -35,7 +35,7 @@ class cfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
-			uniformClass = "Simc_nva_2";
+			uniformClass = "OFCRA_nva_soldier";
 			containerClass = "Supply30";
 			mass = 20;
 			type = 801;
