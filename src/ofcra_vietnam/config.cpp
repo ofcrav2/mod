@@ -46,8 +46,8 @@ class cfgWeapons
 
 class CfgVehicles
 {
-	class OFCRA_soldier_base;
-	class OFCRA_nva_soldier: OFCRA_soldier_base
+	class simc_nva_2;
+	class OFCRA_nva_soldier: simc_nva_2
 	{
 		displayName="OFCRA NVA";
 		_generalMacro="OFCRA_nva_soldier";
