@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="OFCRA">
+  <Package name="ofcra_intro">
+    <Container name="Tooltips">
+      <Key ID="STR_ConnectToOFCRA">
+        <Original>Connect to OFCRA server</Original>
+        <English>Connect to OFCRA server</English>
+        <French>Se connecter au serveur de l'OFCRA</French>
+		<Spanish>Conectar con el servidor OFCRA</Spanish>
+		<Italian>Connessione al server OFCRA</Italian>
+		<Polish>Połącz się z serwerem OFCRA</Polish>		
+		<German>Verbindung zum OFCRA-Server</German>
+		<Czech>Připojit na OFCRA server</Czech>
+      </Key>
+    </Container>
+  </Package>
+</Project>
