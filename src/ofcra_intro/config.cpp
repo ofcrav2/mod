@@ -1,6 +1,6 @@
 class CfgPatches {
 	class ofcra_intro {
-		author[] = {"Liquid, edited by Ziki_CZ"};
+		author[] = {"Liquid, edited by Ziki_CZ, and wombat"};
 		units[] = {};
 		weapons[] = {};
 		requiredVersion[] = {};
