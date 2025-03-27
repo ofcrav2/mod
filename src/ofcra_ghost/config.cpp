@@ -20,9 +20,6 @@ class CfgPatches
 
 class cfgWeapons
 {
-
-
-
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class OFCRA_VR_Ghost_CombatUniform_item: U_B_CombatUniform_mcam
@@ -64,7 +61,6 @@ class cfgWeapons
 class CfgVehicles
 {
 	class OFCRA_soldier_base;
-
 	class OFCRA_VR_Ghost_Soldier: OFCRA_soldier_base
 	{
 		displayName="OFCRA VR Ghost";
