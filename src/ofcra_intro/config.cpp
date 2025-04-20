@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches {
 	class ofcra_intro {
 		author[] = {"Liquid, edited by Ziki_CZ, and wombat"};

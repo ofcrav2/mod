@@ -258,6 +258,14 @@ class CfgMagazines
 		ammo="OFCRA_SMOKE_MAIN";
 		count=32; 
 	}
+
+	class 32Rnd_155mm_Mo_shells: VehicleMagazine
+	{
+		displayName="OFCRA 15cm HE";
+		displayNameShort="OFCRA 15cm HE";
+		ammo="OFCRA_ARTILLERY_HE_BASE";
+		count=32; 
+	};
 };
 
 
