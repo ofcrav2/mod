@@ -113,6 +113,20 @@ class CfgAmmo
 		ace_frag_enabled=0;
 		explosive=1;
 	}
+
+	class B_40mm_GPR: B_30mm_HE
+	{
+		displayNameShort="OFCRA AUTOCANNON HE";
+		displayName="OFCRA AUTOCANNON HE";
+
+		indirectHit=1.911;
+		indirectHitRange=3.301;   
+
+		ace_frag_force=0;       //disable ace frag to make things more consistent
+		ace_frag_enabled=0;
+		explosive=1;
+	}
+
 	class OFCRA_AUTOCANNON_HE: B_30mm_HE
 	{
 		displayNameShort="OFCRA AUTOCANNON HE";
