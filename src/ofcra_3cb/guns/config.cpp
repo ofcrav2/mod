@@ -28,6 +28,35 @@ class CfgPatches
 //rhs  7n14, hit = 13.61, caliber = 0.9 <--- second best PKP round
 
 
+
+/*
+
+	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
+	{
+		hit=9;
+		typicalSpeed=960;
+		airFriction=-0.000772;
+		caliber=0.64999998;
+		ACE_caliber=5.6900001;
+		ACE_bulletLength=23.011999;
+		ACE_bulletMass=4.0176001;
+		ACE_ammoTempMuzzleVelocityShifts[]={-27.200001,-26.440001,-23.76,-21,-17.540001,-13.1,-7.9499998,-1.62,6.2399998,15.48,27.75};
+		ACE_ballisticCoefficients[]={0.15099999};
+		ACE_velocityBoundaries[]={};
+		ACE_standardAtmosphere="ASM";
+		ACE_dragModel=7;
+		ACE_muzzleVelocities[]={723,764,796,825,843,866,878,892,906,915,922,900};
+		ACE_barrelLengths[]={210.82001,238.75999,269.23999,299.72,330.20001,360.67999,391.16,419.10001,449.57999,480.06,508,609.59998};
+	};
+	
+	*/
+
+
+	/*
+			ACE_caliber=5.5879998;
+		ACE_bulletLength=21.59;
+		ACE_bulletMass=3.2270401;
+	*/
 class CfgAmmo
 {
 	class UK3CB_930x62_Ball_R;
@@ -41,6 +70,7 @@ class CfgAmmo
 	{
 		hit = 8;
 		caliber = 0.8;
+		typicalSpeed=300;
 	};
 
 	class UK3CB_762x39_Ball_Red;
@@ -64,6 +94,7 @@ class CfgMagazines
 	class UK3CB_ppsh_71rnd_magazine;
 	class OFCRA_ppsh_71rnd_magazine_AP : UK3CB_ppsh_71rnd_magazine
 	{
+		initSpeed = 390;
 		ammo = "OFCRA_762x25_Ball_AP";
 		displayName = "71Rnd PPSH-41 AP";
 	};

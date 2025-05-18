@@ -49,6 +49,15 @@ class cfgWeapons
 		};
 	};
 
+	class OFCRA_Invisible_helmet: H_HelmetIA
+	{
+		author="wombat";
+		displayName="OFCRA Invisible Helmet";
+		model = "\A3\weapons_f\empty";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+	}
+
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class OFCRA_spain_CombatUniform_item_arid: U_B_CombatUniform_mcam
@@ -191,39 +200,5 @@ class CfgVehicles
 		};
 
 	};
-
-
-	class FlagCarrier;
-	class OFCRA_Scotland_Flag_F: FlagCarrier
-	{
-		author="wombat";
-		scope=2;
-		displayName="Flag (Scotland)";
-		class EventHandlers
-		{
-			init="(_this select 0) setFlagTexture '\ofcra_textures\flags\scotland.paa'";
-		};
-		scopeCurator=2;
-	};
-
 };
 
-
-class CfgMarkers
-{
-	
-	class Flag;
-
-	class OFCRA_Scotland_Flag: Flag
-	{
-		markerClass="Flags";
-		name="Scotland Flag";
-		icon="\ofcra_textures\flags\scotland_marker.paa";
-		texture="\ofcra_textures\flags\scotland_marker.paa";
-		color[]={1,1,1,1};
-		size=32;
-		shadow=0;
-		scope=1;
-	};
-
-};
