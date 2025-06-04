@@ -69,13 +69,53 @@ class CfgAmmo
 
 	};
 
+	class OFCRA_HE_LOW_DAMAGE_SMALL_NO_ARMOUR;
+	class OFCRA_WW2_37mm_FRAG: OFCRA_HE_LOW_DAMAGE_SMALL_NO_ARMOUR
+	{
+		hit=0.4;
+		indirectHit=0.161; 		// minimal damage to infantry
+	};
+
+
+	class LIB_S_37L57_M63;
+	class OFCRA_WW2_NERFED_HE_37mm : LIB_S_37L57_M63 {
+		ACE_damageType="explosive";
+		hit=50;
+		indirectHit=0.221;
+		indirectHitRange=3;   
+
+
+		ace_frag_force=0;       //disable ace frag to make things more consistent
+		ace_frag_enabled=0;
+		ace_frag_skip=1;		
+		explosive=1;
+
+
+		triggerOnImpact=1;
+		submunitionConeAngle[]={160,174}; //random degree range from verticle ....  0 = veritcle,180 = We want slightly downward so we can hit down hills etc
+		submunitionConeAngleHorizontal=720;
+		submunitionAutoleveling=1;
+		submunitionConeType[]=
+		{
+			"randomupcone",
+			4
+		};
+		submunitionAmmo[]={"OFCRA_WW2_37mm_FRAG",1};
+		submunitionInitialOffset[]={0,0,1.0}; //100cm above/behind projectile. this is needed to make sure it is not underground
+		submunitionParentSpeedCoef=0;
+		submunitionDirectionType="SubmunitionAutoLeveling";
+		submunitionInitSpeed=24;               //this also effects pentration and damage of sub projectiles as a ratio of their expected speed
+		deleteParentWhenTriggered=0;
+	};
+
+
 	class LIB_SprGr34_KWK40_HE;
 	class OFCRA_WW2_Artillery_NERFED_HE_Small: LIB_SprGr34_KWK40_HE
 	{
 		ACE_damageType="explosive";
 		hit=100;
-		indirectHit=0.241;
-		indirectHitRange=9;   
+		indirectHit=0.231;
+		indirectHitRange=7;   
 
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
@@ -103,7 +143,7 @@ class CfgAmmo
 			"randomupcone",
 			16
 		};
-		submunitionAmmo[]={"OFCRA_HE_LOW_DAMAGE_SMALL_NO_ARMOUR",0.5,"OFCRA_LIGHT_VEHICLE_DESTRUCTION",0.5  };
+		submunitionAmmo[]={"OFCRA_WW2_37mm_FRAG",0.5,"OFCRA_LIGHT_VEHICLE_DESTRUCTION",0.5  };
 		submunitionInitialOffset[]={0,0,1.0}; //100cm above/behind projectile. this is needed to make sure it is not underground
 		submunitionParentSpeedCoef=0;
 		submunitionDirectionType="SubmunitionAutoLeveling";
@@ -309,7 +349,26 @@ class CfgMagazines
 		submunitionAmmo="OFCRA_WW2_MortarSmoke";
 	};
 
+    class LIB_Shell_37L57_M63_HE : LIB_HE_VehicleMagazine_base
+	{
+		displayName = "OFCRA 37mm M63 HE";
+		ammo="OFCRA_WW2_NERFED_HE_37mm";
 
+	};
+
+	class LIB_30x_37L57_M63_HE : LIB_Shell_37L57_M63_HE
+	{
+		displayName = "OFCRA 37mm M63 HE";
+		ammo="OFCRA_WW2_NERFED_HE_37mm";
+	};
+
+	//Armoured cars BA-10
+	// possible race condition on loading this see how it goes
+	class FA_19x_UO243_HE: LIB_30x_37L57_M63_HE
+	{
+		displayName = "OFCRA UO-243 HE";
+		ammo="OFCRA_WW2_NERFED_HE_37mm";
+	};
 	
 };
 
