@@ -187,6 +187,8 @@ class CfgAmmo
 		ExplosionEffects="OFCRA_EXPLOSION";
 	};
 
+	cl
+
 
 	class OFCRA_12cm_BASE: OFCRA_ARTILLERY_HE_BASE
 	{
@@ -237,11 +239,12 @@ class CfgAmmo
 	class B_35mm_AA;
 	class RHS_ammo_23mm_AA: B_35mm_AA
     {
-        hit=110;                // from 60,  with lowered HE damage this needs to go up 
+        hit=85;                // from 60,  with lowered HE damage this needs to go up 
 		indirectHit=1.911;      // from 40
-		indirectHitRange=2.601; // from 1.8
+		indirectHitRange=2.501; // from 1.8
         explosive=0.10000002;   // from 0.6  By reducing this then it becomes less effective at longer ranges
-		caliber=2.3; 			// from 1.1  Enough to wreck BTR80 at a few 100m in a couple of bursts
+		caliber=1.1; 			// from 1.1  
+		airFriction=-0.001		// from airFriction=-0.00047100001;
     };
 };
 
@@ -297,6 +300,17 @@ class CfgWeapons
 			artilleryDispersion=1.7999998;  //mortar = 1.9, artillery base = 7.2
 		};
 	}
+
+
+	
+
+	class rhs_weap_azp23: CannonCore
+	{
+		class manual: CannonCore
+		{
+		}
+	}
+
 }
 
 class OFCRA_EXPLOSION
