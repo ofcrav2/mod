@@ -61,12 +61,12 @@ class CfgWeapons
 	class mortar_155mm_AMOS;
 	class NORTH_wep_76mm_infhowitzer : mortar_155mm_AMOS
 	{
-		reloadTime=20;
+		reloadTime=21;
 		magazineReloadTime=30;
 		magazines[]+={ "OFCRA_NF_76_ART_NO_ARMOUR_20","OFCRA_SMOKE_MAGAZINE" };
+		class Single1: Mode_SemiAuto
+		{
+			reloadTime=21;
+		};
 	};
-	class Single1: Mode_SemiAuto
-	{
-		reloadTime=20;
-	}
 };
