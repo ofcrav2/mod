@@ -33,14 +33,14 @@ class CfgVehicles
 	};
 	class OFCRA_HARDENED_M939_EARLY: UK3CB_CW_US_B_EARLY_M939_Guntruck
 	{
-		armor=32; //from armor = 32;  
+		armor=26; //from armor = 32;  
 		armorStructural=8; //from armorStructural = 4; higher = less damage.  How much of the damage from parts goes through to object
 		class HitPoints : HitPoints // inherit ALL from UK3CB_CW_US_B_EARLY_M939_Guntruck
 		{
 			class HitEngine : HitEngine // inherit HitEngine from UK3CB_CW_US_B_EARLY_M939_Guntruck
 			{
 				radius = 1; // from radius = 0.45; Make easier to KO engine
-				armor = 27; // from armor = 3; //multiplier from object armor??, this is HP
+				armor = 23; // from armor = 3; //multiplier from object armor??, this is HP
 				passThrough = 0.5; // Damage to engine does not damage the vehicle
 			};
 			class HitBody : HitBody {
