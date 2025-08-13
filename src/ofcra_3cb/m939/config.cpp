@@ -43,52 +43,61 @@ class CfgVehicles
 
 	class OFCRA_HARDENED_M939_EARLY: UK3CB_CW_US_B_EARLY_M939_Guntruck
 	{
-		armor=26; //from armor = 32;  
-		armorStructural=8; //from armorStructural = 4; higher = less damage.  How much of the damage from parts goes through to object
-		class HitPoints : HitPoints // inherit ALL from UK3CB_CW_US_B_EARLY_M939_Guntruck
+		armor=15; //from armor = 32;  
+		armorStructural=9.499; //from armorStructural = 4; higher = less damage.  How much of the damage from parts goes through to object
+		class HitPoints : HitPoints 
 		{
-			class HitEngine : HitEngine // inherit HitEngine from UK3CB_CW_US_B_EARLY_M939_Guntruck
+			class HitEngine : HitEngine 
 			{
 				radius = 1; // from radius = 0.45; Make easier to KO engine
-				armor = 23; // from armor = 3; //multiplier from object armor??, this is HP
-				passThrough = 0.5; // Damage to engine does not damage the vehicle
+				armor = 66; // from armor = 3; //multiplier from object armor??, this is HP
+				passThrough = 1; // Damage to engine does not damage the vehicle
 			};
 			class HitBody : HitBody {
 				passThrough = 1;	
 				armor = 0.35;
 				radius = 0.1; //make smaller 
+				depends="HitFuel";
 			};
 			class HitFuel : HitFuel {
-				passThrough = 0.1;
+				armor = 0.1;
+				radius = 0.5;
+				passThrough = 1;
 			}
 			class HitHull : HitHull {
 				armor = 100;
+				depends="HitFuel";
 			}
 		};
 	};	
 
 	class OFCRA_HARDENED_M939_RECOVERY_EARLY: UK3CB_CW_US_B_EARLY_M939_Recovery
 	{
-		armor=26; //from armor = 32;  
-		armorStructural=8; //from armorStructural = 4; higher = less damage.  How much of the damage from parts goes through to object
-		class HitPoints : HitPoints // inherit ALL from UK3CB_CW_US_B_EARLY_M939_Guntruck
+		armor=15; //from armor = 32;  
+		armorStructural=9.499; //from armorStructural = 4; higher = less damage.  How much of the damage from parts goes through to object
+		class HitPoints : HitPoints 
 		{
-			class HitEngine : HitEngine // inherit HitEngine from UK3CB_CW_US_B_EARLY_M939_Guntruck
+			class HitEngine : HitEngine 
 			{
 				radius = 1; // from radius = 0.45; Make easier to KO engine
-				armor = 23; // from armor = 3; //multiplier from object armor??, this is HP
-				passThrough = 0.5; // Damage to engine does not damage the vehicle
+				armor = 66; // from armor = 3; //multiplier from object armor??, this is HP
+				passThrough = 1; // Damage to engine does not damage the vehicle
 			};
 			class HitBody : HitBody {
 				passThrough = 1;	
 				armor = 0.35;
 				radius = 0.1; //make smaller 
+				depends="HitFuel";
 			};
 			class HitFuel : HitFuel {
-				passThrough = 0.1;
+				armor = 0.1;
+				radius = 0.5;
+				passThrough = 1;
+
 			}
 			class HitHull : HitHull {
 				armor = 100;
+				depends="HitFuel";
 			}
 		};
 	};		
