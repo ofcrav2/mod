@@ -31,7 +31,7 @@ class CfgVehicles
 			class HitHull;
 		}
 	};
-	UK3CB_B_M939_Recovery_G;
+	class UK3CB_B_M939_Recovery_G;
 	class UK3CB_CW_US_B_EARLY_M939_Recovery : UK3CB_B_M939_Recovery_G{
 		class HitPoints : HitPoints{
 			class HitEngine;
@@ -39,7 +39,7 @@ class CfgVehicles
 			class HitFuel;
 			class HitHull;
 		}
-	}
+	};
 
 	class OFCRA_HARDENED_M939_EARLY: UK3CB_CW_US_B_EARLY_M939_Guntruck
 	{
