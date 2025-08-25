@@ -187,7 +187,6 @@ class CfgAmmo
 		ExplosionEffects="OFCRA_EXPLOSION";
 	};
 
-	cl
 
 
 	class OFCRA_12cm_BASE: OFCRA_ARTILLERY_HE_BASE
@@ -315,12 +314,14 @@ class CfgWeapons
 
 class OFCRA_EXPLOSION
 {
+
+	
 	class Light1
 	{
 		simulation="light";
 		type="GrenadeExploLight";
 		position[]={0,0,0};
-		intensity=0.0099999998;
+		intensity=0.0199999998;
 		interval=1;
 		lifeTime=1;
 	};
