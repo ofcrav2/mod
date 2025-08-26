@@ -27,11 +27,7 @@ class CfgWeapons
 	class rhs_weap_d30: mortar_155mm_AMOS
 	{
 		class Single1 : Mode_SemiAuto {}
-		class Single2 : Single1 {}
-		class Single3 : Single1 {}
-		class Single4 : Single1 {}
-		class Single5 : Single1 {}
-		class Single6 : Single1 {}
+
 	}
 
 	//slower reload, louder sound, higher mass
@@ -44,7 +40,9 @@ class CfgWeapons
 
 		class Single1: Single1
 		{
+			displayName="Charge 4";
 			reloadTime=24;
+			//Gun itself heard from double the distance of default
 			class StandardSound
 			{
 				begin1[]=
@@ -62,30 +60,39 @@ class CfgWeapons
 				SoundSetShot[]=
 				{
 					"OFCRA_Cannon155mm_Shot_SoundSet",
-					"OFCRA_Cannon155mm_Tail_SoundSet"
+					"OFCRA_Cannon155mm_Tail_SoundSet",
+					"OFCRA_155mm_Shot_SoundSet",
+					"RHS_155mm_int_Shot_SoundSet",
+					"OFCRA_cannon_Tail_SoundSet"
 				};
 			};
 		};
-		class Single2: Single2
+		class Single2: Single1
 		{
-			reloadTime=24;
+			displayName="Charge 3";
+			artilleryCharge=0.19;
 		};
-		class Single3: Single3
+		class Single3: Single1
 		{
-			reloadTime=24;
+			displayName="Charge 2";
+			artilleryCharge=0.24;
 		};
-		class Single4: Single4
+		class Single4: Single1
 		{
-			reloadTime=24;
+			displayName="Charge 1";
+			artilleryCharge=0.30;
 		};
-		class Single5: Single5
+		class Single5: Single1
 		{
-			reloadTime=24;
+			displayName="Reduced charge";
+			artilleryCharge=0.38;
 		};
-		class Single6: Single6
+		class Single6: Single1
 		{
-			reloadTime=24;
+			displayName="Full charge";
+			artilleryCharge=0.48;
 		};
+
 	};
 };
 
@@ -140,6 +147,7 @@ class CfgVehicles
 class cfgSoundSets
 {
 	class Cannon155mm_Shot_SoundSet;
+	class Cannon155mm_Tail_SoundSet;
 	class OFCRA_Cannon155mm_Shot_SoundSet : Cannon155mm_Shot_SoundSet
 	{
 		soundShaders[]=
@@ -149,10 +157,6 @@ class cfgSoundSets
 			"OFCRA_Cannon155mm_distShot_SoundShader"
 		};
 	};
-
-	class Cannon155mm_Tail_SoundSet;
-
-
 	class OFCRA_Cannon155mm_Tail_SoundSet : Cannon155mm_Tail_SoundSet
 	{
 		soundShaders[]=
@@ -160,6 +164,40 @@ class cfgSoundSets
 			"OFCRA_Cannon155mm_tailForest_SoundShader",
 			"OFCRA_Cannon155mm_tailMeadows_SoundShader",
 			"OFCRA_Cannon155mm_tailHouses_SoundShader"
+		};
+	};
+
+
+	class RHS_155mm_Shot_SoundSet;
+	class RHS_cannon_Tail_SoundSet;
+
+	class OFCRA_155mm_Shot_SoundSet : RHS_155mm_Shot_SoundSet
+	{
+		soundShaders[]=
+		{
+			"OFCRA_155mm_0m_SoundShader",
+			"OFCRA_155mm_50m_SoundShader",
+			"OFCRA_155mm_150m_SoundShader",
+			"OFCRA_155mm_550m_SoundShader",
+			"OFCRA_155mm_1000m_SoundShader",
+			"OFCRA_155mm_1800m_SoundShader"
+		};
+	};
+
+	class OFCRA_cannon_Tail_SoundSet : RHS_cannon_Tail_SoundSet
+	{
+		soundShaders[]=
+		{
+			"OFCRA_cannon_Meadows_close_SoundShader",
+			"OFCRA_cannon_Meadows_far_SoundShader",
+			"OFCRA_cannon_Houses_close_SoundShader",
+			"OFCRA_cannon_Houses_far_SoundShader",
+			"OFCRA_cannon_Forest_close_SoundShader",
+			"OFCRA_cannon_Forest_far_SoundShader",
+			"OFCRA_cannon_Interior_close_SoundShader",
+			"OFCRA_cannon_noise_meadows_SoundShader",
+			"OFCRA_cannon_noise_forest_SoundShader",
+			"OFCRA_cannon_noise_houses_SoundShader"
 		};
 	};
 };
@@ -224,5 +262,192 @@ class cfgSoundShaders
 			{6000,0}
 		};
 	};
+
+
+
+
+	class RHS_155mm_0m_SoundShader;
+	class RHS_155mm_50m_SoundShader;
+	class RHS_155mm_150m_SoundShader;
+	class RHS_155mm_550m_SoundShader;
+	class RHS_155mm_1000m_SoundShader;
+	class RHS_155mm_1800m_SoundShader;
+
+	class RHS_cannon_Meadows_close_SoundShader;
+	class RHS_cannon_Meadows_far_SoundShader;
+	class RHS_cannon_Houses_close_SoundShader;
+	class RHS_cannon_Houses_far_SoundShader;
+	class RHS_cannon_Forest_close_SoundShader;
+	class RHS_cannon_Forest_far_SoundShader;
+	class RHS_cannon_Interior_close_SoundShader;
+	class RHS_cannon_noise_meadows_SoundShader;
+	class RHS_cannon_noise_forest_SoundShader;
+	class RHS_cannon_noise_houses_SoundShader;
+
+
+	class OFCRA_155mm_0m_SoundShader : RHS_155mm_0m_SoundShader
+	{
+		range=100; //from range=25;
+		rangeCurve[]=
+		{
+			{0,1},
+			{50,0}
+		};
+	};
+	class OFCRA_155mm_50m_SoundShader : RHS_155mm_50m_SoundShader
+	{
+		range=300; //from range=150;
+		rangeCurve[]=
+		{
+			{0,0},
+			{100,1},
+			{300,0}
+		};
+	};
+	class OFCRA_155mm_150m_SoundShader : RHS_155mm_150m_SoundShader
+	{
+		range = 1100; //from range=550;
+		rangeCurve[]=
+		{
+			{0,0},
+			{100,0},
+			{300,1},
+			{1100,0}
+		};
+	};
+	class OFCRA_155mm_550m_SoundShader : RHS_155mm_550m_SoundShader
+	{
+		range=2000; //from range=1000
+		rangeCurve[]=
+		{
+			{0,0},
+			{300,0},
+			{1100,1},
+			{2000,0}
+		};
+	};
+
+	class OFCRA_155mm_1000m_SoundShader : RHS_155mm_1000m_SoundShader
+	{
+		range=3600; //from range=1800
+		rangeCurve[]=
+		{
+			{0,0},
+			{1100,0},
+			{2000,1},
+			{3600,0}
+		};
+	};
+	class OFCRA_155mm_1800m_SoundShader : RHS_155mm_1800m_SoundShader
+	{
+		range=11000;
+		rangeCurve[]=
+		{
+			{0,0},
+			{2000,0},
+			{3600,1},
+			{11000,0}
+		};
+	};
+
+
+	//Closure
+	class OFCRA_cannon_Meadows_close_SoundShader : RHS_cannon_Meadows_close_SoundShader
+	{
+		range=300;
+		rangeCurve[]=
+		{
+			{0,1},
+			{300,0}
+		};
+	};
+	class OFCRA_cannon_Meadows_far_SoundShader : RHS_cannon_Meadows_far_SoundShader
+	{
+		range=9000;
+		rangeCurve[]=
+		{
+			{0,0},
+			{300,1},
+			{9000,1}
+		};
+	};
+	class OFCRA_cannon_Houses_close_SoundShader : RHS_cannon_Houses_close_SoundShader
+	{
+		range=300;
+		rangeCurve[]=
+		{
+			{0,1},
+			{300,0}
+		};
+	};
+	class OFCRA_cannon_Houses_far_SoundShader : RHS_cannon_Houses_far_SoundShader
+	{
+		range=9000;
+		rangeCurve[]=
+		{
+			{0,0},
+			{300,1},
+			{9000,1}
+		};
+	};
+	class OFCRA_cannon_Forest_close_SoundShader : RHS_cannon_Forest_close_SoundShader
+	{
+		range=300;
+		rangeCurve[]=
+		{
+			{0,1},
+			{300,0}
+		};
+	};
+	class OFCRA_cannon_Forest_far_SoundShader : RHS_cannon_Forest_far_SoundShader
+	{
+		range=9000;
+		rangeCurve[]=
+		{
+			{0,0},
+			{300,1},
+			{9000,1}
+		};
+	};
+	class OFCRA_cannon_Interior_close_SoundShader : RHS_cannon_Interior_close_SoundShader
+	{
+		range=14;
+		rangeCurve[]=
+		{
+			{0,1},
+			{6,1},
+			{14,0}
+		};
+	};
+	class OFCRA_cannon_noise_meadows_SoundShader : RHS_cannon_noise_meadows_SoundShader
+	{
+		range=600;
+		rangeCurve[]=
+		{
+			{0,1},
+			{600,0}
+		};
+	};
+	class OFCRA_cannon_noise_forest_SoundShader : RHS_cannon_noise_forest_SoundShader
+	{
+		range=600;
+		rangeCurve[]=
+		{
+			{0,1},
+			{600,0}
+		};
+	};
+	class OFCRA_cannon_noise_houses_SoundShader : RHS_cannon_noise_houses_SoundShader
+	{
+		range=600;
+		rangeCurve[]=
+		{
+			{0,1},
+			{600,0}
+		};
+	};
+
+	
+
 
 };
