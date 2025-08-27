@@ -37,10 +37,13 @@ class CfgWeapons
 		displayName = "OFCRA 122mm Howitzer";
 		reloadTime=24;
 		
+		magazines[]={
+			"OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
+		};
 
 		class Single1: Single1
 		{
-			displayName="Charge 4";
+			displayName="Charge 0";
 			reloadTime=24;
 			//Gun itself heard from double the distance of default
 			class StandardSound
@@ -69,7 +72,7 @@ class CfgWeapons
 		};
 		class Single2: Single1
 		{
-			displayName="Charge 3";
+			displayName="Charge 1";
 			artilleryCharge=0.19;
 		};
 		class Single3: Single1
@@ -79,17 +82,17 @@ class CfgWeapons
 		};
 		class Single4: Single1
 		{
-			displayName="Charge 1";
+			displayName="Charge 3";
 			artilleryCharge=0.30;
 		};
 		class Single5: Single1
 		{
-			displayName="Reduced charge";
+			displayName="Charge 4";
 			artilleryCharge=0.38;
 		};
 		class Single6: Single1
 		{
-			displayName="Full charge";
+			displayName="Charge 5";
 			artilleryCharge=0.48;
 		};
 
