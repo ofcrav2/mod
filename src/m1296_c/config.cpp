@@ -171,102 +171,12 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag
-			{
-				magazine="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-				count=75;
-			};
-			class _xx_rhsusf_100Rnd_556x45_soft_pouch
-			{
-				magazine="rhsusf_100Rnd_556x45_soft_pouch";
-				count=11;
-			};
-			class _xx_rhsusf_100Rnd_762x51
-			{
-				magazine="rhsusf_100Rnd_762x51";
-				count=11;
-			};
-			class _xx_rhs_fgm148_magazine_AT
-			{
-				magazine="rhs_fgm148_magazine_AT";
-				count=2;
-			};
-			class _xx_rhs_m136_mag
-			{
-				magazine="rhs_m136_mag";
-				count=2;
-			};
-			class _xx_rhs_mag_M433_HEDP
-			{
-				magazine="rhs_mag_M433_HEDP";
-				count=20;
-			};
-			class _xx_rhs_mag_M714_white
-			{
-				magazine="rhs_mag_M714_white";
-				count=8;
-			};
-			class _xx_rhs_mag_M662_red
-			{
-				magazine="rhs_mag_M662_red";
-				count=4;
-			};
-			class _xx_rhs_mag_m67
-			{
-				magazine="rhs_mag_m67";
-				count=10;
-			};
-			class _xx_rhs_mag_m18_green
-			{
-				magazine="rhs_mag_m18_green";
-				count=4;
-			};
-			class _xx_rhs_mag_m18_red
-			{
-				magazine="rhs_mag_m18_red";
-				count=4;
-			};
-			class _xx_rhs_mag_an_m8hc
-			{
-				magazine="rhs_mag_an_m8hc";
-				count=10;
-			};
 		};
 		class TransportItems
 		{
-			class _xx_FirstAidKit
-			{
-				name="FirstAidKit";
-				count=10;
-			};
-			class _xx_Medikit
-			{
-				name="Medikit";
-				count=2;
-			};
-			class _xx_Toolkit
-			{
-				name="Toolkit";
-				count=1;
-			};
 		};
 		class TransportWeapons
 		{
-			class _xx_rhs_weap_m4
-			{
-				weapon="rhs_weap_m4";
-				count=2;
-			};
-			class _xx_rhs_weap_fgm148
-			{
-				weapon="rhs_weap_fgm148";
-				count=2;
-			};
-			class _xx_rhs_weap_M136
-			{
-				weapon="rhs_weap_M136";
-				count=2;
-			};
 		};
 		memoryPointSupply="SupplyPos";
 		supplyRadius=4.6999998;
@@ -29465,8 +29375,8 @@ class CfgAmmo
 	{
 		typicalSpeed=960;
 		hit=30;
-		indirectHit=10;
-		indirectHitRange=3;
+		indirectHit=1.911;
+		indirectHitRange=3.301;   
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
@@ -29475,8 +29385,8 @@ class CfgAmmo
 	{
 		typicalSpeed=960;
 		hit=30;
-		indirectHit=10;
-		indirectHitRange=3;
+		indirectHit=1.911;
+		indirectHitRange=3.301;   
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
@@ -29514,8 +29424,8 @@ class CfgMagazines
 	class 156Rnd_MK238_HEI: VehicleMagazine
 	{
 		author="[CN]Lurker1011,真红战队";
-		displayName="MK238 30mm HE-T";
-		displayNameShort="30mm HE-T";
+		displayName="OFCRA MK238 30mm HE-T";
+		displayNameShort="OFCRA 30mm HE-T";
 		ammo="lk_Mk238_HET";
 		initSpeed=960;
 		count=156;
@@ -29527,8 +29437,8 @@ class CfgMagazines
 	class 156Rnd_MK310_AB: VehicleMagazine
 	{
 		author="[CN]Lurker1011,真红战队";
-		displayName="MK310 30mm AB";
-		displayNameShort="30mm Airburst";
+		displayName="OFCRA MK310 30mm AB";
+		displayNameShort="OFCRA 30mm Airburst";
 		ammo="lk_Mk310_AB";
 		initSpeed=960;
 		count=156;

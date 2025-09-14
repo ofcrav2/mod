@@ -106,62 +106,15 @@ class CfgVehicles
 		selectionBrakeLights="Light_Brake";
 		class TransportBackpacks
 		{
-			class _xx_B_Carryall_cbr
-			{
-				backpack="B_Carryall_cbr";
-				count=1;
-			};
+
 		};
 		class TransportMagazines
 		{
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag
-			{
-				magazine="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-				count=30;
-			};
-			class _xx_rhsusf_200rnd_556x45_mixed_box
-			{
-				magazine="rhsusf_200rnd_556x45_mixed_box";
-				count=10;
-			};
-			class _xx_rhs_fgm148_magazine_AT
-			{
-				magazine="rhs_fgm148_magazine_AT";
-				count=5;
-			};
-			class _xx_rhs_m136_mag
-			{
-				magazine="rhs_m136_mag";
-				count=2;
-			};
-			class _xx_rhs_mag_M433_HEDP
-			{
-				magazine="rhs_mag_M433_HEDP";
-				count=10;
-			};
-			class _xx_rhs_mag_m67
-			{
-				magazine="rhs_mag_m67";
-				count=10;
-			};
-			class _xx_rhs_mag_an_m8hc
-			{
-				magazine="rhs_mag_an_m8hc";
-				count=5;
-			};
+		
 		};
 		class TransportWeapons
 		{
-			class _xx_rhs_weap_fgm148
-			{
-				weapon="rhs_weap_fgm148";
-				count=1;
-			};
-			class _xx_rhs_weap_M136
-			{
-				weapon="rhs_weap_M136";
-				count=2;
-			};
+			
 		};
 		memoryPointSupply="SupplyPos";
 		supplyRadius=4.6999998;

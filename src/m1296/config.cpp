@@ -1,12 +1,11 @@
 class CfgPatches
 {
-	class ampv_cuas_lk
+	class M1296_lk
 	{
 		skipWhenMissingDependencies=1;
 		requiredAddons[]=
 		{
-			"A3_Armor_F_Beta",
-			"ampv_lk"
+			"rhsusf_stryker"
 		};
 		requiredVersion=0.1;
 		units[]={};
@@ -16,5 +15,5 @@ class CfgPatches
 class cfgMods
 {
 	author="[CN]Lurker1011";
-	timepacked="1733678809";
+	timepacked="1737300360";
 };
