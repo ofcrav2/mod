@@ -1,22 +1,7 @@
 #include "BIS_AddonInfo.hpp"
 class CfgFunctions
 {
-	class M10
-	{
-		class functions
-		{
-			class hatch
-			{
-				file="M10_booker_c\scripts\m10_hatch.sqf";
-				description="hatch";
-			};
-			class init
-			{
-				file="M10_booker_c\scripts\m10_init.sqf";
-				description="ztl11_init";
-			};
-		};
-	};
+
 	class AMPV 
 	{
 		class AMPV_Weapons
