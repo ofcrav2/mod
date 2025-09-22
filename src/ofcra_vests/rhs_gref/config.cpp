@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[] = {
 			"ofcra_vests",
 			"rhsgref_main_loadorder"
-
 		};
 		units[] = {};
 		weapons[] = {};
@@ -21,7 +20,8 @@ class OFCRA_level3_plate_HitpointsProtectionInfo;
 
 class cfgWeapons
 {
-	class rhsgref_alice_webbing{
+	class rhs_6b23;
+	class rhsgref_alice_webbing : rhs_6b23{
 		class ItemInfo;
 	}
 	class OFCRA_rhsgref_alice_webbing: rhsgref_alice_webbing
