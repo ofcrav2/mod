@@ -1250,6 +1250,28 @@ class CfgVehicles
 					"rhs_faction_usarmy_wd"
 				};
 			};
+			class Woodland
+			{
+				displayName="Woodland";
+				author="wombat";
+				textures[]=
+				{
+					"\m10_booker\tex\Hull_w_co.paa",
+					"\m10_booker\tex\Turret_w_co.paa",
+					"\m10_booker\tex\Aditional_Sides_w_co.paa",
+					"\m10_booker\tex\Sides2_w_co.paa",
+					"\m10_booker\tex\Gun_w_co.paa",
+					"\m10_booker\tex\Mantlet_w_co.paa",
+					"\m10_booker\tex\Wheels_w_co.paa",
+					"\m10_booker\tex\plate_w_co.paa"
+				};
+				factions[]=
+				{
+					"BLU_F",
+					"rhs_faction_usarmy_d",
+					"rhs_faction_usarmy_wd"
+				};
+			};
 		};
 		textureList[]=
 		{
@@ -2940,7 +2962,7 @@ class CfgVehicles
 		faction="rhs_faction_usarmy_d";
 		vehicleClass="rhs_vehclass_tank";
 	};
-	class usarmy_LT_M10_WD: B_LT_M10
+	class usarmy_LT_M10_OLIVE: B_LT_M10
 	{
 		crew="rhsusf_army_ucp_combatcrewman";
 		faction="rhs_faction_usarmy_wd";
@@ -2956,6 +2978,20 @@ class CfgVehicles
 			"\m10_booker\tex\Mantlet_O_co.paa",
 			"\m10_booker\tex\Wheels_O_co.paa",
 			"\m10_booker\tex\plate_O_co.paa"
+		};
+	};
+	class usarmy_LT_M10_WD: usarmy_LT_M10_OLIVE
+	{
+		hiddenSelectionsTextures[]=
+		{
+			"\m10_booker\tex\Hull_w_co.paa",
+			"\m10_booker\tex\Turret_w_co.paa",
+			"\m10_booker\tex\Aditional_Sides_w_co.paa",
+			"\m10_booker\tex\Sides2_w_co.paa",
+			"\m10_booker\tex\Gun_w_co.paa",
+			"\m10_booker\tex\Mantlet_w_co.paa",
+			"\m10_booker\tex\Wheels_w_co.paa",
+			"\m10_booker\tex\plate_w_co.paa"
 		};
 	};
 };
