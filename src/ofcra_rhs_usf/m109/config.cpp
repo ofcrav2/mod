@@ -98,6 +98,65 @@ class CfgVehicles
 		class Turrets : Turrets {
 			class MainTurret;
 		}
+
+
+		class textureSources
+		{
+			class standard
+			{
+				displayName="Woodland";
+				author="$STR_RHSUSF_AUTHOR_FULL";
+				textures[]=
+				{
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_01_wd_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_02_wd_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_03_wd_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"
+				};
+				factions[]=
+				{
+					"rhs_faction_usarmy_wd"
+				};
+			};
+			class Desert
+			{
+				displayName="Desert";
+				author="$STR_RHSUSF_AUTHOR_FULL";
+				textures[]=
+				{
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_01_d_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_02_d_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_03_d_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_d_ca.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_d_co.paa"
+				};
+				factions[]=
+				{
+					"rhs_faction_usarmy_d"
+				};
+			};
+			class Tan
+			{
+				displayName="Tan";
+				author="wombat";
+				textures[]=
+				{
+					"\ofcra_rhs_usf\m109\rhsusf_m109a6_01_tan_co.paa",
+					"\ofcra_rhs_usf\m109\rhsusf_m109a6_02_tan_co.paa",
+					"\ofcra_rhs_usf\m109\rhsusf_m109a6_03_tan_co.paa",
+					"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_d_ca.paa",
+					"\ofcra_rhs_usf\m109\rhsusf_m109a6_wheels_tan_co.paa"
+				};
+				factions[]=
+				{
+					"rhs_faction_usarmy_d"
+				};
+			};
+
+		};
+
+
 	};
 	class rhsusf_m109_usarmy: rhsusf_m109tank_base{};
 	class rhsusf_m109d_usarmy: rhsusf_m109_usarmy{};
