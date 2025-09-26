@@ -163,8 +163,6 @@ class CfgAmmo
 		ace_frag_enabled=0;
 		explosive=1;
 
-		soundFly[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01",4.56228,1,800};
-		
 		triggerOnImpact=1;
 		submunitionConeAngle[]={160,174}; //random degree range from verticle ....  0 = veritcle,180 = We want slightly downward so we can hit down hills etc
 		submunitionConeAngleHorizontal=720;
@@ -185,6 +183,11 @@ class CfgAmmo
 		//as the explosion is nerfed we want to make the effects bigger to compensate
 		CraterEffects="OFCRA_CRATER";
 		ExplosionEffects="OFCRA_EXPLOSION";
+
+
+		soundFly[] = {"\ofcra_ammo_base\shell.wav",4.56228,1,2000};
+
+
 	};
 
 
