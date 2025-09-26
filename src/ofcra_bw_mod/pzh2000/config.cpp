@@ -64,7 +64,8 @@ class CfgWeapons
 			"Single3",
 			"Single4",
 			"Single5",
-			"Single6"
+			"Single6",
+			"Single7"
 		};
 		class Single1 : Mode_SemiAuto
 		{
@@ -96,6 +97,11 @@ class CfgWeapons
 		{
 			displayName="Charge 5";
 			artilleryCharge=0.48;
+		};
+		class Single7: Single1
+		{
+			displayName="Charge 6";
+			artilleryCharge=0.6;
 		};
 	};
 
