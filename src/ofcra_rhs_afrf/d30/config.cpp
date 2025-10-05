@@ -6,6 +6,7 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		units[]=
 		{
+			"OFCRA_SLOW_Howitzer_Unit"
 
 		};
 

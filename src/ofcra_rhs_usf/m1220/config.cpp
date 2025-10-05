@@ -8,7 +8,9 @@ class CfgPatches
 		requiredAddons[] = {
 			"rhsusf_main_loadorder"
 		};
-		units[] = {};
+		units[] = {
+			"OFCRA_B_M1220_WINTER",
+		};
 		weapons[] = {};
 		ammo[]={};
 

@@ -6,6 +6,8 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		units[]=
 		{
+			"OFCRA_m109tank",
+			"OFCRA_m109tank_d"
 
 		};
 

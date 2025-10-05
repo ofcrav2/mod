@@ -6,6 +6,8 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		units[]=
 		{
+			"OFCRA_Panzerhaubitze2000_Fleck",
+			"OFCRA_Panzerhaubitze2000_Tropen"
 
 		};
 

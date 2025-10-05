@@ -10,7 +10,13 @@ class CfgPatches
 			"rhs_main",
 			"ofcra_ammo_base"
 		};
-		units[] = {};
+		units[] = {
+			"OFCRA_B_UAV_SPOTTER",
+			"OFCRA_O_UAV_SPOTTER",
+			"OFCRA_I_UAV_SPOTTER",
+			"OFCRA_B_UAV_01_backpack_F",
+			"OFCRA_O_UAV_01_backpack_F",
+			"OFCRA_I_UAV_01_backpack_F",
 		weapons[] = {};
 		ammo[]={};
 
