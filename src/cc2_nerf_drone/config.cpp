@@ -349,14 +349,14 @@ class CfgVehicles {
 		faction="OPF_F";
 		crew="O_UAV_AI";
 		typicalCargo[]= {"O_UAV_AI"};
-		class assembleInfo
+		class assembleInfo : assembleInfo
 		{
-			primary=1;
-			base="";
-			dissasembleTo[]={};
-			displayName="OFCRA Spotter drone";
-			assembleTo="OFCRA_O_UAV_01_backpack_F";
+			dissasembleTo[]=
+			{
+				"OFCRA_O_UAV_01_backpack_F"
+			};
 		};
+
 	}
 	class OFCRA_I_UAV_SPOTTER : OFCRA_B_UAV_SPOTTER
 	{
@@ -364,14 +364,12 @@ class CfgVehicles {
 		faction="IND_F";
 		crew="I_UAV_AI";
 		typicalCargo[]= {"I_UAV_AI"};
-		class assembleInfo
+		class assembleInfo : assembleInfo
 		{
-			primary=1;
-			base="";
-			dissasembleTo[]={};
-			displayName="OFCRA Spotter drone";
-			assembleTo="OFCRA_I_UAV_01_backpack_F";
-
+			dissasembleTo[]=
+			{
+				"OFCRA_I_UAV_01_backpack_F"
+			};
 		};
 	}
 
