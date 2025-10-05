@@ -36,6 +36,7 @@ class CfgWeapons
 		author = "OFCRA Wombat";
 		displayName = "OFCRA 122mm Howitzer";
 		reloadTime=24;
+		scopeCurator=2;
 		
 		magazines[]={
 			"OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"

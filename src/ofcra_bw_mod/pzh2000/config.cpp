@@ -159,6 +159,7 @@ class CfgVehicles
 	class OFCRA_Panzerhaubitze2000_Fleck: BWA3_Panzerhaubitze2000_Fleck
 	{
 		displayName = "OFCRA PzH 2000";
+		scopeCurator=2;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret

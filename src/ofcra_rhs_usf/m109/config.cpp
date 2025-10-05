@@ -169,6 +169,7 @@ class CfgVehicles
 	class OFCRA_m109tank: rhsusf_m109_usarmy
 	{
 		displayName = "OFCRA M109 Howitzer"; 
+		scopeCurator=2;
 
 
 		class Turrets: Turrets
@@ -193,6 +194,7 @@ class CfgVehicles
 	class OFCRA_m109tank_d: rhsusf_m109d_usarmy
 	{
 		displayName = "OFCRA M109 Howitzer"; 
+		scopeCurator=2;
 
 
 		class Turrets: Turrets
