@@ -194,13 +194,20 @@ class CfgVehicles {
 		class NewTurret;
 	};
 	class Air : AllVehicles{};
-	class Helicopter: Air{};
-
-	class Helicopter_Base_F: Helicopter
-	{
+	class Helicopter: Air{
 		class Turrets
 		{
 			class MainTurret: NewTurret
+			{
+			};
+		};
+	};
+
+	class Helicopter_Base_F: Helicopter
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
 			{
 			};
 		};

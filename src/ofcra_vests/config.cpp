@@ -17,7 +17,7 @@ class OFCRA_level3_plate_HitpointsProtectionInfo
 	class Chest
 	{
 		HitpointName="HitChest";
-		armor=16
+		armor=16;
 		PassThrough=0.3;
 	};
 	class Diaphragm

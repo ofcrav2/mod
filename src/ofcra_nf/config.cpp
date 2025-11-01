@@ -40,7 +40,7 @@ class CfgAmmo
 		};
 		submunitionAmmo[]={"OFCRA_NF_SPLASH_NO_AROUR",0.25,"OFCRA_LIGHT_VEHICLE_DESTRUCTION",0.75  };
 		submunitionInitSpeed=40;   
-	}
+	};
 };
 
 class CfgMagazines

@@ -246,7 +246,7 @@ class CfgAmmo
 		indirectHitRange=2.501; // from 1.8
         explosive=0.10000002;   // from 0.6  By reducing this then it becomes less effective at longer ranges
 		caliber=1.1; 			// from 1.1  
-		airFriction=-0.001		// from airFriction=-0.00047100001;
+		airFriction=-0.001;		// from airFriction=-0.00047100001;
     };
 };
 
