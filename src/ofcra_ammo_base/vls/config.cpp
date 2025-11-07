@@ -1,7 +1,7 @@
 class CfgPatches
 {
 	class ofcra_ammo_base_vls {
-		name = "ofcra_ammo_base";
+		name = "ofcra_ammo_base_vls";
 		requiredVersion = 1.98;
 		author = "OFCRA Wombat";
 		skipWhenMissingDependencies=1;

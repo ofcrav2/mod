@@ -7,7 +7,8 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
 			"rhsusf_main_loadorder",
-			"ofcra_ammo_base"
+			"ofcra_ammo_base",
+			"ofcra_ammo_base_vls"
 		};
 		units[] = {};
 		weapons[] = {};
@@ -27,38 +28,42 @@ class CfgAmmo
 	class OFCRA_NERFED_HIMARS_CLUSTER_ROCKET : rhs_ammo_m26_rocket
 	{
 
-		//161 submunitions 5% = 8
+		author="wombat";
+		displayName="OFCRA Cruise Missile Cluster";
+		triggerDistance=150; 
+		submunitionParentSpeedCoef=1;
+		submunitionInitSpeed=0; 
+		effectsMissile="OFCRA_CruiseMissile";
 
-		displayName="OFCRA M26A1 CLUSTER ROCKET";
+		submunitionConeAngle=35;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			40
+		};
+
 		submunitionAmmo[]=
 		{
-			"OFCRA_AUTOCANNON_HE",
-			0.25,
 			"OFCRA_MLRS_CLUSTER_LOW_DAMAGE",
-			0.25,
+			0.65,
 			"OFCRA_MLRS_CLUSTER",
-			0.5
+			0.15,
+			"OFCRA_MLRS_CLUSTER_FRAG",
+			0.20
 		};
-		soundFly[] = {"\ofcra_ammo_base\shell.wav",4.56228,1,2000};
-	};
-
-	class OFCRA_HE_LOW_DAMAGE;
-	class OFCRA_MLRS_CLUSTER_LOW_DAMAGE : OFCRA_HE_LOW_DAMAGE
-	{
-		hit=300;
-		explosive=1;
-	};
-
-	class rhs_ammo_m77_submunition;
 	
-	class OFCRA_MLRS_CLUSTER : rhs_ammo_m77_submunition
-	{
+		
+		soundFly[] = {"\ofcra_ammo_base\shell.wav",4.99,1,5000};
 
-		hit=300;
-		indirectHit=1.911;
-		indirectHitRange=8;
-		soundFly[] = {"\ofcra_ammo_base\shell.wav",4.56228,1,500};
+		class Cruise
+		{
+			preferredFlightAltitude=800;
+			//horizontal distance when it starts to home in
+			//this always seems to speed up
+			lockDistanceToTarget=50; 
+		};
 	};
+
 }
 
 class CfgMagazines
