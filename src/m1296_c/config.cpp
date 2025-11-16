@@ -229,7 +229,7 @@ class CfgVehicles
 				opticsModel="rhsusf\addons\rhsusf_optics\data\rhsusf_DVE_4x3";
 				visionMode[]=
 				{
-					"TI"
+					"NVG"
 				};
 				thermalMode[]={0,1};
 				initFov=1.07692;
@@ -14045,7 +14045,7 @@ class CfgVehicles
 						opticsDisplayName="4.3x";
 						visionMode[]=
 						{
-							"TI"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						initFov=0.162791;
@@ -14208,7 +14208,7 @@ class CfgVehicles
 						gunnerOpticsModel="rhsusf\addons\rhsusf_optics\data\rhsusf_DVE_4x3";
 						visionMode[]=
 						{
-							"TI"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						initFov=1.07692;
@@ -14243,7 +14243,7 @@ class CfgVehicles
 						camDir="View_CROWS_TI_dir";
 						visionMode[]=
 						{
-							"TI"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						initFov=0.162791;
@@ -14729,7 +14729,7 @@ class CfgVehicles
 				opticsModel="rhsusf\addons\rhsusf_optics\data\rhsusf_DVE_4x3";
 				visionMode[]=
 				{
-					"TI"
+					"NVG"
 				};
 				thermalMode[]={0,1};
 				initFov=1.07692;
@@ -28839,7 +28839,7 @@ class CfgVehicles
 						visionMode[]=
 						{
 							"Normal",
-							"Ti"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						gunnerOpticsModel="rhsusf\addons\rhsusf_optics\data\rhsusf_IBAS_4x";
@@ -29002,7 +29002,7 @@ class CfgVehicles
 						gunnerOpticsModel="rhsusf\addons\rhsusf_optics\data\rhsusf_DVE_4x3";
 						visionMode[]=
 						{
-							"TI"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						initFov=1.07692;
@@ -29037,7 +29037,7 @@ class CfgVehicles
 						camDir="View_CROWS_TI_dir";
 						visionMode[]=
 						{
-							"TI"
+							"NVG"
 						};
 						thermalMode[]={0,1};
 						initFov=0.162791;
