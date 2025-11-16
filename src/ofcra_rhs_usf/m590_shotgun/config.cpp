@@ -45,6 +45,7 @@ class CfgAmmo
 		author="OFCRA Wombat";
 		submunitionAmmo="OFCRA_12g_00buckshot_pellet";
 		triggerSpeedCoef[]={0.87999997,1};
+		submunitionConeAngle=1.2;  //from 0.95
 		submunitionConeType[]=
 		{
 			"poissondisc",
@@ -64,8 +65,9 @@ class CfgAmmo
 	class OFCRA_12g_HE : rhs_ammo_12g_HE
 	{
 		author="OFCRA Wombat";
-		caliber=0.6048; // from 0.2
-		hit=30;
+		caliber=0.4048; // from 0.2
+		explosive=0.5;      
+		hit=15;
 		indirectHit=1.043;        // from 1.143
 		indirectHitRange=3.1;   //from 1.9
 	};
@@ -81,8 +83,8 @@ class CfgAmmo
 	class OFCRA_12g_birdshot_pellet : rhs_ammo_12g_00buckshot_pellet
 	{
 		author="OFCRA Wombat";
-		hit=1.25;
-		caliber=0.15999999;
+		hit=1.75;
+		caliber=0.149;   //this often does not even pen clothing
 	};
 };
 
@@ -98,6 +100,7 @@ class CfgMagazines
 		displayNameShort="Birdshot";
 		description="Birdshot";
 		descriptionShort="Birdshot";
+		initSpeed=450; //from 403
 	};
 
 	class OFCRA_8rnd_buck : rhsusf_8Rnd_00Buck
@@ -107,17 +110,18 @@ class CfgMagazines
 		displayName="8Rnd Buckshot";
 		description="Buckshot";
 		descriptionShort="Buckshot";
+		initSpeed=450; //from 403
 	};
 
 	class rhsusf_8Rnd_Slug;
 	class OFCRA_8Rnd_Slug : rhsusf_8Rnd_Slug
 	{
 		author="OFCRA Wombat";
-		initSpeed=570;
 		ammo="OFCRA_12g_slug";
 		displayName="8Rnd Slug";
 		description="Slug";
 		descriptionShort="Slug";
+		initSpeed=570;  //from 475
 
 	};
 
@@ -129,8 +133,8 @@ class CfgMagazines
 		displayName="8Rnd HE";
 		description="High Explosive";
 		descriptionShort="HE";
+		initSpeed=140;  //from 150
 	};
-
 };
 
 
