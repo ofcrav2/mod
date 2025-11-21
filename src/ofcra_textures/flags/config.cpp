@@ -94,4 +94,12 @@ class CfgMarkers
 		texture="\ofcra_textures\flags\north_korea_marker.paa";
 	}
 
+	class OFCRA_Finland_Flag : OFCRA_Scotland_Flag
+	{
+		name="Finland Flag";
+		icon="\ofcra_textures\flags\finland_marker.paa";
+		texture="\ofcra_textures\flags\finland_marker.paa";
+	}
+
+
 };

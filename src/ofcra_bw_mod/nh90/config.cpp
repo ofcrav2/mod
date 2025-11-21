@@ -167,6 +167,293 @@ class CfgVehicles
 				};
 			};
 
+
+			class BlackNorway
+			{
+				displayName="Black Norway";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Norway_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyNorway
+			{
+				displayName="Grey/Navy Norway";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Norway_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
+
+
+			class BlackBelgium
+			{
+				displayName="Black Belgium";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Belgium_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyBelgium
+			{
+				displayName="Grey/Navy Belgium";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Belgium_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
+
+
+
+			class BlackItaly
+			{
+				displayName="Black Italy";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Italy_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyItaly
+			{
+				displayName="Grey/Navy Italy";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Italy_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
+
+
+			class BlackGreece
+			{
+				displayName="Black Greece";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Greece_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyGreece
+			{
+				displayName="Grey/Navy Greece";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Greece_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
+
+
+
+
+			
+
+			class BlackNetherlands
+			{
+				displayName="Black Netherlands";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Netherlands_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyNetherlands
+			{
+				displayName="Grey/Navy Netherlands";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\A3\ui_f\data\map\markers\flags\Netherlands_ca.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
+
+
+			
+			class BlackFinland
+			{
+				displayName="Black Finland";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\black_tail.paa",
+					"ofcra_bw_mod\nh90\black_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\ofcra_textures\flags\finland_marker.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+			class GreyFinland
+			{
+				displayName="Grey/Navy Finland";
+				author="OFCRA wombat";
+				textures[]=
+				{
+					"ofcra_bw_mod\nh90\grey_tail.paa",
+					"ofcra_bw_mod\nh90\grey_body.paa",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"#(argb,8,8,3)color(0,0,0,0,co)",
+					"\ofcra_textures\flags\finland_marker.paa",
+					"ofcra_bw_mod\nh90\black_rotor.paa"
+				};
+				factions[]=
+				{
+				};
+			};
+
 		};
 
 	}
