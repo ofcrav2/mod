@@ -31,7 +31,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 }

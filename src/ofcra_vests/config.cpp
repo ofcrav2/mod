@@ -12,6 +12,15 @@ class CfgPatches
 };
 
 
+
+/*
+	This does not work. Having :
+
+	 "ItemInfo" >> "HitpointsProtectionInfo"
+
+	 Inherit from this somehow breaks it. Instead copy and paste these values into each vest that is needed to be modified
+
+*/
 class OFCRA_level3_plate_HitpointsProtectionInfo
 {
 	class Chest
@@ -30,7 +39,7 @@ class OFCRA_level3_plate_HitpointsProtectionInfo
 	{
 		hitpointName="HitAbdomen";
 		armor=16;
-		PassThrough=0.5;
+		PassThrough=0.3;
 	};
 	class Body
 	{

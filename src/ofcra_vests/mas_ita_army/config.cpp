@@ -62,7 +62,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierGL_rgr: V_mas_itr_PlateCarrierGL_rgr
@@ -72,7 +96,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierAR_rgr: V_mas_itr_PlateCarrierAR_rgr
@@ -82,7 +130,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrier1_tan: V_mas_itr_PlateCarrier1_tan
@@ -92,7 +164,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierGL_tan: V_mas_itr_PlateCarrierGL_tan
@@ -102,7 +198,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierAR_tan: V_mas_itr_PlateCarrierAR_tan
@@ -112,7 +232,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrier1_win: V_mas_itr_PlateCarrier1_win
@@ -122,7 +266,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierGL_win: V_mas_itr_PlateCarrierGL_win
@@ -132,7 +300,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 	class OFCRA_V_mas_itr_PlateCarrierAR_win: V_mas_itr_PlateCarrierAR_win
@@ -142,7 +334,31 @@ class cfgWeapons
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 80;
-			class HitpointsProtectionInfo : OFCRA_level3_plate_HitpointsProtectionInfo{};
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
 		}
 	};
 }
