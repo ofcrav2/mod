@@ -33,6 +33,7 @@ class CfgAmmo
 		submunitionConeAngle=2.8;  //from 0.95
 		triggerSpeedCoef[]={0.87999997,1};
 		triggerTime=0.00003   //from 0.0001
+		hit=0.1;
 		submunitionConeType[]=
 		{
 			"poissondisccenter",
@@ -61,15 +62,22 @@ class CfgAmmo
 		caliber=0.9048; // from 0.3048
 	};
 
+	class OFCRA_12g_beanbag : rhs_ammo_12g_slug
+	{
+		author="OFCRA Wombat";
+		hit=16;
+		caliber=0.15;   
+	};
+
 	class rhs_ammo_12g_HE;
 	class OFCRA_12g_HE : rhs_ammo_12g_HE
 	{
 		author="OFCRA Wombat";
-		caliber=0.4048; // from 0.2
+		caliber=0.3948; // from 0.2
 		explosive=0.5;      
 		hit=15;
-		indirectHit=1.043;        // from 1.143
-		indirectHitRange=3.1;   //from 1.9
+		indirectHit=0.843;        // from 1.143
+		indirectHitRange=2.8;   //from 1.9
 	};
 
 
@@ -83,7 +91,7 @@ class CfgAmmo
 	class OFCRA_12g_birdshot_pellet : rhs_ammo_12g_00buckshot_pellet
 	{
 		author="OFCRA Wombat";
-		hit=1.75;
+		hit=0.6;
 		caliber=0.149;   //this often does not even pen clothing
 	};
 };
@@ -125,6 +133,18 @@ class CfgMagazines
 
 	};
 
+	class OFCRA_8Rnd_Beanbag : rhsusf_8Rnd_Slug
+	{
+		author="OFCRA Wombat";
+		ammo="OFCRA_12g_beanbag";
+		displayName="8Rnd Beanbag";
+		displayNameShort ="Beanbag";
+		description="Beanbag";
+		descriptionShort="Beanbag";
+		initSpeed=475;  //from 475
+
+	};
+
 	class rhsusf_8Rnd_HE;
 	class OFCRA_8Rnd_HE : rhsusf_8Rnd_HE
 	{
@@ -157,7 +177,8 @@ class CfgWeapons
 			"OFCRA_8Rnd_Birdshot",
 			"OFCRA_8rnd_buck",
 			"OFCRA_8Rnd_Slug",
-			"OFCRA_8Rnd_HE"
+			"OFCRA_8Rnd_HE",
+			"OFCRA_8Rnd_Beanbag"
 		};
 		magazineWell[]=	{};
 		inertia=0.34999999; // from 0.6
