@@ -9,6 +9,7 @@ class CfgPatches
 			"rhs_c_heavyweapons",
 			"rhs_c_vehiclesounds"
 		};
+		skipWhenMissingDependencies=1;
 		requiredVersion=0.1;
 		units[]=
 		{

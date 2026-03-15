@@ -8,6 +8,7 @@ class CfgPatches
 			"rhsusf_c_heavyweapons",
 			"rhs_bmp"
 		};
+		skipWhenMissingDependencies=1;
 		requiredVersion=0.1;
 		units[]=
 		{

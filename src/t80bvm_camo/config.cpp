@@ -1,8 +1,9 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-	class bmp2m_lk
+	class t80bvm_camo_lk
 	{
+		name="RE_Textures for T-80 BVM ";
+		author="Lurker1011";
 		requiredAddons[]=
 		{
 			"A3_Armor_F_Beta"
@@ -16,5 +17,5 @@ class CfgPatches
 class cfgMods
 {
 	author="[CN]Lurker1011";
-	timepacked="1769552052";
+	timepacked="1748648660";
 };
