@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><Project name="Arma3">
+  <Package name="kgn25_c">
+    <Container name="k25">
+      <Key ID="STR_LK_azimuth_name0">
+        <Original>АЗИМУТ</Original>
+        <Chinese>АЗИМУТ</Chinese>
+        <French>АЗИМУТ</French>
+        <Spanish>АЗИМУТ</Spanish>
+        <Italian>АЗИМУТ</Italian>
+        <Polish>АЗИМУТ</Polish>
+        <Russian>АЗИМУТ</Russian>
+        <German>АЗИМУТ</German>
+        <Czech>АЗИМУТ</Czech>
+        <English>АЗИМУТ</English>
+        <Portuguese>АЗИМУТ</Portuguese>
+        <Korean>АЗИМУТ</Korean>
+        <Chinesesimp>АЗИМУТ</Chinesesimp>
+        <Japanese>АЗИМУТ</Japanese>
+        <Turkish>АЗИМУТ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_shoot_name0">
+        <Original>К СТРЕЛЬБЕ</Original>
+        <Chinese>К СТРЕЛЬБЕ</Chinese>
+        <French>К СТРЕЛЬБЕ</French>
+        <Spanish>К СТРЕЛЬБЕ</Spanish>
+        <Italian>К СТРЕЛЬБЕ</Italian>
+        <Polish>К СТРЕЛЬБЕ</Polish>
+        <Russian>К СТРЕЛЬБЕ</Russian>
+        <German>К СТРЕЛЬБЕ</German>
+        <Czech>К СТРЕЛЬБЕ</Czech>
+        <English>К СТРЕЛЬБЕ</English>
+        <Portuguese>К СТРЕЛЬБЕ</Portuguese>
+        <Korean>К СТРЕЛЬБЕ</Korean>
+        <Chinesesimp>К СТРЕЛЬБЕ</Chinesesimp>
+        <Japanese>К СТРЕЛЬБЕ</Japanese>
+        <Turkish>К СТРЕЛЬБЕ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_ready_name0">
+        <Original>ГОТОВ</Original>
+        <Chinese>ГОТОВ</Chinese>
+        <French>ГОТОВ</French>
+        <Spanish>ГОТОВ</Spanish>
+        <Italian>ГОТОВ</Italian>
+        <Polish>ГОТОВ</Polish>
+        <Russian>ГОТОВ</Russian>
+        <German>ГОТОВ</German>
+        <Czech>ГОТОВ</Czech>
+        <English>ГОТОВ</English>
+        <Portuguese>ГОТОВ</Portuguese>
+        <Korean>ГОТОВ</Korean>
+        <Chinesesimp>ГОТОВ</Chinesesimp>
+        <Japanese>ГОТОВ</Japanese>
+        <Turkish>ГОТОВ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_maingun_name0">
+        <Original>ГЛАВНОЕ ОРУДИЕ</Original>
+        <Chinese>ГЛАВНОЕ ОРУДИЕ</Chinese>
+        <French>ГЛАВНОЕ ОРУДИЕ</French>
+        <Spanish>ГЛАВНОЕ ОРУДИЕ</Spanish>
+        <Italian>ГЛАВНОЕ ОРУДИЕ</Italian>
+        <Polish>ГЛАВНОЕ ОРУДИЕ</Polish>
+        <Russian>ГЛАВНОЕ ОРУДИЕ</Russian>
+        <German>ГЛАВНОЕ ОРУДИЕ</German>
+        <Czech>ГЛАВНОЕ ОРУДИЕ</Czech>
+        <English>ГЛАВНОЕ ОРУДИЕ</English>
+        <Portuguese>ГЛАВНОЕ ОРУДИЕ</Portuguese>
+        <Korean>ГЛАВНОЕ ОРУДИЕ</Korean>
+        <Chinesesimp>ГЛАВНОЕ ОРУДИЕ</Chinesesimp>
+        <Japanese>ГЛАВНОЕ ОРУДИЕ</Japanese>
+        <Turkish>ГЛАВНОЕ ОРУДИЕ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_machinegun_name0">
+        <Original>ПУЛЕМЕТ</Original>
+        <Chinese>ПУЛЕМЕТ</Chinese>
+        <French>ПУЛЕМЕТ</French>
+        <Spanish>ПУЛЕМЕТ</Spanish>
+        <Italian>ПУЛЕМЕТ</Italian>
+        <Polish>ПУЛЕМЕТ</Polish>
+        <Russian>ПУЛЕМЕТ</Russian>
+        <German>ПУЛЕМЕТ</German>
+        <Czech>ПУЛЕМЕТ</Czech>
+        <English>ПУЛЕМЕТ</English>
+        <Portuguese>ПУЛЕМЕТ</Portuguese>
+        <Korean>ПУЛЕМЕТ</Korean>
+        <Chinesesimp>ПУЛЕМЕТ</Chinesesimp>
+        <Japanese>ПУЛЕМЕТ</Japanese>
+        <Turkish>ПУЛЕМЕТ</Turkish>
+      </Key> 
+	   <Key ID="STR_LK_Maingun_ammo_type_name0">
+        <Original>ТИП АМУНИЦИИ</Original>
+        <Chinese>ТИП АМУНИЦИИ</Chinese>
+        <French>ТИП АМУНИЦИИ</French>
+        <Spanish>ТИП АМУНИЦИИ</Spanish>
+        <Italian>ТИП АМУНИЦИИ</Italian>
+        <Polish>ТИП АМУНИЦИИ</Polish>
+        <Russian>ТИП АМУНИЦИИ</Russian>
+        <German>ТИП АМУНИЦИИ</German>
+        <Czech>ТИП АМУНИЦИИ</Czech>
+        <English>ТИП АМУНИЦИИ</English>
+        <Portuguese>ТИП АМУНИЦИИ</Portuguese>
+        <Korean>ТИП АМУНИЦИИ</Korean>
+        <Chinesesimp>ТИП АМУНИЦИИ</Chinesesimp>
+        <Japanese>ТИП АМУНИЦИИ</Japanese>
+        <Turkish>ТИП АМУНИЦИИ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_distance_name0">
+        <Original>ДАЛЬНОСТЬ</Original>
+        <Chinese>ДАЛЬНОСТЬ</Chinese>
+        <French>ДАЛЬНОСТЬ</French>
+        <Spanish>ДАЛЬНОСТЬ</Spanish>
+        <Italian>ДАЛЬНОСТЬ</Italian>
+        <Polish>ДАЛЬНОСТЬ</Polish>
+        <Russian>ДАЛЬНОСТЬ</Russian>
+        <German>ДАЛЬНОСТЬ</German>
+        <Czech>ДАЛЬНОСТЬ</Czech>
+        <English>ДАЛЬНОСТЬ</English>
+        <Portuguese>ДАЛЬНОСТЬ</Portuguese>
+        <Korean>ДАЛЬНОСТЬ</Korean>
+        <Chinesesimp>ДАЛЬНОСТЬ</Chinesesimp>
+        <Japanese>ДАЛЬНОСТЬ</Japanese>
+        <Turkish>ДАЛЬНОСТЬ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_Azimut_name0">
+        <Original>АЗИМУТ</Original>
+        <Chinese>АЗИМУТ</Chinese>
+        <French>АЗИМУТ</French>
+        <Spanish>АЗИМУТ</Spanish>
+        <Italian>АЗИМУТ</Italian>
+        <Polish>АЗИМУТ</Polish>
+        <Russian>АЗИМУТ</Russian>
+        <German>АЗИМУТ</German>
+        <Czech>АЗИМУТ</Czech>
+        <English>АЗИМУТ</English>
+        <Portuguese>АЗИМУТ</Portuguese>
+        <Korean>АЗИМУТ</Korean>
+        <Chinesesimp>АЗИМУТ</Chinesesimp>
+        <Japanese>АЗИМУТ</Japanese>
+        <Turkish>АЗИМУТ</Turkish>
+      </Key> 
+	   <Key ID="STR_LK_Damage_name0">
+        <Original>ПОВРЕЖДЕНИЯ</Original>
+        <Chinese>ПОВРЕЖДЕНИЯ</Chinese>
+        <French>ПОВРЕЖДЕНИЯ</French>
+        <Spanish>ПОВРЕЖДЕНИЯ</Spanish>
+        <Italian>ПОВРЕЖДЕНИЯ</Italian>
+        <Polish>ПОВРЕЖДЕНИЯ</Polish>
+        <Russian>ПОВРЕЖДЕНИЯ</Russian>
+        <German>ПОВРЕЖДЕНИЯ</German>
+        <Czech>ПОВРЕЖДЕНИЯ</Czech>
+        <English>ПОВРЕЖДЕНИЯ</English>
+        <Portuguese>ПОВРЕЖДЕНИЯ</Portuguese>
+        <Korean>ПОВРЕЖДЕНИЯ</Korean>
+        <Chinesesimp>ПОВРЕЖДЕНИЯ</Chinesesimp>
+        <Japanese>ПОВРЕЖДЕНИЯ</Japanese>
+        <Turkish>ПОВРЕЖДЕНИЯ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_BP_name0">
+        <Original>БР</Original>
+        <Chinese>БР</Chinese>
+        <French>БР</French>
+        <Spanish>БР</Spanish>
+        <Italian>БР</Italian>
+        <Polish>БР</Polish>
+        <Russian>БР</Russian>
+        <German>БР</German>
+        <Czech>БР</Czech>
+        <English>БР</English>
+        <Portuguese>БР</Portuguese>
+        <Korean>БР</Korean>
+        <Chinesesimp>БР</Chinesesimp>
+        <Japanese>БР</Japanese>
+        <Turkish>БР</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_OF_name0">
+        <Original>ОФ</Original>
+        <Chinese>ОФ</Chinese>
+        <French>ОФ</French>
+        <Spanish>ОФ</Spanish>
+        <Italian>ОФ</Italian>
+        <Polish>ОФ</Polish>
+        <Russian>ОФ</Russian>
+        <German>ОФ</German>
+        <Czech>ОФ</Czech>
+        <English>ОФ</English>
+        <Portuguese>ОФ</Portuguese>
+        <Korean>ОФ</Korean>
+        <Chinesesimp>ОФ</Chinesesimp>
+        <Japanese>ОФ</Japanese>
+        <Turkish>ОФ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_R_name0">
+        <Original>Р</Original>
+        <Chinese>Р</Chinese>
+        <French>Р</French>
+        <Spanish>Р</Spanish>
+        <Italian>Р</Italian>
+        <Polish>Р</Polish>
+        <Russian>Р</Russian>
+        <German>Р</German>
+        <Czech>Р</Czech>
+        <English>Р</English>
+        <Portuguese>Р</Portuguese>
+        <Korean>Р</Korean>
+        <Chinesesimp>Р</Chinesesimp>
+        <Japanese>Р</Japanese>
+        <Turkish>Р</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_obsgun_name0">
+        <Original>ОРУДИЕ КОМАНДИРА</Original>
+        <Chinese>ОРУДИЕ КОМАНДИРА</Chinese>
+        <French>ОРУДИЕ КОМАНДИРА</French>
+        <Spanish>ОРУДИЕ КОМАНДИРА</Spanish>
+        <Italian>ОРУДИЕ КОМАНДИРА</Italian>
+        <Polish>ОРУДИЕ КОМАНДИРА</Polish>
+        <Russian>ОРУДИЕ КОМАНДИРА</Russian>
+        <German>ОРУДИЕ КОМАНДИРА</German>
+        <Czech>ОРУДИЕ КОМАНДИРА</Czech>
+        <English>ОРУДИЕ КОМАНДИРА</English>
+        <Portuguese>ОРУДИЕ КОМАНДИРА</Portuguese>
+        <Korean>ОРУДИЕ КОМАНДИРА</Korean>
+        <Chinesesimp>ОРУДИЕ КОМАНДИРА</Chinesesimp>
+        <Japanese>ОРУДИЕ КОМАНДИРА</Japanese>
+        <Turkish>ОРУДИЕ КОМАНДИРА</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_mags_name0">
+        <Original>МАГ.</Original>
+        <Chinese>МАГ.</Chinese>
+        <French>МАГ.</French>
+        <Spanish>МАГ.</Spanish>
+        <Italian>МАГ.</Italian>
+        <Polish>МАГ.</Polish>
+        <Russian>МАГ.</Russian>
+        <German>МАГ.</German>
+        <Czech>МАГ.</Czech>
+        <English>МАГ.</English>
+        <Portuguese>МАГ.</Portuguese>
+        <Korean>МАГ.</Korean>
+        <Chinesesimp>МАГ.</Chinesesimp>
+        <Japanese>МАГ.</Japanese>
+        <Turkish>МАГ.</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_smoker_name0">
+        <Original>ДЫМОВАЯ</Original>
+        <Chinese>ДЫМОВАЯ</Chinese>
+        <French>ДЫМОВАЯ</French>
+        <Spanish>ДЫМОВАЯ</Spanish>
+        <Italian>ДЫМОВАЯ</Italian>
+        <Polish>ДЫМОВАЯ</Polish>
+        <Russian>ДЫМОВАЯ</Russian>
+        <German>ДЫМОВАЯ</German>
+        <Czech>ДЫМОВАЯ</Czech>
+        <English>ДЫМОВАЯ</English>
+        <Portuguese>ДЫМОВАЯ</Portuguese>
+        <Korean>ДЫМОВАЯ</Korean>
+        <Chinesesimp>ДЫМОВАЯ</Chinesesimp>
+        <Japanese>ДЫМОВАЯ</Japanese>
+        <Turkish>ДЫМОВАЯ</Turkish>
+      </Key> 
+	  <Key ID="STR_LK_curtain_name0">
+        <Original>ЗАВЕСА</Original>
+        <Chinese>ЗАВЕСА</Chinese>
+        <French>ЗАВЕСА</French>
+        <Spanish>ЗАВЕСА</Spanish>
+        <Italian>ЗАВЕСА</Italian>
+        <Polish>ЗАВЕСА</Polish>
+        <Russian>ЗАВЕСА</Russian>
+        <German>ЗАВЕСА</German>
+        <Czech>ЗАВЕСА</Czech>
+        <English>ЗАВЕСА</English>
+        <Portuguese>ЗАВЕСА</Portuguese>
+        <Korean>ЗАВЕСА</Korean>
+        <Chinesesimp>ЗАВЕСА</Chinesesimp>
+        <Japanese>ЗАВЕСА</Japanese>
+        <Turkish>ЗАВЕСА</Turkish>
+      </Key> 
+    </Container>
+  </Package>
+</Project>	  
+	  
