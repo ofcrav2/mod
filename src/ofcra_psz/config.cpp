@@ -7,6 +7,7 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
 			"psz_weapons",
+			"psz_wheeled",
 			"ofcra_ammo_base",
 			"ofcra_rhs_afrf"
 		};
@@ -30,5 +31,13 @@ class CfgMagazines
 }
 
 
+class RCWSOptics
+{
 
-
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+	};
+	thermalMode[]={0};
+};

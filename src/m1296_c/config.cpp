@@ -854,8 +854,8 @@ class CfgVehicles
 				renderTarget="rendertarget2";
 				class CameraView1
 				{
-					pointPosition="View_CROWS_TI";
-					pointDirection="View_CROWS_TI_dir";
+					pointPosition="View_CROWS";
+					pointDirection="View_CROWS_dir";
 					renderVisionMode=2;
 					renderQuality=2;
 					fov=0.69999999;
@@ -15302,8 +15302,8 @@ class CfgVehicles
 				renderTarget="rendertarget2";
 				class CameraView1
 				{
-					pointPosition="View_CROWS_TI";
-					pointDirection="View_CROWS_TI_dir";
+					pointPosition="View_CROWS";
+					pointDirection="View_CROWS_dir";
 					renderVisionMode=2;
 					renderQuality=2;
 					fov=0.69999999;
