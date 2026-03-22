@@ -12,10 +12,8 @@ class CfgPatches
 		units[] = {"OFCRA_PSZ_Rosomak_Winter","OFCRA_PSZ_Tumak2_WKM","OFCRA_PSZ_Tumak2_UKM","OFCRA_PSZ_Tumak2_Winter","OFCRA_PSZ_Star_944","OFCRA_PSZ_Star_1466"};
 		weapons[] = {"OFCRA_PSZ_Beryl_Winter"}; 
 		ammo[]={};
-
 	};
 };
-
 
 
 class CfgWeapons
@@ -27,13 +25,8 @@ class CfgWeapons
 		author = "OFCRA Wombat";
 		scope = 2;
     	scopeArsenal = 2;
-
 		baseWeapon="OFCRA_PSZ_Beryl_Winter";
-		
-		//hiddenSelectionsTextures[] = {"psz\weapons\beryl\data\psz_beryl96_co.paa","psz\weapons\beryl\data\psz_beryl_elements_co.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
-		hiddenSelectionsTextures[] = {"ofcra_psz\winter\beryl_base_.paa","ofcra_psz\winter\beryl_elements_.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
-		//hiddenSelectionsTextures[] = {"\ofcra_psz\winter\beryl_base_.paa","\ofcra_psz\winter\beryl_elements_.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
-		
+		hiddenSelectionsTextures[] = {"ofcra_psz\winter\beryl_base.paa","ofcra_psz\winter\beryl_elements_.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
 		displayName = "wz.96D Beryl Winter";
 	}
 
@@ -61,8 +54,6 @@ class CfgWeapons
 		};
 	};
 	
-
-
 	class PSZ_H_wz2005_DES;
 	class OFCRA_PSZ_H_Winter : PSZ_H_wz2005_DES
 	{
@@ -70,8 +61,6 @@ class CfgWeapons
 		displayName = "OFCRA PSZ Winter";
 		hiddenSelectionsTextures[] = { "\ofcra_psz\winter\helmet.paa" };
 	};
-
-
 }
 
 class CfgVehicles
@@ -108,17 +97,13 @@ class CfgVehicles
 		
 	};
 
-	class PSZ_PL_WDL20_Rosomak_M1M;
+	class PSZ_PL_WDL10_Rosomak_M1M;
+	class PSZ_PL_WDL20_Rosomak_M1M : PSZ_PL_WDL10_Rosomak_M1M
+	{
+		class AnimationSources;
+	};
 
 
-
-/*
-cursorObject setObjectTexture [0, "ros_body_1_2.jpg"];
-cursorObject setObjectTexture [3, "ros_wheels.jpg"];
-cursorObject setObjectTexture [5, "ros_turret3.jpg"];
-cursorObject setObjectTexture [7, "net.paa"];
-
-*/
 
 	class OFCRA_PSZ_Rosomak_Winter : PSZ_PL_WDL20_Rosomak_M1M
 	{
@@ -139,6 +124,15 @@ cursorObject setObjectTexture [7, "net.paa"];
 "psz\common\data\tablice_rej\white\8_ca.paa",
 "psz\common\data\tablice_rej\white\5_ca.paa",
 "psz\common\data\tablice_rej\white\8_ca.paa"
+		};
+
+		class AnimationSources: AnimationSources
+		{
+			class ros_camonet{
+				source="user";
+				animPeriod=1e-006;
+				initPhase=1;
+			};
 		};
 	};
 
