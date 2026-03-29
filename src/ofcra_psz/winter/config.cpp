@@ -26,7 +26,7 @@ class CfgWeapons
 		scope = 2;
     	scopeArsenal = 2;
 		baseWeapon="OFCRA_PSZ_Beryl_Winter";
-		hiddenSelectionsTextures[] = {"ofcra_psz\winter\beryl_base.paa","ofcra_psz\winter\beryl_elements_.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
+		hiddenSelectionsTextures[] = {"ofcra_psz\winter\beryl_base.paa","ofcra_psz\winter\beryl_elements.paa","psz\weapons\beryl\data\psz_beryl_stanag_adapter_co.paa"};
 		displayName = "wz.96D Beryl Winter";
 	}
 
