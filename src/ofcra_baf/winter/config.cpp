@@ -153,7 +153,7 @@ class CfgVehicles
 			{
 				initPhase = 1;
 			};
-			class showSLATTurret :
+			class showSLATTurret : showSLATTurret
 			{
 				initPhase = 1;
 			};
@@ -183,7 +183,7 @@ class CfgVehicles
 			{
 				initPhase = 1;
 			};
-			class showSLATTurret :
+			class showSLATTurret : showSLATTurret
 			{
 				initPhase = 1;
 			};
