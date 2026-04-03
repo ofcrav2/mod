@@ -34,7 +34,7 @@ class CfgWeapons
 	class OFCRA_PSZ_V_Winter : PSZ_V_UKO_L_DES_R_Headset
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Winter";
+		displayName = "PSZ Winter";
 		//hiddenSelectionsTextures[] = {"psz\characters\pl\data\psz_armor_DES_co.paa","PSZ\characters\pl\data\psz_equip_co.paa"};
 		hiddenSelectionsTextures[] = {	"\ofcra_psz\winter\vest.paa", "PSZ\characters\pl\data\psz_equip_co.paa" };
 	};
@@ -44,7 +44,7 @@ class CfgWeapons
 	class OFCRA_PSZ_U_Winter : PSZ_U_PL_DES_wz2010_Crye
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Winter";
+		displayName = "PSZ Winter";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -58,7 +58,7 @@ class CfgWeapons
 	class OFCRA_PSZ_H_Winter : PSZ_H_wz2005_DES
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Winter";
+		displayName = "PSZ Winter";
 		hiddenSelectionsTextures[] = { "\ofcra_psz\winter\helmet.paa" };
 	};
 }
@@ -69,7 +69,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Rifleman: PSZ_PL_DES20_Soldier_Rifleman
 	{
 		author = "OFCRA Wombat";
-		displayName="OFCRA PSZ Winter";
+		displayName="PSZ Winter";
 		_generalMacro="OFCRA_PSZ_Rifleman";
 		uniformClass="OFCRA_PSZ_U_Winter";
 		hiddenSelectionsTextures[]=
@@ -108,7 +108,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Rosomak_Winter : PSZ_PL_WDL20_Rosomak_M1M
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Rosomak Winter";
+		displayName = "Rosomak Winter";
 
 		hiddenSelectionsTextures[]=
 		{
@@ -143,7 +143,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Tumak2_Winter : PSZ_PL_WDL20_Tumak2
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Tumak2 Winter";
+		displayName = "Tumak2 Winter";
 
 		hiddenSelectionsTextures[]=
 		{
@@ -158,7 +158,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Tumak2_UKM : PSZ_PL_WDL20_Tumak2_UKM
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Tumak2 UKM Winter";
+		displayName = "Tumak2 UKM Winter";
 
 		hiddenSelectionsTextures[]=
 		{
@@ -173,7 +173,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Tumak2_WKM : PSZ_PL_WDL20_Tumak2_WKM
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Tumak2 WKM Winter";
+		displayName = "Tumak2 WKM Winter";
 
 		hiddenSelectionsTextures[]=
 		{
@@ -193,7 +193,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Star_1466 : PSZ_PL_WDL20_Star_1466
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Star 1466 Winter";
+		displayName = "Star 1466 Winter";
 
 		hiddenSelectionsTextures[]=
 		{
@@ -205,7 +205,7 @@ class CfgVehicles
 	class OFCRA_PSZ_Star_944 : PSZ_PL_WDL20_Star_944
 	{
 		author = "OFCRA Wombat";
-		displayName = "OFCRA PSZ Star 944 Winter";
+		displayName = "Star 944 Winter";
 
 		hiddenSelectionsTextures[]=
 		{

@@ -19,6 +19,7 @@ class CfgPatches
 
 class CfgAmmo
 {
+	class G_40mm_HE;
 	class G_40mm_HEDP;
 	class rhs_ammo_VOG30: G_40mm_HE
 	{

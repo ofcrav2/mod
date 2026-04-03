@@ -37,6 +37,15 @@ class cfgWeapons
 			"\ofcra_textures\spain\arid_vest.paa"
 		};
 	};
+	class OFCRA_invisible_plate: V_PlateCarrier1_blk
+	{
+		author="wombat";
+		displayName="OFCRA Invisible Plate";
+		scope=2;
+		model = "\A3\weapons_f\empty";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+	};
 
 	class H_HelmetIA;
 	class OFCRA_spain_arid_helmet: H_HelmetIA
