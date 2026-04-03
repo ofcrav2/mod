@@ -20,8 +20,9 @@ class CfgAmmo
 	class G_40mm_HEDP;
 	class OFCRA_G_40mm_HEDP: G_40mm_HEDP
 	{	
-		indirectHit=2.211;
-		indirectHitRange=3.851;   
+		hit=48;                 // 20% increase (assuming base 40, same as M384)
+		indirectHit=2.322;      // 5% increase from 2.211
+		indirectHitRange=4.236; // 10% increase from 3.851
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -33,8 +34,9 @@ class CfgAmmo
 	
 	class rhs_ammo_mk19m3_M384: G_40mm_HE
 	{
-		indirectHit=2.211;
-		indirectHitRange=3.851;   
+		hit=48;                 // 20% increase from base 40
+		indirectHit=2.322;      // 5% increase from 2.211
+		indirectHitRange=4.236; // 10% increase from 3.851
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -43,8 +45,9 @@ class CfgAmmo
 	
 	class rhs_ammo_mk19m3_M430I: rhs_ammo_mk19m3_M384
 	{
-		indirectHit=2.211;
-		indirectHitRange=3.851;   
+		hit=42;                 // 20% increase from base 35
+		indirectHit=2.322;      // 5% increase from 2.211
+		indirectHitRange=4.236; // 10% increase from 3.851
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;

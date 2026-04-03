@@ -94,7 +94,7 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		hit=96;                 // 20% increase from base 80
+		hit=36;                 // 20% increase from base 30
 		indirectHit=2.007;      // 5% increase from 1.911
 		indirectHitRange=2.861; // 10% increase from 2.601
 
@@ -107,7 +107,7 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		hit=96;                 // 20% increase from base 80
+		hit=108;                // 20% increase from base 90
 		indirectHit=2.007;      // 5% increase from 1.911
 		indirectHitRange=2.861; // 10% increase from 2.601
 
@@ -121,7 +121,7 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		hit=120;                // 20% increase from base 100
+		hit=84;                 // 20% increase from base 70
 		indirectHit=2.007;      // 5% increase from 1.911
 		indirectHitRange=3.631; // 10% increase from 3.301
 
@@ -135,7 +135,6 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		hit=96;                 // 20% increase from base 80
 		indirectHit=2.007;      // 5% increase from 1.911
 		indirectHitRange=2.861; // 10% increase from 2.601
 
