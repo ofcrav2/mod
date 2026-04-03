@@ -47,7 +47,7 @@ class CfgAmmo
 		//slightly smaller
 		hit=42;                 // 20% increase from base 35
 		indirectHit=2.322;      // OFCRA 40mm grenade standard
-		indirectHitRange=3.466; // OFCRA 30mm grenade standard (smaller round)
+		indirectHitRange=3.466; // OFCRA smaller grenade standard (VOG17m is smaller caliber)
 		submunitionAmmo="";
 	};
 };
