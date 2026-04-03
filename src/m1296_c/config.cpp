@@ -29376,7 +29376,7 @@ class CfgAmmo
 		typicalSpeed=960;
 		hit=36;                 // 20% increase from base 30 (matching OFCRA standard)
 		indirectHit=2.007;      // OFCRA 30mm autocannon standard
-		indirectHitRange=3.631; // OFCRA 40mm autocannon standard (40mm GPR uses 3.631)
+		indirectHitRange=2.861; // OFCRA 30mm autocannon standard
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
@@ -29386,7 +29386,7 @@ class CfgAmmo
 		typicalSpeed=960;
 		hit=36;                 // 20% increase from base 30 (matching OFCRA standard)
 		indirectHit=2.007;      // OFCRA 30mm autocannon standard
-		indirectHitRange=3.631; // OFCRA 40mm autocannon standard (40mm GPR uses 3.631)
+		indirectHitRange=2.861; // OFCRA 30mm autocannon standard
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
