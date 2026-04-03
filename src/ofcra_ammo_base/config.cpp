@@ -94,8 +94,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		hit=36;                 // 20% increase from base 30
+		indirectHit=2.007;      // OFCRA 30mm autocannon standard
+		indirectHitRange=2.861; // OFCRA 30mm autocannon standard
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -106,8 +107,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		hit=108;                // 20% increase from base 90
+		indirectHit=2.007;      // OFCRA 30mm autocannon standard
+		indirectHitRange=2.861; // OFCRA 30mm autocannon standard
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -119,8 +121,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=3.301;   
+		hit=84;                 // 20% increase from base 70
+		indirectHit=2.007;      // OFCRA 40mm autocannon standard
+		indirectHitRange=3.631; // OFCRA 40mm autocannon standard
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -132,8 +135,8 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		indirectHit=2.007;      // OFCRA 30mm autocannon standard
+		indirectHitRange=2.861; // OFCRA 30mm autocannon standard
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
