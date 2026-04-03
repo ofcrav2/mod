@@ -94,8 +94,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		hit=96;                 // 20% increase from base 80
+		indirectHit=2.007;      // 5% increase from 1.911
+		indirectHitRange=2.861; // 10% increase from 2.601
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -106,8 +107,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		hit=96;                 // 20% increase from base 80
+		indirectHit=2.007;      // 5% increase from 1.911
+		indirectHitRange=2.861; // 10% increase from 2.601
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -119,8 +121,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=3.301;   
+		hit=120;                // 20% increase from base 100
+		indirectHit=2.007;      // 5% increase from 1.911
+		indirectHitRange=3.631; // 10% increase from 3.301
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -132,8 +135,9 @@ class CfgAmmo
 		displayNameShort="OFCRA AUTOCANNON HE";
 		displayName="OFCRA AUTOCANNON HE";
 
-		indirectHit=1.911;
-		indirectHitRange=2.601;   
+		hit=96;                 // 20% increase from base 80
+		indirectHit=2.007;      // 5% increase from 1.911
+		indirectHitRange=2.861; // 10% increase from 2.601
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
