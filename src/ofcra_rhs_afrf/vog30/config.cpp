@@ -23,8 +23,8 @@ class CfgAmmo
 	class rhs_ammo_VOG30: G_40mm_HE
 	{
 		hit=48;                 // 20% increase from base 40
-		indirectHit=2.322;      // 5% increase from 2.211
-		indirectHitRange=4.236; // 10% increase from 3.851
+		indirectHit=2.322;      // OFCRA 40mm grenade standard
+		indirectHitRange=4.236; // OFCRA 40mm grenade standard
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -36,8 +36,8 @@ class CfgAmmo
 	{
 		//has higher direct hit
 		hit=60;                 // 20% increase from base 50
-		indirectHit=2.322;      // 5% increase from 2.211
-		indirectHitRange=4.236; // 10% increase from 3.851
+		indirectHit=2.322;      // OFCRA 40mm grenade standard
+		indirectHitRange=4.236; // OFCRA 40mm grenade standard
 		submunitionAmmo="";
 	};
 
@@ -46,8 +46,8 @@ class CfgAmmo
 	{
 		//slightly smaller
 		hit=42;                 // 20% increase from base 35
-		indirectHit=2.322;      // 5% increase from 2.211
-		indirectHitRange=3.466; // 10% increase from 3.151
+		indirectHit=2.322;      // OFCRA 40mm grenade standard
+		indirectHitRange=3.466; // OFCRA 30mm grenade standard (smaller round)
 		submunitionAmmo="";
 	};
 };

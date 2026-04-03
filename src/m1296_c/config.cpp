@@ -29374,9 +29374,9 @@ class CfgAmmo
 	class lk_Mk238_HET: B_30mm_HE
 	{
 		typicalSpeed=960;
-		hit=30;
-		indirectHit=1.911;
-		indirectHitRange=3.301;   
+		hit=36;                 // 20% increase from base 30 (matching OFCRA standard)
+		indirectHit=2.007;      // OFCRA 30mm autocannon standard
+		indirectHitRange=3.631; // OFCRA 40mm autocannon standard (40mm GPR uses 3.631)
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
@@ -29384,9 +29384,9 @@ class CfgAmmo
 	class lk_Mk310_AB: B_30mm_HE
 	{
 		typicalSpeed=960;
-		hit=30;
-		indirectHit=1.911;
-		indirectHitRange=3.301;   
+		hit=36;                 // 20% increase from base 30 (matching OFCRA standard)
+		indirectHit=2.007;      // OFCRA 30mm autocannon standard
+		indirectHitRange=3.631; // OFCRA 40mm autocannon standard (40mm GPR uses 3.631)
 		explosive=0.80000001;
 		caliber=1.4;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
