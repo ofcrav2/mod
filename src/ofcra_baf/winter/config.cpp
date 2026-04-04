@@ -192,13 +192,13 @@ class CfgVehicles
 
 
 
-	class UK3CB_BAF_Jackal2_L2A1_W_Arctic;
-	class UK3CB_BAF_Jackal2_GMG_W_Arctic;
-	class UK3CB_BAF_Coyote_Passenger_L134A1_W_Arctic;
-	class UK3CB_BAF_Coyote_Passenger_L111A1_W_Arctic;
+	class UK3CB_BAF_Jackal2_L2A1_W;
+	class UK3CB_BAF_Jackal2_GMG_W;
+	class UK3CB_BAF_Coyote_Passenger_L134A1_W;
+	class UK3CB_BAF_Coyote_Passenger_L111A1_W;
 
 
-	class OFCRA_BAF_Jackal_L2A1_Winter: UK3CB_BAF_Jackal2_L2A1_W_Arctic
+	class OFCRA_BAF_Jackal_L2A1_Winter: UK3CB_BAF_Jackal2_L2A1_W
 	{
 		author = "OFCRA Wombat";
 		displayName = "Jackal HMG (Winter)";
@@ -214,7 +214,7 @@ class CfgVehicles
 
 	};
 
-	class OFCRA_BAF_Jackal_GMG_Winter: UK3CB_BAF_Jackal2_GMG_W_Arctic
+	class OFCRA_BAF_Jackal_GMG_Winter: UK3CB_BAF_Jackal2_GMG_W
 	{
 		author = "OFCRA Wombat";
 		displayName = "Jackal GMG (Winter)";
@@ -229,7 +229,7 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_BAF_Coyote_L134A1_Winter: UK3CB_BAF_Coyote_Passenger_L134A1_W_Arctic
+	class OFCRA_BAF_Coyote_L134A1_Winter: UK3CB_BAF_Coyote_Passenger_L134A1_W
 	{
 		author = "OFCRA Wombat";
 		displayName = "Coyote HMG (Winter)";
@@ -244,7 +244,7 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_BAF_Coyote_L111A1_Winter: UK3CB_BAF_Coyote_Passenger_L111A1_W_Arctic
+	class OFCRA_BAF_Coyote_L111A1_Winter: UK3CB_BAF_Coyote_Passenger_L111A1_W
 	{
 		author = "OFCRA Wombat";
 		displayName = "Coyote GMG (Winter)";
