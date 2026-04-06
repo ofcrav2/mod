@@ -7,7 +7,8 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
 			"NORTH_StaticWeapons",
-			"ofcra_ammo_base"
+			"ofcra_ammo_base",
+			"ofcra_textures"
 		};
 		units[] = {};
 		weapons[] = {};
@@ -69,4 +70,46 @@ class CfgWeapons
 			reloadTime=21;
 		};
 	};
+
+
+	class U_NORTH_FIN_M36_W_Greatcoat_camo;
+	class UniformItem;
+	class OFCRA_gomier_uniform : U_NORTH_FIN_M36_W_Greatcoat_camo
+	{
+		author="OFCRA Wombat";
+		displayName="OFCRA Goumier Uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"\ofcra_textures\top_goumier.paa",
+			"\ofcra_textures\greatcoat_goumier.paa"
+		};
+
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="OFCRA_goumier_soldier";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+};
+
+
+class CfgVehicles
+{
+
+	class I_NORTH_FIN_M36_W_Greatcoat_camo;
+	class OFCRA_goumier_soldier: I_NORTH_FIN_M36_W_Greatcoat_camo
+	{
+		displayName="OFCRA Goumier";
+		_generalMacro="OFCRA_goumier_soldier";
+		uniformClass="OFCRA_gomier_uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"\ofcra_nf\top_goumier.paa",
+			"\ofcra_nf\greatcoat_goumier.paa"
+		};
+	};
+
 };
