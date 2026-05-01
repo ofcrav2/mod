@@ -96,7 +96,7 @@ class CfgMagazines
 		displayName="OFCRA AT drone grenade";
 		displayNameShort="OFCRA AT drone grenade";
 		ammo="OFCRA_DroneGrenade_AT";
-		pylonWeapon="OFCRA_DroneGreande_Weapon";
+		pylonWeapon="OFCRA_DroneGrenade_Weapon";
 	};
 };
 
@@ -112,7 +112,7 @@ class CfgWeapons
 		reloadTime=5;
 	};
 
-	class OFCRA_DroneGreande_Weapon: BombDemine_01_F
+	class OFCRA_DroneGrenade_Weapon: BombDemine_01_F
 	{
 		magazines[]=
 		{
