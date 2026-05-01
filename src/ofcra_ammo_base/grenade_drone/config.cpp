@@ -316,13 +316,13 @@ class CfgVehicles {
 	class B_UAV_06_backpack_F;
 	class B_UAV_06_antimine_backpack_F: B_UAV_06_backpack_F
 	{
-		displayName="Grenade Drone Backback";
+		displayName="Grenade Drone Backpack";
 		class assembleInfo
 		{
 			primary=1;
 			base="";
 			dissasembleTo[]={};
-			displayName="Demining Drone";
+			displayName="Grenade Drone";
 			assembleTo="B_UAV_06_antimine_base_F";
 		};
 	};
@@ -330,13 +330,13 @@ class CfgVehicles {
 	class O_UAV_06_backpack_F;
 	class O_UAV_06_antimine_backpack_F: O_UAV_06_backpack_F
 	{
-		displayName="Grenade Drone Backback";
+		displayName="Grenade Drone Backpack";
 		class assembleInfo
 		{
 			primary=1;
 			base="";
 			dissasembleTo[]={};
-			displayName="Demining Drone";
+			displayName="Grenade Drone";
 			assembleTo="O_UAV_06_antimine_base_F";
 		};
 	};
@@ -344,13 +344,13 @@ class CfgVehicles {
 	class I_UAV_06_backpack_F;
 	class I_UAV_06_antimine_backpack_F: I_UAV_06_backpack_F
 	{
-		displayName="Grenade Drone Backback";
+		displayName="Grenade Drone Backpack";
 		class assembleInfo
 		{
 			primary=1;
 			base="";
 			dissasembleTo[]={};
-			displayName="Demining Drone";
+			displayName="Grenade Drone";
 			assembleTo="I_UAV_06_antimine_base_F";
 		};
 	};
