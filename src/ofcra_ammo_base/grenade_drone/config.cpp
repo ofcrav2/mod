@@ -13,6 +13,8 @@ class CfgPatches
 			"O_UAV_06_antimine_base_F",
 			"I_UAV_06_antimine_base_F",
 			"OFCRA_UAV_06_AT_base"
+			
+
 		};
 		weapons[] = {};
 		ammo[]={};
@@ -50,7 +52,7 @@ class CfgAmmo
 			300
 		};
 
-
+		
 		triggerDistance=2.5;
 		triggerOnImpact=1;
 		submunitionConeAngle[]={159,183}; //random degree range from verticle ....  0 = veritcle,180 = We want slightly downward so we can hit down hills etc
@@ -72,9 +74,12 @@ class CfgAmmo
 
 	class OFCRA_DroneGrenade_AT: OFCRA_DroneGrenade
 	{
-		caliber=17.3333;
-		hit=290;
+		caliber=25;
+		hit=350;
 		displayName="OFCRA AT drone grenade";
+
+		indirectHit=2;
+		indirectHitRange=9;  
 	};
 
 };
@@ -129,6 +134,8 @@ class CfgVehicles {
 	class UAV_06_antimine_base_F: UAV_06_base_F
     {
 
+
+		class Components;
 		irTarget=1;
 		irTargetSize=1;
 
@@ -391,6 +398,7 @@ class CfgVehicles {
 		{
 			class TransportPylonsComponent
 			{
+				UIPicture="\a3\Air_F_Orange\UAV_06\Data\UI\UAV_06_Demining_3DEN_CA.paa";
 				class pylons
 				{
 					class pylons1
@@ -409,6 +417,142 @@ class CfgVehicles {
 					};
 				};
 			};
+		};
+	};
+
+	class OFCRA_B_UAV_06_AT: OFCRA_UAV_06_AT_base
+	{
+		side=1;
+		faction="BLU_F";
+		crew="B_UAV_AI_F";
+		forceInGarage=1;
+
+		editorPreview="\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_UAV_06_antimine_F.jpg";
+		displayName="OFCRA AT grenade drone";
+		scope=2;
+		icon="\A3\Air_F_Orange\UAV_06\Data\UI\Map_UAV_06_demining_CA.paa";
+		picture="\A3\Air_F_Orange\UAV_06\Data\UI\UAV_06_demining_CA.paa";
+
+		typicalCargo[]=
+		{
+			"B_UAV_AI_F"
+		};
+
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			assembleTo="";
+			displayName="";
+			dissasembleTo[]=
+			{
+				"OFCRA_B_UAV_06_AT_backpack"
+			};
+		};
+
+	};
+
+	class OFCRA_B_UAV_06_AT_backpack : B_UAV_06_backpack_F
+	{
+		displayName="AT Grenade Drone Backpack";
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			dissasembleTo[]={};
+			displayName="AT Grenade Drone";
+			assembleTo="OFCRA_B_UAV_06_AT";
+		};
+	};
+
+	class OFCRA_O_UAV_06_AT: OFCRA_UAV_06_AT_base
+	{
+		side=0;
+		faction="OPF_F";
+		crew="O_UAV_AI";
+		forceInGarage=1;
+
+		editorPreview="\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_UAV_06_antimine_F.jpg";
+		displayName="OFCRA AT grenade drone";
+		scope=2;
+		icon="\A3\Air_F_Orange\UAV_06\Data\UI\Map_UAV_06_demining_CA.paa";
+		picture="\A3\Air_F_Orange\UAV_06\Data\UI\UAV_06_demining_CA.paa";
+
+		typicalCargo[]=
+		{
+			"O_UAV_AI"
+		};
+
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			assembleTo="";
+			displayName="";
+			dissasembleTo[]=
+			{
+				"OFCRA_O_UAV_06_AT_backpack"
+			};
+		};
+
+	};
+
+	class OFCRA_O_UAV_06_AT_backpack : O_UAV_06_backpack_F
+	{
+		displayName="AT Grenade Drone Backpack";
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			dissasembleTo[]={};
+			displayName="AT Grenade Drone";
+			assembleTo="OFCRA_O_UAV_06_AT";
+		};
+	};
+
+
+	class OFCRA_I_UAV_06_AT: OFCRA_UAV_06_AT_base
+	{
+		side=2;
+		faction="IND_F";
+		crew="I_UAV_AI";
+		forceInGarage=1;
+
+		editorPreview="\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_UAV_06_antimine_F.jpg";
+		displayName="OFCRA AT grenade drone";
+		scope=2;
+		icon="\A3\Air_F_Orange\UAV_06\Data\UI\Map_UAV_06_demining_CA.paa";
+		picture="\A3\Air_F_Orange\Data\UI\UAV_06_demining_CA.paa";
+
+		typicalCargo[]=
+		{
+			"I_UAV_AI"
+		};
+
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			assembleTo="";
+			displayName="";
+			dissasembleTo[]=
+			{
+				"OFCRA_I_UAV_06_AT_backpack"
+			};
+		};
+
+	};
+
+	class OFCRA_I_UAV_06_AT_backpack : I_UAV_06_backpack_F
+	{
+		displayName="AT Grenade Drone Backpack";
+		class assembleInfo
+		{
+			primary=1;
+			base="";
+			dissasembleTo[]={};
+			displayName="AT Grenade Drone";
+			assembleTo="OFCRA_I_UAV_06_AT";
 		};
 	};
 
