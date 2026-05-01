@@ -22,7 +22,7 @@ class CfgPatches
 class CfgAmmo
 {
 	class BombDemine_01_Ammo_F;
-	class ONE_Demine: BombDemine_01_Ammo_F
+	class OFCRA_DroneGrenade: BombDemine_01_Ammo_F
 	{
 		hit=200;           
 		displayName="OFCRA drone grenade"; 
@@ -79,7 +79,7 @@ class CfgMagazines
 	{
 		displayName="OFCRA drone grenade";
 		displayNameShort="OFCRA drone grenade";
-		ammo="ONE_Demine";
+		ammo="OFCRA_DroneGrenade";
 		count=12;
 	};
 };
