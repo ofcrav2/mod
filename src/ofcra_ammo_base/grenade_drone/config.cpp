@@ -11,7 +11,8 @@ class CfgPatches
 		units[] = {
 			"B_UAV_06_antimine_base_F",
 			"O_UAV_06_antimine_base_F",
-			"I_UAV_06_antimine_base_F"
+			"I_UAV_06_antimine_base_F",
+			"OFCRA_UAV_06_AT_base"
 		};
 		weapons[] = {};
 		ammo[]={};
@@ -69,6 +70,13 @@ class CfgAmmo
 		deleteParentWhenTriggered=0;
 	};
 
+	class OFCRA_DroneGrenade_AT: OFCRA_DroneGrenade
+	{
+		caliber=17.3333;
+		hit=290;
+		displayName="OFCRA AT drone grenade";
+	};
+
 };
 
 
@@ -82,6 +90,14 @@ class CfgMagazines
 		ammo="OFCRA_DroneGrenade";
 		count=12;
 	};
+
+	class OFCRA_12Rnd_DroneGrenade_AT: PylonRack_4Rnd_BombDemine_01_F
+	{
+		displayName="OFCRA AT drone grenade";
+		displayNameShort="OFCRA AT drone grenade";
+		ammo="OFCRA_DroneGrenade_AT";
+		pylonWeapon="OFCRA_DroneGrenade_Weapon";
+	};
 };
 
 
@@ -94,6 +110,14 @@ class CfgWeapons
 		displayName="OFCRA drone grenade";
 		displayNameShort="OFCRA drone grenade";
 		reloadTime=5;
+	};
+
+	class OFCRA_DroneGrenade_Weapon: BombDemine_01_F
+	{
+		magazines[]=
+		{
+			"OFCRA_12Rnd_DroneGrenade_AT"
+		};
 	};
 	
 };
@@ -352,6 +376,39 @@ class CfgVehicles {
 			dissasembleTo[]={};
 			displayName="Grenade Drone";
 			assembleTo="I_UAV_06_antimine_base_F";
+		};
+	};
+
+	class OFCRA_UAV_06_AT_base: UAV_06_antimine_base_F
+	{
+		displayName="OFCRA AT Grenade Drone";
+		scope=2;
+		side=1;
+		faction="BLU_F";
+		crew="B_UAV_AI_F";
+
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				class pylons
+				{
+					class pylons1
+					{
+						maxweight=15;
+						hardpoints[]=
+						{
+							"ANTIMINE_DRONE_PYLON"
+						};
+						attachment="OFCRA_12Rnd_DroneGrenade_AT";
+						bay=-1;
+						priority=1;
+						UIposition[]={0.31999999,0.28};
+						turret[]={};
+						mirroredMissilePos=0;
+					};
+				};
+			};
 		};
 	};
 
