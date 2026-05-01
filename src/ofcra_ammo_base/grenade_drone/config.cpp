@@ -285,7 +285,7 @@ class CfgVehicles {
     {
 		side=2;
 		faction="IND_F";
-		crew="O_UAV_AI";
+		crew="I_UAV_AI";
 		forceInGarage=1;
 
 		editorPreview="\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_UAV_06_antimine_F.jpg";

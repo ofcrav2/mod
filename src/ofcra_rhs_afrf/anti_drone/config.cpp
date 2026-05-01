@@ -91,7 +91,7 @@ class CfgMagazines
 	{
 		ammo="OFCRA_rhs_ammo_9k38";
 		descriptionshort="Range: 100-4200 m <br/>Type: ground-air <br/>Used in: 9K32";
-		displayname="OFCRA 9K38 AnitDrone";
+		displayname="OFCRA 9K38 AntiDrone";
 	};
 };
 
@@ -102,7 +102,7 @@ class CfgWeapons
 	class rhs_weap_igla;
 	class OFCRA_rhs_weap_igla: rhs_weap_igla
 	{
-		displayname = "OFCRA 9K38 AnitDrone";
+		displayname = "OFCRA 9K38 AntiDrone";
 		magazines[]=
 		{
 			"OFCRA_rhs_mag_9k38_rocket"
