@@ -40,28 +40,25 @@ class cfgWeapons
 				class Chest
 				{
 					HitpointName="HitChest";
-					armor=12;
-					//This looks wrong but gives what we want.
-					// Nerfed HE no armour shells still do the same damage
-					// 2 rounds to KO from rifle to chest
-					PassThrough=0; 
+					armor=12;					//This sets explosive resistance in GUI. Seems to be accurate in game. Normal level 2 plate is 12
+					passThrough=0.4;            // this seems to be a multiplier roughly from explosvie damage to direct hit. Normal level 2 playte is 0.4
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
-					PassThrough=0;
+					passThrough=0.4;
 				};
 			}
 		}
@@ -81,24 +78,24 @@ class cfgWeapons
 				{
 					HitpointName="HitChest";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
-					PassThrough=0;
+					passThrough=0.4;
 				};
 			}
 		}
@@ -118,24 +115,24 @@ class cfgWeapons
 				{
 					HitpointName="HitChest";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
-					PassThrough=0;
+					passThrough=0.4;
 				};
 			}
 		}
@@ -160,24 +157,24 @@ class cfgWeapons
 				{
 					HitpointName="HitChest";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
-					PassThrough=0;
+					passThrough=0.4;
 				};
 			}
 		}
@@ -193,24 +190,24 @@ class cfgWeapons
 				{
 					HitpointName="HitChest";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
 					armor=12;
-					PassThrough=0;
+					passThrough=0.4;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
-					PassThrough=0;
+					passThrough=0.4;
 				};
 			}
 		}

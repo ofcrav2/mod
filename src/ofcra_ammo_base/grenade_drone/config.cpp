@@ -12,7 +12,13 @@ class CfgPatches
 			"B_UAV_06_antimine_base_F",
 			"O_UAV_06_antimine_base_F",
 			"I_UAV_06_antimine_base_F",
-			"OFCRA_UAV_06_AT_base"
+			"OFCRA_B_UAV_06_AT",
+			"OFCRA_O_UAV_06_AT",
+			"OFCRA_I_UAV_06_AT",
+			"OFCRA_B_UAV_06_AT_backpack",
+			"OFCRA_O_UAV_06_AT_backpack",
+			"OFCRA_I_UAV_06_AT_backpack"
+
 			
 
 		};
@@ -72,15 +78,52 @@ class CfgAmmo
 		deleteParentWhenTriggered=0;
 	};
 
+
 	class OFCRA_DroneGrenade_AT: OFCRA_DroneGrenade
 	{
-		caliber=25;
-		hit=350;
-		displayName="OFCRA AT drone grenade";
+		warheadName="AP";
+		caliber=350; //this is a multiplier of speed... Grenade is slow
+		hit=400;
 
 		indirectHit=2;
 		indirectHitRange=9;  
+
+		displayName="OFCRA AT drone grenade";
+
+
+		triggerDistance=2.5;
+		triggerOnImpact=1;
+		submunitionConeAngleHorizontal=720;
+		submunitionAutoleveling=1;
+		submunitionInitSpeed=1500;    
+		submunitionInitialOffset[]={0,0,-10.0}; //100cm above/behind projectile.
+		submunitionDirectionType="SubmunitionModelDirection";
+
+		submunitionAmmo	= "OFCRA_DroneGrenade_AT_PEN";
+		submunitionConeAngle=4;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			2
+		};
+
 	};
+
+	class BombDemine_01_SubAmmo_F;
+	class OFCRA_DroneGrenade_AT_PEN : BombDemine_01_SubAmmo_F{
+		//shotShell makes a nice pattern from the submunition code but does not pen,
+		//simulation="shotBullet";   
+		simulation="shotShell";   
+		warheadName="HEAT";   //this does seem to make a difference and have submunition pattern with shell but good AP
+		caliber=1500; //this is a multiplier of speed... should go through most things
+		hit=150;  //lower damage
+		explosive=0;
+
+		simulationStep=0.002;
+		airFriction=-0.28;
+		deflecting=0;
+	}
+
 
 };
 
@@ -103,6 +146,11 @@ class CfgMagazines
 		ammo="OFCRA_DroneGrenade_AT";
 		pylonWeapon="OFCRA_DroneGrenade_Weapon";
 	};
+
+
+
+
+
 };
 
 
@@ -389,11 +437,6 @@ class CfgVehicles {
 	class OFCRA_UAV_06_AT_base: UAV_06_antimine_base_F
 	{
 		displayName="OFCRA AT Grenade Drone";
-		scope=2;
-		side=1;
-		faction="BLU_F";
-		crew="B_UAV_AI_F";
-
 		class Components: Components
 		{
 			class TransportPylonsComponent
