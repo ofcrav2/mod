@@ -30,7 +30,7 @@ class CfgAmmo
 		caliber = 1.6; // from 0.~ 46 to match jmssa
 	};
 
-	class LIB_B_762x63_Ball : LIB_B_762x63_Ball {
+	class LIB_B_762x33_Ball : LIB_B_762x63_Ball {
 		caliber = 1.5; // from 0.~ 43 to match jmssa
 	};
 	
