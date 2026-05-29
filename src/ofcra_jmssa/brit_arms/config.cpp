@@ -80,7 +80,7 @@ class CfgVehicles
 	/*
 	hiddenSelections[] = {"camo1","camo2","camo3","insignia"};
 	hiddenSelectionsTextures[] = {"JMSSA_brits\data\body\p37_body_eng_co.paa","JMSSA_brits\data\body\p37_arms_eng_co.paa","JMSSA_brits\data\body\p40_trousers_eng_co.paa"};
-	*/
+	
 
 	class I_NORTH_FIN_M36_W_Greatcoat_camo;
 	class OFCRA_goumier_soldier: I_NORTH_FIN_M36_W_Greatcoat_camo
@@ -94,5 +94,5 @@ class CfgVehicles
 			"\ofcra_nf\greatcoat_goumier.paa"
 		};
 	};
-
+*/
 };

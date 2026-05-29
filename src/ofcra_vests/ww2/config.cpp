@@ -25,6 +25,8 @@ class CfgPatches
 class cfgWeapons
 {
 
+
+/*
 	class fow_v_base;
 	class fow_v_heer_mp40 : fow_v_base
 	{
@@ -212,5 +214,6 @@ class cfgWeapons
 			}
 		}
 	};
+	*/
 
 }
