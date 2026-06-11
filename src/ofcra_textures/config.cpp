@@ -114,7 +114,7 @@ class cfgWeapons
 		model = "\A3\weapons_f\empty";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
-		ItemInfo: ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			uniformModel= "\A3\weapons_f\empty";
 		};
