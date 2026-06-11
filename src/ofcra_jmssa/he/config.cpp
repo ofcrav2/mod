@@ -42,12 +42,14 @@ class CfgAmmo
 	class JMSSA_75mm_qf75_m48HE_Shell;
 	class OFCRA_JMSSA_HE: JMSSA_75mm_qf75_m48HE_Shell
 	{
-		indirectHit=0.7;
-		indirectHitRange=5;  
+	
+		indirectHit=0.8;
+		indirectHitRange=7;  
 
 
 		ACE_damageType="explosive";
-		hit=100;
+		hit=500;
+		caliber=1.5;
 
 		ace_frag_force=0;       //disable ace frag to make things more consistent
 		ace_frag_enabled=0;
@@ -62,7 +64,7 @@ class CfgAmmo
 		submunitionConeType[]=
 		{
 			"randomupcone",
-			16
+			24
 		};
 		submunitionAmmo[]={"OFCRA_JMSSA_HE_FRAG",0.5,"OFCRA_LIGHT_VEHICLE_DESTRUCTION",0.5  };
 		submunitionInitialOffset[]={0,0,1.0}; //100cm above/behind projectile. this is needed to make sure it is not underground

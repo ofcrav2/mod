@@ -26,7 +26,11 @@ class cfgFactionClasses
 
 class cfgWeapons
 {
-	class V_PlateCarrier1_blk;
+	class Vest_Camo_Base;
+	class V_PlateCarrier1_blk: Vest_Camo_Base
+	{
+		class ItemInfo;
+	};
 	class OFCRA_spain_arid_vest: V_PlateCarrier1_blk
 	{
 		author="wombat";
@@ -36,6 +40,7 @@ class cfgWeapons
 		{
 			"\ofcra_textures\spain\arid_vest.paa"
 		};
+
 	};
 	class OFCRA_invisible_plate: V_PlateCarrier1_blk
 	{
@@ -45,9 +50,52 @@ class cfgWeapons
 		model = "\A3\weapons_f\empty";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
+		ItemInfo: ItemInfo
+		{
+			uniformModel= "\A3\weapons_f\empty";
+		};
+	};
+	class OFCRA_invisible_plate_level2: OFCRA_invisible_plate
+	
+		displayName="OFCRA Invisible Plate level 2";
+		scope=2;
+
+		ItemInfo: ItemInfo
+		{
+			uniformModel= "\A3\weapons_f\empty";
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=12;					
+					passThrough=0.4;          
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=12;
+					passThrough=0.4;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=12;
+					passThrough=0.4;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.4;
+				};
+			}
+		};
 	};
 
-	class H_HelmetIA;
+	class H_HelmetB;
+	class H_HelmetIA : H_HelmetB
+	{
+		class ItemInfo;
+	};
 	class OFCRA_spain_arid_helmet: H_HelmetIA
 	{
 		author="wombat";
@@ -56,6 +104,7 @@ class cfgWeapons
 		{
 			"\ofcra_textures\spain\arid_helmet.paa"
 		};
+
 	};
 
 	class OFCRA_Invisible_helmet: H_HelmetIA
@@ -65,6 +114,10 @@ class cfgWeapons
 		model = "\A3\weapons_f\empty";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
+		ItemInfo: ItemInfo
+		{
+			uniformModel= "\A3\weapons_f\empty";
+		};
 	}
 
 	class U_B_CombatUniform_mcam;

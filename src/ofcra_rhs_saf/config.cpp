@@ -38,6 +38,32 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+
+	class rhssaf_helmet_base;
+	class rhssaf_beret_blue_un : rhssaf_helmet_base
+	{
+		class ItemInfo;
+	};
+	class OFCRA_UN_BERET_BLUE : rhssaf_beret_blue_un
+	{
+		author="wombat";
+		displayName="OFCRA UN Blue Beret";
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		};
+	};
+
+
+
 };
 
 class CfgVehicles
