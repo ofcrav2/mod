@@ -56,7 +56,7 @@ class cfgWeapons
 		};
 	};
 	class OFCRA_invisible_plate_level2: OFCRA_invisible_plate
-	
+	{
 		displayName="OFCRA Invisible Plate level 2";
 		scope=2;
 
