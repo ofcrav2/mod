@@ -50,7 +50,7 @@ class cfgWeapons
 		model = "\A3\weapons_f\empty";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
-		ItemInfo: ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			uniformModel= "\A3\weapons_f\empty";
 		};
@@ -60,9 +60,9 @@ class cfgWeapons
 		displayName="OFCRA Invisible Plate level 2";
 		scope=2;
 
-		ItemInfo: ItemInfo
+		class ItemInfo: ItemInfo
 		{
-			uniformModel= "\A3\weapons_f\empty";
+			uniformModel = "\A3\weapons_f\empty";
 			class HitpointsProtectionInfo {
 				class Chest
 				{
@@ -87,7 +87,7 @@ class cfgWeapons
 					hitpointName="HitBody";
 					passThrough=0.4;
 				};
-			}
+			};
 		};
 	};
 
