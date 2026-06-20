@@ -134,4 +134,46 @@ class cfgWeapons
 			}
 		}
 	};
+
+
+//["BWA3_Vest_JPC_Rifleman_Tropen","BWA3_Vest_JPC_Rifleman_Fleck","V_PlateCarrier2_rgr","V_PlateCarrier1_rgr","Vest_NoCamo_Base","ItemCore","Default"]
+
+	class BWA3_Vest_JPC_Rifleman_Tropen;
+	class BWA3_Vest_JPC_Radioman_Tropen : BWA3_Vest_JPC_Rifleman_Tropen{
+		class ItemInfo;
+	}
+	class OFCRa_BWA3_Vest_JPC_Radioman_Tropen : BWA3_Vest_JPC_Radioman_Tropen {
+
+		author="wombat";
+		displayName="OFCRA Tropentarn JPC level 3 plate";
+		nameSound = "";
+		class ItemInfo : ItemInfo {
+			mass= 80;
+			class HitpointsProtectionInfo {
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					PassThrough=0.3;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					PassThrough=0.3;
+				};
+			}
+		}
+	}
 }

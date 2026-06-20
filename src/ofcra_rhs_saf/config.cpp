@@ -62,8 +62,6 @@ class cfgWeapons
 		};
 	};
 
-
-
 };
 
 class CfgVehicles

@@ -55,6 +55,15 @@ class CfgVehicles
 		};
 	};
 
+	class OFCRA_SaudiArabia_Flag_F: OFCRA_Scotland_Flag_F
+	{
+		displayName="Flag (Saudi Arabia)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\ofcra_textures\flags\saudi_arabia.paa'";
+		};
+	};
+
 };
 
 
@@ -99,6 +108,13 @@ class CfgMarkers
 		name="Finland Flag";
 		icon="\ofcra_textures\flags\finland_marker.paa";
 		texture="\ofcra_textures\flags\finland_marker.paa";
+	}
+
+	class OFCRA_SaudiArabia_Flag : OFCRA_Scotland_Flag
+	{
+		name="Saudi Arabia Flag";
+		icon="\ofcra_textures\flags\saudi_arabia_marker.paa";
+		texture="\ofcra_textures\flags\saudi_arabia_marker.paa";
 	}
 
 
