@@ -35,6 +35,63 @@ UK3CB_LDF_B_V_RIF_ALT_Vest_KKZ10_OLI -> ["rhsusf_spcs_ocp_rifleman","rhsusf_spcs
 	*/
 
 
+
+/*
+
+UK3CB_H_Shemag_blk
+
+UK3CB_NFA_B_H_M88_Field_Cap_ALP
+
+*/
+
+	class H_Shemag_olive;
+	class UK3CB_H_Shemag_blk : H_Shemag_olive {
+		class ItemInfo;
+	};
+	class OFCRA_UK3CB_H_Shemag_blk : UK3CB_H_Shemag_blk
+	{
+		author="wombat";
+		displayName="OFCRA Shemagh Black";
+		nameSound = "";
+		class ItemInfo : ItemInfo {
+			mass= 20;
+			class HitpointsProtectionInfo {
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		}
+	};
+
+	class rhs_fieldcap_m88;
+	class UK3CB_NFA_B_H_M88_Field_Cap_ALP: rhs_fieldcap_m88 {
+		class ItemInfo;
+	};
+	class OFCRA_UK3CB_NFA_B_H_M88_Field_Cap_ALP : UK3CB_NFA_B_H_M88_Field_Cap_ALP
+	{
+		author="wombat";
+		displayName="OFCRA M88 Field Cap ALP";
+		nameSound = "";
+		class ItemInfo : ItemInfo {
+			mass= 20;
+			class HitpointsProtectionInfo {
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		}
+	};
+
+
+
+
+
 	class rhsusf_mbav_rifleman;
 	class rhssaf_vest_md12_digital;
 	class UK3CB_V_SOV_CHICOM_BASE;
