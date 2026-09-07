@@ -8,7 +8,7 @@ class InteractiveStartUp {
 	fadein=1;
 	fadeout=1;
 	name="Interactive Start-up";
-	onLoad = "with uiNameSpace do { InteractiveStartUp = _this select 0};ExecVM '\ofcra_intro\omtk\dynamic_startup\loadPanel.sqf';";
+	onLoad = "with uiNameSpace do { InteractiveStartUp = _this select 0};ExecVM '\ofcra_omtk\omtk\dynamic_startup\loadPanel.sqf';";
 	class controls {
 
 
@@ -23,7 +23,7 @@ class Background: omtk_BOX
 class Banner: omtk_RscPicture
 {
 	idc = 1200;
-	text = "\ofcra_intro\omtk\dynamic_startup\img\banner.jpg";
+	text = "\ofcra_omtk\omtk\dynamic_startup\img\banner.jpg";
 	x = 0.298906 * safezoneW + safezoneX;
 	y = 0.225 * safezoneH + safezoneY;
 	w = 0.4025 * safezoneW;

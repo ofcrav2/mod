@@ -402,7 +402,7 @@ omtk_respawn_unit = {
 		//_loadout = player getVariable ["playerLoadout", 0];
 		player setUnitLoadout [_loadout, true];
 		
-		execVM "\ofcra_intro\omtk\view_distance\main.sqf";
+		execVM "\ofcra_omtk\omtk\view_distance\main.sqf";
 	};
 	
 };

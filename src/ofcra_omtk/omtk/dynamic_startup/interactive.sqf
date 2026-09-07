@@ -14,7 +14,7 @@ omtk_ds_interactive_mode = {
 	_class = typeOf player;
 	if (hasInterface && !_already_processed && _class in OMTK_DS_CHIEF_CLASSES) then {
 		if (call omtk_is_using_ACEmod) then {
-			_action = ["OMTK_INTERACTIVE_MENU","Interactive Menu","\ofcra_intro\omtk\dynamic_startup\img\application.paa",{createDialog "InteractiveStartUp";},{true;}] call ace_interact_menu_fnc_createAction;
+			_action = ["OMTK_INTERACTIVE_MENU","Interactive Menu","\ofcra_omtk\omtk\dynamic_startup\img\application.paa",{createDialog "InteractiveStartUp";},{true;}] call ace_interact_menu_fnc_createAction;
 			[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 		} else {
 			createDialog "InteractiveStartUp";

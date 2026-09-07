@@ -5,8 +5,8 @@ _handle = nil;
 	_handle = execVM _x;
 	waitUntil {isNull _handle};
 } forEach [
-	"\ofcra_intro\omtk\dynamic_startup\markers.sqf",
-	"\ofcra_intro\omtk\dynamic_startup\interactive.sqf"];
+	"\ofcra_omtk\omtk\dynamic_startup\markers.sqf",
+	"\ofcra_omtk\omtk\dynamic_startup\interactive.sqf"];
 	
 _mode = "OMTK_MODULE_DYNAMIC_STARTUP" call BIS_fnc_getParamValue;
 

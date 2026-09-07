@@ -15,4 +15,4 @@ This module prevents players from dropping their uniform and possibly being unab
 The uniform gets locked when inventory is open. Code adapted from Iceman77 and pierremgi on the bohemia forums
 
 To remove it, just comment out the "execVM" line on load_modules.sqf (currently line 49):
-	> execVM "omtk\uniform_lock\main.sqf";
+	> execVM "\ofcra_omtk\omtk\uniform_lock\main.sqf";

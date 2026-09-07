@@ -8,7 +8,7 @@ class ScoreBoard {
 	fadein=1;
 	fadeout=1;
 	name="ScoreBoard";
-	onLoad = "with uiNameSpace do { ScoreBoard = _this select 0};ExecVM '\ofcra_intro\omtk\score_board\loadBoard.sqf';";
+	onLoad = "with uiNameSpace do { ScoreBoard = _this select 0};ExecVM '\ofcra_omtk\omtk\score_board\loadBoard.sqf';";
 	
 	class controls {
 		
@@ -42,7 +42,7 @@ class ScoreBoard {
 		class Banner: omtk_RscPicture
 		{
 			idc = 1202;
-			text = "\ofcra_intro\omtk\score_board\img\banner.jpg";
+			text = "\ofcra_omtk\omtk\score_board\img\banner.jpg";
 			x = 0.3625 * safezoneW + safezoneX;
 			y = 0.236103 * safezoneH + safezoneY;
 			w = 0.275 * safezoneW;
@@ -125,7 +125,7 @@ class ScoreBoard_MS {
 	fadein=1;
 	fadeout=1;
 	name="ScoreBoard";
-	onLoad = "with uiNameSpace do { ScoreBoard = _this select 0};ExecVM '\ofcra_intro\omtk\score_board\loadBoard_ms.sqf';";
+	onLoad = "with uiNameSpace do { ScoreBoard = _this select 0};ExecVM '\ofcra_omtk\omtk\score_board\loadBoard_ms.sqf';";
 	
 	class controls {
 		
@@ -159,7 +159,7 @@ class ScoreBoard_MS {
 		class Banner: omtk_RscPicture
 		{
 			idc = 1202;
-			text = "\ofcra_intro\omtk\score_board\img\banner_ms.jpg";
+			text = "\ofcra_omtk\omtk\score_board\img\banner_ms.jpg";
 			x = 0.3625 * safezoneW + safezoneX;
 			y = 0.236103 * safezoneH + safezoneY;
 			w = 0.275 * safezoneW;

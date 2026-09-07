@@ -34,7 +34,7 @@ When Disable Playable AI is enabled, AIs are frozen and made immortal during war
 
 ### Extra Parameters
 
-#### File *omtk\\ia_manager\\main.sqf*
+#### File *\ofcra_omtk\omtk\\ia_manager\\main.sqf*
 
 IA Skill values to be set directly into the file   
 Check [Arma 3 wiki](https://community.bistudio.com/wiki/AI_Sub-skills) for explanations.

@@ -336,7 +336,7 @@ simControlpic ctrlsetPosition [
     0.03 * safeZoneH
 ];
 simControlpic ctrlCommit 0;
-simControlpic ctrlsettext "\ofcra_intro\omtk\ui\img\sim_control.jpg";
+simControlpic ctrlsettext "\ofcra_omtk\omtk\ui\img\sim_control.jpg";
 
 
 // Enable Blue sim
@@ -420,7 +420,7 @@ vdControlpic ctrlsetPosition [
     0.03 * safeZoneH
 ];
 vdControlpic ctrlCommit 0;
-vdControlpic ctrlsettext "\ofcra_intro\omtk\ui\img\view_distance.jpg";
+vdControlpic ctrlsettext "\ofcra_omtk\omtk\ui\img\view_distance.jpg";
 
 // set 1 VD
 buttonVD_1 = _display ctrlCreate ["omtk_RscButton", 1201];
@@ -494,7 +494,7 @@ simControlpic ctrlsetPosition [
     0.03 * safeZoneH
 ];
 simControlpic ctrlCommit 0;
-simControlpic ctrlsettext "\ofcra_intro\omtk\ui\img\omtk_btns.jpg";
+simControlpic ctrlsettext "\ofcra_omtk\omtk\ui\img\omtk_btns.jpg";
 
 // End warmup
 button_endWarmup = _display ctrlCreate ["omtk_RscButton", 1201];
@@ -698,7 +698,7 @@ button_export ctrlsetBackgroundColor [0.2, 0.8, 0.2, 1];
 button_export ctrlCommit 0;
 button_export ctrlsettext "export list";
 button_export ctrlAddEventHandler ["Buttondown", {
-    _handle = execVM "\ofcra_intro\omtk\table_forum.sqf";
+    _handle = execVM "\ofcra_omtk\omtk\table_forum.sqf";
 }];
 
 // Loop that will handle list of players

@@ -3,7 +3,13 @@ OFCRA Essentials
 
 ## Bundled OMTK mission assets
 
-OMTK mission files are bundled in the `ofcra_intro` addon so missions can reference them directly from the mod:
+OMTK mission files are bundled in the `ofcra_omtk` addon so missions can reference them directly from the mod:
 
-- `\ofcra_intro\omtk\...` (for example: `execVM "\ofcra_intro\omtk\load_modules.sqf";`)
-- `\ofcra_intro\loadscreen.jpg`
+- `\ofcra_omtk\omtk\...`
+- `\ofcra_omtk\loadscreen.jpg`
+
+Mission init usage:
+
+```sqf
+[] call OFCRA_OMTK_fnc_init;
+```

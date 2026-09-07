@@ -3,7 +3,7 @@
 
 omtk_tp_add_action = {
 		hint "paradrop available";
-		_action = ["OMTK_PARADROP","Paradrop","\ofcra_intro\omtk\tactical_paradrop\img\paradrop.paa",{call omtk_tp_paradrop_on;},{true;}] call ace_interact_menu_fnc_createAction;
+		_action = ["OMTK_PARADROP","Paradrop","\ofcra_omtk\omtk\tactical_paradrop\img\paradrop.paa",{call omtk_tp_paradrop_on;},{true;}] call ace_interact_menu_fnc_createAction;
 		[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 		[omtk_tp_paradrop_off, [], ("OMTK_MODULE_TACTICAL_PARADROP_TIME_LIMIT" call BIS_fnc_getParamValue)*60] call KK_fnc_setTimeout;	
 };

@@ -81,7 +81,7 @@ Defines wether people will be able to shoot during warmup.
 
 ### Extra Parameters
 
-#### File *omtk\\warm_up\\main.sqf*
+#### File *\ofcra_omtk\omtk\\warm_up\\main.sqf*
 
 At the top of the file, you can specify which unit classes can declare the side as ready to stop prematurely  the warmup.
 
