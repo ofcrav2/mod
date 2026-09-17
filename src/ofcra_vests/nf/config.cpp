@@ -7,7 +7,11 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
 			"ofcra_vests",
-			"NORTH_StaticWeapons"
+			"NORTH_StaticWeapons",
+			"NORTH_Civilian_caps",
+			"NF_SOV_Uniforms",
+			"NORTH_SOV_caps",
+
 		};
 		units[] = {};
 		weapons[] = {};
@@ -22,6 +26,7 @@ class cfgWeapons
 
 	class Vest_Camo_Base;
 	class H_NORTH_cap_base;
+	class H_NORTH_Workercap;
 
 
 
@@ -35,7 +40,7 @@ class cfgWeapons
 	class H_NORTH_SOV_Obr40_Ushanka : H_NORTH_cap_base {
 		class ItemInfo;
 	};
-	class H_NORTH_Workercap_bl : H_NORTH_cap_base {
+	class H_NORTH_Workercap_bl : H_NORTH_Workercap {
 		class ItemInfo;
 	};
 
