@@ -1,5 +1,6 @@
 // CC4: the three Baba Yaga presets (HE, AT, Heavy AT) for CC4 Blufor (original MMM camo) and CC4 Opfor (CC4 skin).
 // Like every CC4 vehicle: no TFAR vehicle radio and no thermal (init event handler).
+// Battery: HE and AT last 4x as long as the Vampire, Heavy AT 2x (lower fuelConsumptionRate).
 // Kept separate from ..\config.cpp so the payload nerf still loads if the CC4 factions are missing.
 class CfgPatches
 {
@@ -53,6 +54,7 @@ class CfgVehicles
 
 	class OFCRA_BabaYaga_HE_base: OFCRA_BabaYaga_base
 	{
+		fuelConsumptionRate = 0.025;   // battery x4 (Vampire: 0.1 with fuelCapacity 200)
 		displayName = "Baba Yaga (HE)";
 		class Components: Components
 		{
@@ -99,6 +101,7 @@ class CfgVehicles
 
 	class OFCRA_BabaYaga_AT_base: OFCRA_BabaYaga_base
 	{
+		fuelConsumptionRate = 0.025;   // battery x4 (Vampire: 0.1 with fuelCapacity 200)
 		displayName = "Baba Yaga (AT)";
 		class Components: Components
 		{
@@ -145,6 +148,7 @@ class CfgVehicles
 
 	class OFCRA_BabaYaga_AT_Heavy_base: OFCRA_BabaYaga_base
 	{
+		fuelConsumptionRate = 0.05;   // battery x2 (Vampire: 0.1 with fuelCapacity 200)
 		displayName = "Baba Yaga (Heavy AT)";
 		class Components: Components
 		{

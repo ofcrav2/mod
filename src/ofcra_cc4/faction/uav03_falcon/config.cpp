@@ -52,37 +52,46 @@ class CfgVehicles
 		{
 			class TransportPylonsComponent
 			{
-				uiPicture = "\A3\Air_F_Exp\UAV_03\Data\UI\Map_UAV_03_3DEN_CA.paa";
+				UIPicture = "\A3\Air_F_Exp\UAV_03\Data\UI\Map_UAV_03_3DEN_CA.paa";
 				class Pylons
 				{
 					class Pylons1
 					{
+						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
 						priority = 5;
-						turret[] = {0};
-						maxweight = 300;
 						UIposition[] = {0.0500000007450581, 0.300000011920929};
-						attachment = "";
+						turret[] = {0};
 					};
-					class Pylons2: Pylons1
+					class Pylons2
 					{
+						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
-						priority = 4;
 						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.100000001490116, 0.379999995231628};
-						attachment = "";
+						turret[] = {0};
 					};
-					class Pylons3: Pylons2
+					class Pylons3
 					{
+						attachment = "";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.529999971389771, 0.379999995231628};
+						turret[] = {0};
 						mirroredMissilePos = 2;
-						attachment = "";
 					};
-					class Pylons4: Pylons1
+					class Pylons4
 					{
-						UIposition[] = {0.579999983310699, 0.300000011920929};
-						mirroredMissilePos = 1;
 						attachment = "";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 5;
+						UIposition[] = {0.579999983310699, 0.300000011920929};
+						turret[] = {0};
+						mirroredMissilePos = 1;
 					};
 				};
 			};
@@ -91,7 +100,7 @@ class CfgVehicles
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; { _v removeWeaponTurret [_w, _x] } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};
@@ -111,37 +120,46 @@ class CfgVehicles
 		{
 			class TransportPylonsComponent
 			{
-				uiPicture = "\A3\Air_F_Exp\UAV_03\Data\UI\Map_UAV_03_3DEN_CA.paa";
+				UIPicture = "\A3\Air_F_Exp\UAV_03\Data\UI\Map_UAV_03_3DEN_CA.paa";
 				class Pylons
 				{
 					class Pylons1
 					{
+						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
 						priority = 5;
-						turret[] = {0};
-						maxweight = 300;
 						UIposition[] = {0.0500000007450581, 0.300000011920929};
-						attachment = "";
+						turret[] = {0};
 					};
-					class Pylons2: Pylons1
+					class Pylons2
 					{
+						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
-						priority = 4;
 						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.100000001490116, 0.379999995231628};
-						attachment = "";
+						turret[] = {0};
 					};
-					class Pylons3: Pylons2
+					class Pylons3
 					{
+						attachment = "";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.529999971389771, 0.379999995231628};
+						turret[] = {0};
 						mirroredMissilePos = 2;
-						attachment = "";
 					};
-					class Pylons4: Pylons1
+					class Pylons4
 					{
-						UIposition[] = {0.579999983310699, 0.300000011920929};
-						mirroredMissilePos = 1;
 						attachment = "";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 5;
+						UIposition[] = {0.579999983310699, 0.300000011920929};
+						turret[] = {0};
+						mirroredMissilePos = 1;
 					};
 				};
 			};
@@ -150,7 +168,7 @@ class CfgVehicles
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; { _v removeWeaponTurret [_w, _x] } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};

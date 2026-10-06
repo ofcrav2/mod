@@ -76,41 +76,46 @@ class CfgVehicles
 		{
 			class TransportPylonsComponent
 			{
-				uiPicture = "\bwa3_tiger\ui\bwa3_tiger_3DEN_ca.paa";
+				UIPicture = "\bwa3_tiger\ui\bwa3_tiger_3DEN_ca.paa";
 				class Pylons
 				{
 					class PylonLeft1
 					{
-						priority = 5;
-						turret[] = {};
-						UIposition[] = {0.119999997317791, 0.430000007152557};
-						name = "Tiger_Attack_01";
 						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
 						hardpoints[] = {"BWA3_Outer_Pylon", "OFCRA_CC4_tiger"};
-					};
-					class PylonLeft2: PylonLeft1
-					{
-						priority = 3;
+						priority = 5;
+						UIposition[] = {0.119999997317791, 0.430000007152557};
 						turret[] = {};
-						UIposition[] = {0.200000002980232, 0.379999995231628};
+						name = "Tiger_Attack_01";
+					};
+					class PylonLeft2
+					{
 						attachment = "rhs_mag_upk23_btz";
 						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
-					};
-					class PylonRight2: PylonLeft2
-					{
-						attachment = "Pylonweapon_4Rnd_PARS";
 						priority = 3;
+						UIposition[] = {0.200000002980232, 0.379999995231628};
+						turret[] = {};
+						name = "Tiger_Attack_01";
+					};
+					class PylonRight2
+					{
+						attachment = "";
+						hardpoints[] = {"BWA3_Inner_Pylon"};
+						priority = 3;
+						UIposition[] = {0.465000003576279, 0.379999995231628};
 						turret[] = {0};
 						mirroredMissilePos = 2;
-						UIposition[] = {0.465000003576279, 0.379999995231628};
+						name = "Tiger_Attack_01";
 					};
-					class PylonRight1: PylonLeft1
+					class PylonRight1
 					{
-						attachment = "Pylonweapon_2Rnd_Fliegerfaust";
+						attachment = "";
+						hardpoints[] = {"BWA3_Outer_Pylon"};
 						priority = 5;
-						mirroredMissilePos = 1;
-						turret[] = {};
 						UIposition[] = {0.545000016689301, 0.430000007152557};
+						turret[] = {};
+						mirroredMissilePos = 1;
+						name = "Tiger_Attack_01";
 					};
 				};
 			};
@@ -167,41 +172,46 @@ class CfgVehicles
 		{
 			class TransportPylonsComponent
 			{
-				uiPicture = "\bwa3_tiger\ui\bwa3_tiger_3DEN_ca.paa";
+				UIPicture = "\bwa3_tiger\ui\bwa3_tiger_3DEN_ca.paa";
 				class Pylons
 				{
 					class PylonLeft1
 					{
-						priority = 5;
-						turret[] = {};
-						UIposition[] = {0.119999997317791, 0.430000007152557};
-						name = "Tiger_Attack_01";
 						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
 						hardpoints[] = {"BWA3_Outer_Pylon", "OFCRA_CC4_tiger"};
-					};
-					class PylonLeft2: PylonLeft1
-					{
-						priority = 3;
+						priority = 5;
+						UIposition[] = {0.119999997317791, 0.430000007152557};
 						turret[] = {};
-						UIposition[] = {0.200000002980232, 0.379999995231628};
+						name = "Tiger_Attack_01";
+					};
+					class PylonLeft2
+					{
 						attachment = "rhs_mag_upk23_btz";
 						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
-					};
-					class PylonRight2: PylonLeft2
-					{
-						attachment = "Pylonweapon_4Rnd_PARS";
 						priority = 3;
+						UIposition[] = {0.200000002980232, 0.379999995231628};
+						turret[] = {};
+						name = "Tiger_Attack_01";
+					};
+					class PylonRight2
+					{
+						attachment = "";
+						hardpoints[] = {"BWA3_Inner_Pylon"};
+						priority = 3;
+						UIposition[] = {0.465000003576279, 0.379999995231628};
 						turret[] = {0};
 						mirroredMissilePos = 2;
-						UIposition[] = {0.465000003576279, 0.379999995231628};
+						name = "Tiger_Attack_01";
 					};
-					class PylonRight1: PylonLeft1
+					class PylonRight1
 					{
-						attachment = "Pylonweapon_2Rnd_Fliegerfaust";
+						attachment = "";
+						hardpoints[] = {"BWA3_Outer_Pylon"};
 						priority = 5;
-						mirroredMissilePos = 1;
-						turret[] = {};
 						UIposition[] = {0.545000016689301, 0.430000007152557};
+						turret[] = {};
+						mirroredMissilePos = 1;
+						name = "Tiger_Attack_01";
 					};
 				};
 			};

@@ -60,7 +60,7 @@ class CfgVehicles
 					{
 						attachment = "";
 					};
-					class pylons2: pylons1
+					class pylons2
 					{
 						attachment = "";
 					};
@@ -71,7 +71,7 @@ class CfgVehicles
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; { _v removeWeaponTurret [_w, _x] } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};
@@ -97,13 +97,14 @@ class CfgVehicles
 				UIPicture = "\a3\Drones_F\Air_F_Gamma\UAV_02\data\ui\UAV_02_base_EDEN_F.paa";
 				class pylons
 				{
-					class pylons1: pylons1
+					class pylons1
 					{
 						hardpoints[] = {"O_BOMB_PYLON", "O_MISSILE_PYLON", "UNI_SCALPEL"};
 						attachment = "";
 					};
-					class pylons2: pylons1
+					class pylons2
 					{
+						hardpoints[] = {"O_BOMB_PYLON", "O_MISSILE_PYLON", "UNI_SCALPEL"};
 						UIposition[] = {0.330000013113022, 0.150000005960464};
 						mirroredMissilePos = 1;
 						attachment = "";
@@ -115,7 +116,7 @@ class CfgVehicles
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; { _v removeWeaponTurret [_w, _x] } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};
