@@ -33,7 +33,9 @@ class CfgPatches
 		{
 			"boxer",
 			"rhs_main_loadorder",
-			"rhsusf_main_loadorder"
+			"rhsusf_main_loadorder",
+			"bwa3_weapons",
+			"bwa3_mg3"
 		};
 		skipWhenMissingDependencies=1;
 	};
