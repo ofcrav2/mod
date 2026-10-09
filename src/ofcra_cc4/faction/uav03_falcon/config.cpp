@@ -29,9 +29,76 @@ class CfgVehicles
 	{
 		class EventHandlers;
 		class Components;
+		class ViewOptics;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_B_T_UAV_03_dynamicLoadout_F: B_T_UAV_03_dynamicLoadout_F
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class ViewOptics: ViewOptics
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_B_T_UAV_03_dynamicLoadout_F: OFCRA_CC4_ti2_B_T_UAV_03_dynamicLoadout_F
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class ViewOptics: ViewOptics
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_B_T_UAV_03_dynamicLoadout_F: OFCRA_CC4_ti3_B_T_UAV_03_dynamicLoadout_F
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class ViewOptics: ViewOptics
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Medium;
+					class Narrow;
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_B_T_UAV_03_dynamicLoadout_F: B_T_UAV_03_dynamicLoadout_F
+	class OFCRA_CC4_B_B_T_UAV_03_dynamicLoadout_F: OFCRA_CC4_ti4_B_T_UAV_03_dynamicLoadout_F
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -96,16 +163,45 @@ class CfgVehicles
 				};
 			};
 		};
+		class ViewOptics: ViewOptics
+		{
+			visionMode[] = {"Normal", "NVG"};
+			thermalMode[] = {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; }; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_B_T_UAV_03_dynamicLoadout_F: B_T_UAV_03_dynamicLoadout_F
+	class OFCRA_CC4_O_B_T_UAV_03_dynamicLoadout_F: OFCRA_CC4_ti4_B_T_UAV_03_dynamicLoadout_F
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -164,11 +260,40 @@ class CfgVehicles
 				};
 			};
 		};
+		class ViewOptics: ViewOptics
+		{
+			visionMode[] = {"Normal", "NVG"};
+			thermalMode[] = {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; }; if (!is3DEN) then { [_v, ['GMG_40mm']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};

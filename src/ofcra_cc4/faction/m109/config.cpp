@@ -28,9 +28,95 @@ class CfgVehicles
 	class OFCRA_m109tank: rhsusf_m109_usarmy
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_OFCRA_m109tank: OFCRA_m109tank
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_OFCRA_m109tank: OFCRA_CC4_ti2_OFCRA_m109tank
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_OFCRA_m109tank: OFCRA_CC4_ti3_OFCRA_m109tank
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Medium;
+					class Narrow;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_OFCRA_m109tank: OFCRA_CC4_ti4_OFCRA_m109tank
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics;
+					};
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_OFCRA_m109tank: OFCRA_m109tank
+	class OFCRA_CC4_B_OFCRA_m109tank: OFCRA_CC4_ti5_OFCRA_m109tank
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -48,16 +134,51 @@ class CfgVehicles
 			"\rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_d_ca.paa",
 			"ofcra_cc4\m109\m109_4.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics: ViewOptics
+						{
+							visionMode[] = {"Normal"};
+							thermalMode[] = {};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_OFCRA_m109tank: OFCRA_m109tank
+	class OFCRA_CC4_O_OFCRA_m109tank: OFCRA_CC4_ti5_OFCRA_m109tank
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -75,11 +196,46 @@ class CfgVehicles
 			"\rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_d_ca.paa",
 			"ofcra_cc4\m109\m109_4.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics: ViewOptics
+						{
+							visionMode[] = {"Normal"};
+							thermalMode[] = {};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};

@@ -31,9 +31,66 @@ class CfgVehicles
 	{
 		class EventHandlers;
 		class Components;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_BWA3_Tiger: BWA3_Tiger
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_BWA3_Tiger: OFCRA_CC4_ti2_BWA3_Tiger
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_BWA3_Tiger: OFCRA_CC4_ti3_BWA3_Tiger
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Components: Components
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Medium;
+					class Narrow;
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_BWA3_Tiger: BWA3_Tiger
+	class OFCRA_CC4_B_BWA3_Tiger: OFCRA_CC4_ti4_BWA3_Tiger
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -120,16 +177,40 @@ class CfgVehicles
 				};
 			};
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_BWA3_Tiger: BWA3_Tiger
+	class OFCRA_CC4_O_BWA3_Tiger: OFCRA_CC4_ti4_BWA3_Tiger
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -216,11 +297,35 @@ class CfgVehicles
 				};
 			};
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Medium: Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};

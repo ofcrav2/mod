@@ -28,9 +28,56 @@ class CfgVehicles
 	class rhsusf_m1245_m2crows_socom_d: rhsusf_MATV_SOF_CROWS_M2_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_rhsusf_m1245_m2crows_socom_d: rhsusf_m1245_m2crows_socom_d
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret;
+		};
+	};
+	class OFCRA_CC4_ti3_rhsusf_m1245_m2crows_socom_d: OFCRA_CC4_ti2_rhsusf_m1245_m2crows_socom_d
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				class OpticsIn;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_rhsusf_m1245_m2crows_socom_d: OFCRA_CC4_ti3_rhsusf_m1245_m2crows_socom_d
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class ThermalWFOV;
+					class ThermalNFOV;
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_rhsusf_m1245_m2crows_socom_d: rhsusf_m1245_m2crows_socom_d
+	class OFCRA_CC4_B_rhsusf_m1245_m2crows_socom_d: OFCRA_CC4_ti4_rhsusf_m1245_m2crows_socom_d
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -55,16 +102,35 @@ class CfgVehicles
 			"ofcra_cc4\matv\matv_10.paa",
 			"\a3\map_vr\data\picturemap_ca.paa"
 		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class ThermalWFOV: ThermalWFOV
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class ThermalNFOV: ThermalNFOV
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_rhsusf_m1245_m2crows_socom_d: rhsusf_m1245_m2crows_socom_d
+	class OFCRA_CC4_O_rhsusf_m1245_m2crows_socom_d: OFCRA_CC4_ti4_rhsusf_m1245_m2crows_socom_d
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -89,11 +155,30 @@ class CfgVehicles
 			"ofcra_cc4\matv\matv_10.paa",
 			"\a3\map_vr\data\picturemap_ca.paa"
 		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class ThermalWFOV: ThermalWFOV
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class ThermalNFOV: ThermalNFOV
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};

@@ -30,13 +30,95 @@ class CfgVehicles
 	class UK3CB_AAF_B_M60A3: UK3CB_B_M60A3_AAF
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_UK3CB_AAF_B_M60A3: UK3CB_AAF_B_M60A3
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_UK3CB_AAF_B_M60A3: OFCRA_CC4_ti2_UK3CB_AAF_B_M60A3
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_UK3CB_AAF_B_M60A3: OFCRA_CC4_ti3_UK3CB_AAF_B_M60A3
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_UK3CB_AAF_B_M60A3: OFCRA_CC4_ti4_UK3CB_AAF_B_M60A3
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics;
+					};
+				};
+			};
+		};
 	};
 	class UK3CB_KRG_O_M60A1: UK3CB_O_M60A1_DES
 	{
 		class EventHandlers;
 	};
 
-	class OFCRA_CC4_B_UK3CB_AAF_B_M60A3: UK3CB_AAF_B_M60A3
+	class OFCRA_CC4_B_UK3CB_AAF_B_M60A3: OFCRA_CC4_ti5_UK3CB_AAF_B_M60A3
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -54,11 +136,41 @@ class CfgVehicles
 			"ofcra_cc4\m60\m60_3.paa",
 			"ofcra_cc4\m60\m60_4.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics: ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+							thermalMode[] = {};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
@@ -85,7 +197,7 @@ class CfgVehicles
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};

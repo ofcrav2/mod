@@ -34,29 +34,881 @@ class CfgVehicles
 	class mkk_boxer_ifv_b: mkk_boxer_ifv_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_ifv_b: mkk_boxer_ifv_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_ifv_b: OFCRA_CC4_ti2_mkk_boxer_ifv_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_ifv_b: OFCRA_CC4_ti3_mkk_boxer_ifv_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_ifv_b: OFCRA_CC4_ti4_mkk_boxer_ifv_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_ifv_b: OFCRA_CC4_ti5_mkk_boxer_ifv_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 	class mkk_boxer_ifv_r: mkk_boxer_ifv_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_ifv_r: mkk_boxer_ifv_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_ifv_r: OFCRA_CC4_ti2_mkk_boxer_ifv_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_ifv_r: OFCRA_CC4_ti3_mkk_boxer_ifv_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_ifv_r: OFCRA_CC4_ti4_mkk_boxer_ifv_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_ifv_r: OFCRA_CC4_ti5_mkk_boxer_ifv_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 	class mkk_boxer_mgs_b: mkk_boxer_mgs_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_mgs_b: mkk_boxer_mgs_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_mgs_b: OFCRA_CC4_ti2_mkk_boxer_mgs_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_mgs_b: OFCRA_CC4_ti3_mkk_boxer_mgs_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_mgs_b: OFCRA_CC4_ti4_mkk_boxer_mgs_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_mgs_b: OFCRA_CC4_ti5_mkk_boxer_mgs_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 	class mkk_boxer_mgs_r: mkk_boxer_mgs_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_mgs_r: mkk_boxer_mgs_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_mgs_r: OFCRA_CC4_ti2_mkk_boxer_mgs_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_mgs_r: OFCRA_CC4_ti3_mkk_boxer_mgs_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_mgs_r: OFCRA_CC4_ti4_mkk_boxer_mgs_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_mgs_r: OFCRA_CC4_ti5_mkk_boxer_mgs_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 	class mkk_boxer_ranger_b: mkk_boxer_ranger_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_ranger_b: mkk_boxer_ranger_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_ranger_b: OFCRA_CC4_ti2_mkk_boxer_ranger_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_ranger_b: OFCRA_CC4_ti3_mkk_boxer_ranger_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_ranger_b: OFCRA_CC4_ti4_mkk_boxer_ranger_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_ranger_b: OFCRA_CC4_ti5_mkk_boxer_ranger_b
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 	class mkk_boxer_ranger_r: mkk_boxer_ranger_base
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_mkk_boxer_ranger_r: mkk_boxer_ranger_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_mkk_boxer_ranger_r: OFCRA_CC4_ti2_mkk_boxer_ranger_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+				class OpticsIn;
+				class Turrets;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_mkk_boxer_ranger_r: OFCRA_CC4_ti3_mkk_boxer_ranger_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide;
+					class Narrow;
+					class Narrow2x;
+					class Narrow3x;
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti5_mkk_boxer_ranger_r: OFCRA_CC4_ti4_mkk_boxer_ranger_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn;
+					};
+				};
+			};
+		};
+	};
+	class OFCRA_CC4_ti6_mkk_boxer_ranger_r: OFCRA_CC4_ti5_mkk_boxer_ranger_r
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+					class Narrow2x: Narrow2x
+					{
+					};
+					class Narrow3x: Narrow3x
+					{
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide;
+							class Narrow;
+							class Narrow2x;
+							class Narrow3x;
+						};
+					};
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_mkk_boxer_ifv_b: mkk_boxer_ifv_b
+	class OFCRA_CC4_B_mkk_boxer_ifv_b: OFCRA_CC4_ti6_mkk_boxer_ifv_b
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -72,16 +924,79 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_mkk_boxer_ifv_r: mkk_boxer_ifv_r
+	class OFCRA_CC4_O_mkk_boxer_ifv_r: OFCRA_CC4_ti6_mkk_boxer_ifv_r
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -97,16 +1012,79 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_B_mkk_boxer_mgs_b: mkk_boxer_mgs_b
+	class OFCRA_CC4_B_mkk_boxer_mgs_b: OFCRA_CC4_ti6_mkk_boxer_mgs_b
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -122,16 +1100,79 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_mkk_boxer_mgs_r: mkk_boxer_mgs_r
+	class OFCRA_CC4_O_mkk_boxer_mgs_r: OFCRA_CC4_ti6_mkk_boxer_mgs_r
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -147,16 +1188,79 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_B_mkk_boxer_ranger_b: mkk_boxer_ranger_b
+	class OFCRA_CC4_B_mkk_boxer_ranger_b: OFCRA_CC4_ti6_mkk_boxer_ranger_b
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -172,16 +1276,79 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_mkk_boxer_ranger_r: mkk_boxer_ranger_r
+	class OFCRA_CC4_O_mkk_boxer_ranger_r: OFCRA_CC4_ti6_mkk_boxer_ranger_r
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -197,11 +1364,74 @@ class CfgVehicles
 			"ofcra_cc4\boxer\boxer_1.paa",
 			"ofcra_cc4\boxer\boxer_2.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+					thermalMode[] = {};
+				};
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow: Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow2x: Narrow2x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+					class Narrow3x: Narrow3x
+					{
+						visionMode[] = {"Normal", "NVG"};
+						thermalMode[] = {};
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: OpticsIn
+						{
+							class Wide: Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow: Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow2x: Narrow2x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+							class Narrow3x: Narrow3x
+							{
+								visionMode[] = {"Normal", "NVG"};
+								thermalMode[] = {};
+							};
+						};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};

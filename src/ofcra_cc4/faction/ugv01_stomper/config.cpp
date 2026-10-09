@@ -30,9 +30,37 @@ class CfgVehicles
 	class UK3CB_CSAT_A_O_UGV_Armed: UK3CB_O_UGV_Armed_CSAT_A
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_UK3CB_CSAT_A_O_UGV_Armed: UK3CB_CSAT_A_O_UGV_Armed
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class OFCRA_CC4_ti3_UK3CB_CSAT_A_O_UGV_Armed: OFCRA_CC4_ti2_UK3CB_CSAT_A_O_UGV_Armed
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_UK3CB_CSAT_A_O_UGV_Armed: UK3CB_CSAT_A_O_UGV_Armed
+	class OFCRA_CC4_B_UK3CB_CSAT_A_O_UGV_Armed: OFCRA_CC4_ti3_UK3CB_CSAT_A_O_UGV_Armed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -49,16 +77,27 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_1_db.paa",
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_db.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal"};
+					thermalMode[] = {};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_UK3CB_CSAT_A_O_UGV_Armed: UK3CB_CSAT_A_O_UGV_Armed
+	class OFCRA_CC4_O_UK3CB_CSAT_A_O_UGV_Armed: OFCRA_CC4_ti3_UK3CB_CSAT_A_O_UGV_Armed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -75,16 +114,27 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_1_olive.paa",
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_olive.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal"};
+					thermalMode[] = {};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_B_UK3CB_CSAT_A_O_UGV_Armed_M2: UK3CB_CSAT_A_O_UGV_Armed
+	class OFCRA_CC4_B_UK3CB_CSAT_A_O_UGV_Armed_M2: OFCRA_CC4_ti3_UK3CB_CSAT_A_O_UGV_Armed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -101,16 +151,27 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_1_db.paa",
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_db.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal"};
+					thermalMode[] = {};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['uk3cb_AGS30_LR']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; }; if (!is3DEN) then { [_v, ['uk3cb_AGS30_LR']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_UK3CB_CSAT_A_O_UGV_Armed_M2: UK3CB_CSAT_A_O_UGV_Armed
+	class OFCRA_CC4_O_UK3CB_CSAT_A_O_UGV_Armed_M2: OFCRA_CC4_ti3_UK3CB_CSAT_A_O_UGV_Armed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -127,11 +188,22 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_1_olive.paa",
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_olive.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics
+				{
+					visionMode[] = {"Normal"};
+					thermalMode[] = {};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { [_v, ['uk3cb_AGS30_LR']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; }; if (!is3DEN) then { [_v, ['uk3cb_AGS30_LR']] spawn { params ['_v', '_rem']; sleep 1; if (!alive _v) exitWith {}; { private _w = _x; private _mags = compatibleMagazines _w; { private _t = _x; _v removeWeaponTurret [_w, _t]; { _v removeMagazinesTurret [_x, _t] } forEach _mags } forEach ([[-1]] + allTurrets [_v, false]) } forEach _rem; }; };";
 			};
 		};
 	};

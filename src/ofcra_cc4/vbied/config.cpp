@@ -2,7 +2,9 @@
 // The drone operator detonates it from the action menu ("Detonate charge") while connected to it.
 // The charge is SatchelCharge_Remote_Ammo_Scripted, the same ammo as OFCRA_SatchelCharge.
 // Blue spawns in the CC4 dark-brown skin, red in the CC4 olive skin. Both are in the CC4 factions (ofcra_cc4\faction).
-// Like every CC4 vehicle: no TFAR vehicle radio and no thermal (init event handler).
+// Like every CC4 vehicle: no TFAR vehicle radio and no thermals. Both come from the hidden base
+// OFCRA_CC4_NoTI_B/O_UGV_01_F (written by Build-CC4Faction.ps1 to ofcra_cc4\faction\_nothermal):
+// thermals removed in the config, plus the CC4 init event handler.
 class CfgPatches
 {
 	class ofcra_cc4_vbied
@@ -15,24 +17,18 @@ class CfgPatches
 		{
 			"A3_Drones_F_Soft_F_Gamma_UGV_01",
 			"ofcra_cc4_ugv01_stomper",
-			"ofcra_cc4_faction"
+			"ofcra_cc4_faction",
+			"ofcra_cc4_faction_nothermal"
 		};
 	};
 };
 
 class CfgVehicles
 {
-	class UGV_01_base_F;
-	class B_UGV_01_F: UGV_01_base_F
-	{
-		class EventHandlers;
-	};
-	class O_UGV_01_F: UGV_01_base_F
-	{
-		class EventHandlers;
-	};
+	class OFCRA_CC4_NoTI_B_UGV_01_F;
+	class OFCRA_CC4_NoTI_O_UGV_01_F;
 
-	class OFCRA_B_UGV_01_VBIED_F: B_UGV_01_F
+	class OFCRA_B_UGV_01_VBIED_F: OFCRA_CC4_NoTI_B_UGV_01_F
 	{
 		author = "OFCRA Wombat";
 		displayName = "OFCRA Stomper VBIED";
@@ -47,13 +43,6 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_db.paa"
 		};
 		textureList[] = {"OFCRA_CC4_db", 1};
-		class EventHandlers: EventHandlers
-		{
-			class ofcra_cc4
-			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
-			};
-		};
 		class UserActions
 		{
 			class OFCRA_VBIED_Detonate
@@ -72,7 +61,7 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_O_UGV_01_VBIED_F: O_UGV_01_F
+	class OFCRA_O_UGV_01_VBIED_F: OFCRA_CC4_NoTI_O_UGV_01_F
 	{
 		author = "OFCRA Wombat";
 		displayName = "OFCRA Stomper VBIED";
@@ -87,13 +76,6 @@ class CfgVehicles
 			"ofcra_cc4\ugv01_stomper\ugv01_stomper_2_olive.paa"
 		};
 		textureList[] = {"OFCRA_CC4_olive", 1};
-		class EventHandlers: EventHandlers
-		{
-			class ofcra_cc4
-			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
-			};
-		};
 		class UserActions
 		{
 			class OFCRA_VBIED_Detonate

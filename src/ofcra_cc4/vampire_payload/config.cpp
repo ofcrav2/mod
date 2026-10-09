@@ -7,8 +7,9 @@
 //  - one round every 5 s, like the OFCRA grenade drone (BombDemine_01_F reloadTime = 5)
 //  - the 1x 120mm and 1x TM-62M pylon options are hidden from the pylon menu
 //  - thermal removed from the camera (Normal + NV only)
-//  - more vulnerable to small arms: lower armour, and every bullet hit adds damage (hit / 25:
-//    about 3 hits from a 5.56, 2 from a 7.62)
+//  - small arms: the engine's own bullet damage is blocked (handleDamage) and every bullet instead adds
+//    its CfgAmmo hit / 54 (hitPart): 6 hits from a 5.56 (hit 9), about 4-5 from a 7.62, 2 from a .50.
+//    Explosions, crashes and fire still do the normal damage. Armour is MMM's own (1.5 / 5).
 //  - the original MMM_UAV_Vampire is hidden from the editor; place the three Baba Yaga presets instead
 //    (vampire_payload\faction, in the CC4 factions)
 class CfgPatches
@@ -127,8 +128,6 @@ class CfgVehicles
 		displayName = "Baba Yaga";
 		scope = 1;
 		scopeCurator = 0;
-		armor = 0.75;
-		armorStructural = 2;
 		class PilotCamera
 		{
 			class OpticsIn
@@ -149,7 +148,10 @@ class CfgVehicles
 		{
 			class OFCRA_SmallArms
 			{
-				hitPart = "(_this select 0) params ['_v','','','','','','_a']; if (alive _v && {(_a param [3, 0]) < 0.5}) then { _v setDamage (((damage _v) + ((_a param [0, 0]) / 25)) min 1) };";
+				// runs where the vehicle is local: bullets (non-explosive ammo) do no engine damage
+				handleDamage = "params ['_v', '_sel', '_dmg', '', '_ammo', '_hi']; if (_ammo != '' && {getNumber (configFile >> 'CfgAmmo' >> _ammo >> 'explosive') < 0.5}) then { if (_sel == '') then { damage _v } else { _v getHitIndex _hi } } else { _dmg }";
+				// runs on the shooter's machine, once per bullet: damage = ammo hit / 54 (setDamage is global)
+				hitPart = "(_this select 0) params ['_v','','','','','','_a']; if (alive _v && {(_a param [3, 0]) < 0.5}) then { _v setDamage (((damage _v) + ((_a param [0, 0]) / 54)) min 1) };";
 			};
 		};
 		class Components;

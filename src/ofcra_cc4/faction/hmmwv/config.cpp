@@ -30,13 +30,107 @@ class CfgVehicles
 	class UK3CB_AAF_B_M1025_TOW: UK3CB_B_M1025_TOW_AAF
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_UK3CB_AAF_B_M1025_TOW: UK3CB_AAF_B_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret;
+		};
+	};
+	class OFCRA_CC4_ti3_UK3CB_AAF_B_M1025_TOW: OFCRA_CC4_ti2_UK3CB_AAF_B_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_UK3CB_AAF_B_M1025_TOW: OFCRA_CC4_ti3_UK3CB_AAF_B_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide_TI;
+					class Narrow_TI;
+				};
+			};
+		};
 	};
 	class UK3CB_KRG_O_M1025_TOW: UK3CB_O_M1025_TOW_DES
 	{
 		class EventHandlers;
+		class Turrets;
+	};
+	class OFCRA_CC4_ti2_UK3CB_KRG_O_M1025_TOW: UK3CB_KRG_O_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret;
+		};
+	};
+	class OFCRA_CC4_ti3_UK3CB_KRG_O_M1025_TOW: OFCRA_CC4_ti2_UK3CB_KRG_O_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn;
+			};
+		};
+	};
+	class OFCRA_CC4_ti4_UK3CB_KRG_O_M1025_TOW: OFCRA_CC4_ti3_UK3CB_KRG_O_M1025_TOW
+	{
+		scope = 0;
+		scopeCurator = 0;
+		class EventHandlers: EventHandlers
+		{
+		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide_TI;
+					class Narrow_TI;
+				};
+			};
+		};
 	};
 
-	class OFCRA_CC4_B_UK3CB_AAF_B_M1025_TOW: UK3CB_AAF_B_M1025_TOW
+	class OFCRA_CC4_B_UK3CB_AAF_B_M1025_TOW: OFCRA_CC4_ti4_UK3CB_AAF_B_M1025_TOW
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -63,16 +157,35 @@ class CfgVehicles
 			"",
 			""
 		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide_TI: Wide_TI
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Narrow_TI: Narrow_TI
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
 
-	class OFCRA_CC4_O_UK3CB_KRG_O_M1025_TOW: UK3CB_KRG_O_M1025_TOW
+	class OFCRA_CC4_O_UK3CB_KRG_O_M1025_TOW: OFCRA_CC4_ti4_UK3CB_KRG_O_M1025_TOW
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -99,11 +212,30 @@ class CfgVehicles
 			"",
 			""
 		};
+		class Turrets: Turrets
+		{
+			class TOW_Turret: TOW_Turret
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide_TI: Wide_TI
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+					class Narrow_TI: Narrow_TI
+					{
+						visionMode[] = {"Normal"};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
 			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true;";
+				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
 			};
 		};
 	};
