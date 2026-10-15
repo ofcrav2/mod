@@ -63,7 +63,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment = "PylonRack_12Rnd_PG_missiles";
+						attachment = "";
 						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
 						priority = 5;
 						UIposition[] = {0.0599999986588955, 0.400000005960464};
@@ -112,7 +112,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment = "PylonRack_12Rnd_PG_missiles";
+						attachment = "";
 						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
 						priority = 5;
 						UIposition[] = {0.0599999986588955, 0.400000005960464};
