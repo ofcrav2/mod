@@ -29,128 +29,14 @@ class CfgVehicles
 	{
 		class EventHandlers;
 		class ViewOptics;
-		class Turrets;
-	};
-	class OFCRA_CC4_ti2_B_UAV_02_LM_G: B_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
-	};
-	class OFCRA_CC4_ti3_B_UAV_02_LM_G: OFCRA_CC4_ti2_B_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn;
-			};
-		};
-	};
-	class OFCRA_CC4_ti4_B_UAV_02_LM_G: OFCRA_CC4_ti3_B_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide;
-					class Medium;
-					class Narrow;
-				};
-			};
-		};
 	};
 	class O_UAV_02_LM_G: B_UAV_02_LM_G
 	{
 		class EventHandlers;
 		class ViewOptics;
-		class Turrets;
-	};
-	class OFCRA_CC4_ti2_O_UAV_02_LM_G: O_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
-	};
-	class OFCRA_CC4_ti3_O_UAV_02_LM_G: OFCRA_CC4_ti2_O_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn;
-			};
-		};
-	};
-	class OFCRA_CC4_ti4_O_UAV_02_LM_G: OFCRA_CC4_ti3_O_UAV_02_LM_G
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class ViewOptics: ViewOptics
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide;
-					class Medium;
-					class Narrow;
-				};
-			};
-		};
 	};
 
-	class OFCRA_CC4_B_B_UAV_02_LM_G: OFCRA_CC4_ti4_B_UAV_02_LM_G
+	class OFCRA_CC4_B_B_UAV_02_LM_G: B_UAV_02_LM_G
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -169,30 +55,6 @@ class CfgVehicles
 			visionMode[] = {"Normal", "NVG"};
 			thermalMode[] = {};
 		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-				};
-			};
-		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
@@ -202,7 +64,7 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_CC4_O_O_UAV_02_LM_G: OFCRA_CC4_ti4_O_UAV_02_LM_G
+	class OFCRA_CC4_O_O_UAV_02_LM_G: O_UAV_02_LM_G
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -220,30 +82,6 @@ class CfgVehicles
 		{
 			visionMode[] = {"Normal", "NVG"};
 			thermalMode[] = {};
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-				};
-			};
 		};
 		class EventHandlers: EventHandlers
 		{

@@ -28,57 +28,9 @@ class CfgVehicles
 	class UK3CB_TKA_U_O_Shahed: UK3CB_O_Shahed_TKA
 	{
 		class EventHandlers;
-		class Turrets;
-	};
-	class OFCRA_CC4_ti2_UK3CB_TKA_U_O_Shahed: UK3CB_TKA_U_O_Shahed
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
-	};
-	class OFCRA_CC4_ti3_UK3CB_TKA_U_O_Shahed: OFCRA_CC4_ti2_UK3CB_TKA_U_O_Shahed
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn;
-			};
-		};
-	};
-	class OFCRA_CC4_ti4_UK3CB_TKA_U_O_Shahed: OFCRA_CC4_ti3_UK3CB_TKA_U_O_Shahed
-	{
-		scope = 0;
-		scopeCurator = 0;
-		class EventHandlers: EventHandlers
-		{
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide;
-					class Medium;
-					class Narrow;
-				};
-			};
-		};
 	};
 
-	class OFCRA_CC4_B_UK3CB_TKA_U_O_Shahed: OFCRA_CC4_ti4_UK3CB_TKA_U_O_Shahed
+	class OFCRA_CC4_B_UK3CB_TKA_U_O_Shahed: UK3CB_TKA_U_O_Shahed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -92,30 +44,6 @@ class CfgVehicles
 		{
 			"ofcra_cc4\uav02_greyhawk\uav02_greyhawk_0_db.paa"
 		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-				};
-			};
-		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
@@ -125,7 +53,7 @@ class CfgVehicles
 		};
 	};
 
-	class OFCRA_CC4_O_UK3CB_TKA_U_O_Shahed: OFCRA_CC4_ti4_UK3CB_TKA_U_O_Shahed
+	class OFCRA_CC4_O_UK3CB_TKA_U_O_Shahed: UK3CB_TKA_U_O_Shahed
 	{
 		author = "OFCRA Wombat";
 		scope = 2;
@@ -138,30 +66,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] =
 		{
 			"ofcra_cc4\uav02_greyhawk\uav02_greyhawk_0_olive.paa"
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class OpticsIn: OpticsIn
-				{
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-				};
-			};
 		};
 		class EventHandlers: EventHandlers
 		{

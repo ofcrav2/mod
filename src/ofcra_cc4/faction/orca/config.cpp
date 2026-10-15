@@ -67,6 +67,7 @@ class CfgVehicles
 						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
 						priority = 5;
 						UIposition[] = {0.0599999986588955, 0.400000005960464};
+						turret[] = {};
 					};
 					class PylonRight1
 					{
@@ -75,6 +76,7 @@ class CfgVehicles
 						priority = 5;
 						UIposition[] = {0.589999973773956, 0.400000005960464};
 						mirroredMissilePos = 1;
+						turret[] = {};
 					};
 				};
 			};
@@ -116,6 +118,7 @@ class CfgVehicles
 						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
 						priority = 5;
 						UIposition[] = {0.0599999986588955, 0.400000005960464};
+						turret[] = {};
 					};
 					class PylonRight1
 					{
@@ -124,6 +127,7 @@ class CfgVehicles
 						priority = 5;
 						UIposition[] = {0.589999973773956, 0.400000005960464};
 						mirroredMissilePos = 1;
+						turret[] = {};
 					};
 				};
 			};

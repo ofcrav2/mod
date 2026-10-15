@@ -31,7 +31,6 @@ class CfgVehicles
 	{
 		class EventHandlers;
 		class Components;
-		class PilotCamera;
 		class Turrets;
 	};
 	class OFCRA_CC4_ti2_RHS_Ka52_vvsc: RHS_Ka52_vvsc
@@ -43,10 +42,6 @@ class CfgVehicles
 		};
 		class Components: Components
 		{
-		};
-		class PilotCamera: PilotCamera
-		{
-			class OpticsIn;
 		};
 		class Turrets: Turrets
 		{
@@ -62,15 +57,6 @@ class CfgVehicles
 		};
 		class Components: Components
 		{
-		};
-		class PilotCamera: PilotCamera
-		{
-			class OpticsIn: OpticsIn
-			{
-				class Wide;
-				class Medium;
-				class Narrow;
-			};
 		};
 		class Turrets: Turrets
 		{
@@ -90,21 +76,6 @@ class CfgVehicles
 		class Components: Components
 		{
 		};
-		class PilotCamera: PilotCamera
-		{
-			class OpticsIn: OpticsIn
-			{
-				class Wide: Wide
-				{
-				};
-				class Medium: Medium
-				{
-				};
-				class Narrow: Narrow
-				{
-				};
-			};
-		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -114,9 +85,6 @@ class CfgVehicles
 					class Samshin_WFOV;
 					class Samshin_NFOV;
 					class Samshin_NFOV_Stabilised;
-					class Wide;
-					class Medium;
-					class Narrow;
 				};
 			};
 		};
@@ -165,7 +133,7 @@ class CfgVehicles
 						maxweight = 450;
 						priority = 2;
 						UIposition[] = {0.583999991416931, 0.349999994039536};
-						turret[] = {0};
+						turret[] = {};
 					};
 					class pylon4
 					{
@@ -174,7 +142,7 @@ class CfgVehicles
 						maxweight = 450;
 						priority = 2;
 						UIposition[] = {0.0850000008940697, 0.349999994039536};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 3;
 					};
 					class cmDispenser
@@ -184,28 +152,8 @@ class CfgVehicles
 						maxweight = 800;
 						priority = 1;
 						UIposition[] = {0.330000013113022, 0};
+						turret[] = {};
 					};
-				};
-			};
-		};
-		class PilotCamera: PilotCamera
-		{
-			class OpticsIn: OpticsIn
-			{
-				class Wide: Wide
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
-				};
-				class Medium: Medium
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
-				};
-				class Narrow: Narrow
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
 				};
 			};
 		};
@@ -228,21 +176,6 @@ class CfgVehicles
 					class Samshin_NFOV_Stabilised: Samshin_NFOV_Stabilised
 					{
 						visionMode[] = {"Normal"};
-						thermalMode[] = {};
-					};
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
 						thermalMode[] = {};
 					};
 				};
@@ -300,7 +233,7 @@ class CfgVehicles
 						maxweight = 450;
 						priority = 2;
 						UIposition[] = {0.583999991416931, 0.349999994039536};
-						turret[] = {0};
+						turret[] = {};
 					};
 					class pylon4
 					{
@@ -309,7 +242,7 @@ class CfgVehicles
 						maxweight = 450;
 						priority = 2;
 						UIposition[] = {0.0850000008940697, 0.349999994039536};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 3;
 					};
 					class cmDispenser
@@ -319,28 +252,8 @@ class CfgVehicles
 						maxweight = 800;
 						priority = 1;
 						UIposition[] = {0.330000013113022, 0};
+						turret[] = {};
 					};
-				};
-			};
-		};
-		class PilotCamera: PilotCamera
-		{
-			class OpticsIn: OpticsIn
-			{
-				class Wide: Wide
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
-				};
-				class Medium: Medium
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
-				};
-				class Narrow: Narrow
-				{
-					visionMode[] = {"Normal", "NVG"};
-					thermalMode[] = {};
 				};
 			};
 		};
@@ -363,21 +276,6 @@ class CfgVehicles
 					class Samshin_NFOV_Stabilised: Samshin_NFOV_Stabilised
 					{
 						visionMode[] = {"Normal"};
-						thermalMode[] = {};
-					};
-					class Wide: Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Medium: Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow: Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
 						thermalMode[] = {};
 					};
 				};

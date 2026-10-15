@@ -668,7 +668,6 @@ class CfgVehicles
 					class Wide;
 					class Narrow;
 					class Narrow2x;
-					class Narrow3x;
 				};
 				class Turrets: Turrets
 				{
@@ -700,9 +699,6 @@ class CfgVehicles
 					{
 					};
 					class Narrow2x: Narrow2x
-					{
-					};
-					class Narrow3x: Narrow3x
 					{
 					};
 				};
@@ -739,9 +735,6 @@ class CfgVehicles
 					{
 					};
 					class Narrow2x: Narrow2x
-					{
-					};
-					class Narrow3x: Narrow3x
 					{
 					};
 				};
@@ -814,7 +807,6 @@ class CfgVehicles
 					class Wide;
 					class Narrow;
 					class Narrow2x;
-					class Narrow3x;
 				};
 				class Turrets: Turrets
 				{
@@ -846,9 +838,6 @@ class CfgVehicles
 					{
 					};
 					class Narrow2x: Narrow2x
-					{
-					};
-					class Narrow3x: Narrow3x
 					{
 					};
 				};
@@ -885,9 +874,6 @@ class CfgVehicles
 					{
 					};
 					class Narrow2x: Narrow2x
-					{
-					};
-					class Narrow3x: Narrow3x
 					{
 					};
 				};
@@ -1302,11 +1288,6 @@ class CfgVehicles
 						visionMode[] = {"Normal", "NVG"};
 						thermalMode[] = {};
 					};
-					class Narrow3x: Narrow3x
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
 				};
 				class Turrets: Turrets
 				{
@@ -1386,11 +1367,6 @@ class CfgVehicles
 						thermalMode[] = {};
 					};
 					class Narrow2x: Narrow2x
-					{
-						visionMode[] = {"Normal", "NVG"};
-						thermalMode[] = {};
-					};
-					class Narrow3x: Narrow3x
 					{
 						visionMode[] = {"Normal", "NVG"};
 						thermalMode[] = {};

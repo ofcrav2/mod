@@ -56,6 +56,7 @@ class CfgVehicles
 						priority = 2;
 						UIposition[] = {0.625, 0.419999986886978};
 						bay = -1;
+						turret[] = {};
 					};
 					class pylon2
 					{
@@ -65,6 +66,7 @@ class CfgVehicles
 						priority = 1;
 						UIposition[] = {0.555000007152557, 0.370000004768372};
 						bay = -1;
+						turret[] = {};
 					};
 					class pylon3
 					{
@@ -75,6 +77,7 @@ class CfgVehicles
 						UIposition[] = {0.109999999403954, 0.370000004768372};
 						bay = -1;
 						mirroredMissilePos = 2;
+						turret[] = {};
 					};
 					class pylon4
 					{
@@ -85,6 +88,7 @@ class CfgVehicles
 						UIposition[] = {0.0399999991059303, 0.419999986886978};
 						bay = -1;
 						mirroredMissilePos = 1;
+						turret[] = {};
 					};
 					class cmDispenser
 					{
@@ -93,6 +97,7 @@ class CfgVehicles
 						maxweight = 800;
 						priority = 1;
 						UIposition[] = {0.330000013113022, 0};
+						turret[] = {};
 					};
 				};
 			};
@@ -131,6 +136,7 @@ class CfgVehicles
 						priority = 2;
 						UIposition[] = {0.625, 0.419999986886978};
 						bay = -1;
+						turret[] = {};
 					};
 					class pylon2
 					{
@@ -140,6 +146,7 @@ class CfgVehicles
 						priority = 1;
 						UIposition[] = {0.555000007152557, 0.370000004768372};
 						bay = -1;
+						turret[] = {};
 					};
 					class pylon3
 					{
@@ -150,6 +157,7 @@ class CfgVehicles
 						UIposition[] = {0.109999999403954, 0.370000004768372};
 						bay = -1;
 						mirroredMissilePos = 2;
+						turret[] = {};
 					};
 					class pylon4
 					{
@@ -160,6 +168,7 @@ class CfgVehicles
 						UIposition[] = {0.0399999991059303, 0.419999986886978};
 						bay = -1;
 						mirroredMissilePos = 1;
+						turret[] = {};
 					};
 					class cmDispenser
 					{
@@ -168,6 +177,7 @@ class CfgVehicles
 						maxweight = 800;
 						priority = 1;
 						UIposition[] = {0.330000013113022, 0};
+						turret[] = {};
 					};
 				};
 			};

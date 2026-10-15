@@ -160,7 +160,7 @@ class CfgVehicles
 						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
 						priority = 3;
 						UIposition[] = {0.465000003576279, 0.379999995231628};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 2;
 						name = "Tiger_Attack_01";
 					};
@@ -280,7 +280,7 @@ class CfgVehicles
 						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
 						priority = 3;
 						UIposition[] = {0.465000003576279, 0.379999995231628};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 2;
 						name = "Tiger_Attack_01";
 					};
