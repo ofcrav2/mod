@@ -156,8 +156,8 @@ class CfgVehicles
 					};
 					class PylonRight2
 					{
-						attachment = "";
-						hardpoints[] = {"BWA3_Inner_Pylon"};
+						attachment = "PylonWeapon_2000Rnd_65x39_belt";
+						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
 						priority = 3;
 						UIposition[] = {0.465000003576279, 0.379999995231628};
 						turret[] = {0};
@@ -276,8 +276,8 @@ class CfgVehicles
 					};
 					class PylonRight2
 					{
-						attachment = "";
-						hardpoints[] = {"BWA3_Inner_Pylon"};
+						attachment = "PylonWeapon_2000Rnd_65x39_belt";
+						hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_tiger"};
 						priority = 3;
 						UIposition[] = {0.465000003576279, 0.379999995231628};
 						turret[] = {0};
@@ -335,12 +335,17 @@ class CfgMagazines
 {
 	class 7Rnd_Rocket_04_AP_F;
 	class rhs_mag_upk23_ofz;
+	class 2000Rnd_65x39_Belt_Tracer_Green_Splash;
 	class PylonRack_7Rnd_Rocket_04_AP_F: 7Rnd_Rocket_04_AP_F
 	{
-		hardpoints[] = {"B_MISSILE_PYLON", "B_SHIEKER", "OFCRA_CC4_tiger"};
+		hardpoints[] = {"B_MISSILE_PYLON", "B_SHIEKER", "OFCRA_CC4_ka52", "OFCRA_CC4_tiger"};
 	};
 	class rhs_mag_upk23_btz: rhs_mag_upk23_ofz
 	{
-		hardpoints[] = {"RHS_HP_UPK23", "OFCRA_CC4_tiger"};
+		hardpoints[] = {"RHS_HP_UPK23", "OFCRA_CC4_ka52", "OFCRA_CC4_tiger"};
+	};
+	class PylonWeapon_2000Rnd_65x39_belt: 2000Rnd_65x39_Belt_Tracer_Green_Splash
+	{
+		hardpoints[] = {"I_ORCA_RIGHT_PYLON", "OFCRA_CC4_ka52", "OFCRA_CC4_tiger"};
 	};
 };

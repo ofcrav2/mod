@@ -10,9 +10,7 @@ class CfgPatches
 		units[] =
 		{
 			"OFCRA_CC4_B_UK3CB_ION_B_Urban_Orca_Armed_AT",
-			"OFCRA_CC4_O_UK3CB_CSAT_A_O_Orca_Armed_AT",
-			"OFCRA_CC4_B_UK3CB_ION_B_Urban_Orca",
-			"OFCRA_CC4_O_UK3CB_CSAT_A_O_Orca"
+			"OFCRA_CC4_O_UK3CB_CSAT_A_O_Orca_Armed_AT"
 		};
 		weapons[] = {};
 		requiredAddons[] =
@@ -20,6 +18,7 @@ class CfgPatches
 			"ofcra_cc4_faction",
 			"ofcra_cc4_orca",
 			"UK3CB_Factions_ION_B_Urban",
+			"bwa3_pylon",
 			"UK3CB_Factions_CSAT_A_O"
 		};
 	};
@@ -27,25 +26,17 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class UK3CB_O_Orca_CSAT_A;
 	class UK3CB_O_Orca_Armed_AT_CSAT_A;
-	class UK3CB_B_Orca_ION;
 	class UK3CB_B_Orca_Armed_AT_ION;
-	class UK3CB_CSAT_A_O_Orca: UK3CB_O_Orca_CSAT_A
-	{
-		class EventHandlers;
-	};
 	class UK3CB_CSAT_A_O_Orca_Armed_AT: UK3CB_O_Orca_Armed_AT_CSAT_A
 	{
 		class EventHandlers;
-	};
-	class UK3CB_ION_B_Urban_Orca: UK3CB_B_Orca_ION
-	{
-		class EventHandlers;
+		class Components;
 	};
 	class UK3CB_ION_B_Urban_Orca_Armed_AT: UK3CB_B_Orca_Armed_AT_ION
 	{
 		class EventHandlers;
+		class Components;
 	};
 
 	class OFCRA_CC4_B_UK3CB_ION_B_Urban_Orca_Armed_AT: UK3CB_ION_B_Urban_Orca_Armed_AT
@@ -61,6 +52,31 @@ class CfgVehicles
 		hiddenSelectionsTextures[] =
 		{
 			"ofcra_cc4\orca\orca_0.paa"
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				UIPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "PylonRack_12Rnd_PG_missiles";
+						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
+						priority = 5;
+						UIposition[] = {0.0599999986588955, 0.400000005960464};
+					};
+					class PylonRight1
+					{
+						attachment = "Pylonweapon_400Rnd_127x99";
+						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_L", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR", "OFCRA_CC4_orca"};
+						priority = 5;
+						UIposition[] = {0.589999973773956, 0.400000005960464};
+						mirroredMissilePos = 1;
+					};
+				};
+			};
 		};
 		class EventHandlers: EventHandlers
 		{
@@ -85,6 +101,31 @@ class CfgVehicles
 		{
 			"ofcra_cc4\orca\orca_0.paa"
 		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				UIPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "PylonRack_12Rnd_PG_missiles";
+						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_R", "UK3CB_FACTIONS_Cessna_M134_PYLON_GUNPOD", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR"};
+						priority = 5;
+						UIposition[] = {0.0599999986588955, 0.400000005960464};
+					};
+					class PylonRight1
+					{
+						attachment = "Pylonweapon_400Rnd_127x99";
+						hardpoints[] = {"O_SKYFIRE", "DAGR", "DAR", "RHS_HP_MELB", "RHS_HP_MELB_L", "20MM_TWIN_CANNON", "SCALPEL_1RND_EJECTOR", "B_ASRRAM_EJECTOR", "OFCRA_CC4_orca"};
+						priority = 5;
+						UIposition[] = {0.589999973773956, 0.400000005960464};
+						mirroredMissilePos = 1;
+					};
+				};
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			class ofcra_cc4
@@ -93,50 +134,13 @@ class CfgVehicles
 			};
 		};
 	};
+};
 
-	class OFCRA_CC4_B_UK3CB_ION_B_Urban_Orca: UK3CB_ION_B_Urban_Orca
+class CfgMagazines
+{
+	class BWA3_400Rnd_127x99_mag;
+	class Pylonweapon_400Rnd_127x99: BWA3_400Rnd_127x99_mag
 	{
-		author = "OFCRA Wombat";
-		scope = 2;
-		scopeCurator = 2;
-		side = 1;
-		faction = "OFCRA_CC4_B";
-		crew = "B_Helipilot_F";
-		typicalCargo[] = {"B_Helipilot_F"};
-		textureList[] = {"OFCRA_CC4", 1};
-		hiddenSelectionsTextures[] =
-		{
-			"ofcra_cc4\orca\orca_0.paa"
-		};
-		class EventHandlers: EventHandlers
-		{
-			class ofcra_cc4
-			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
-			};
-		};
-	};
-
-	class OFCRA_CC4_O_UK3CB_CSAT_A_O_Orca: UK3CB_CSAT_A_O_Orca
-	{
-		author = "OFCRA Wombat";
-		scope = 2;
-		scopeCurator = 2;
-		side = 0;
-		faction = "OFCRA_CC4_O";
-		crew = "O_helipilot_F";
-		typicalCargo[] = {"O_helipilot_F"};
-		textureList[] = {"OFCRA_CC4", 1};
-		hiddenSelectionsTextures[] =
-		{
-			"ofcra_cc4\orca\orca_0.paa"
-		};
-		class EventHandlers: EventHandlers
-		{
-			class ofcra_cc4
-			{
-				init = "params ['_v']; _v setVariable ['tf_hasRadio', false, false]; _v disableTIEquipment true; if (!is3DEN) then { _v spawn { sleep 1; _this disableTIEquipment true; sleep 5; _this disableTIEquipment true; }; };";
-			};
-		};
+		hardpoints[] = {"BWA3_Inner_Pylon", "OFCRA_CC4_orca", "OFCRA_CC4_uh60"};
 	};
 };
