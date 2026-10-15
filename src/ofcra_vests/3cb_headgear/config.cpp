@@ -1,42 +1,14 @@
-// OFCRA armoured copy of the 3CB black beanie (head armor 6, passThrough 0.5, mass 20)
+// Empty on purpose: the armoured copy of UK3CB_H_Beanie_02_BLK was removed (that 3CB class isn't in the game).
+// The black beanie is now OFCRA_JCA_H_Beanie_01_headset_black_F in ofcra_vests\jca. This folder can be deleted.
 class CfgPatches
 {
 	class ofcra_vests_3cb_headgear {
 		name = "ofcra_vests_3cb_headgear";
 		requiredVersion = 1.98;
 		author = "OFCRA Wombat";
-		skipWhenMissingDependencies=1;
-		requiredAddons[] = {
-			"ofcra_vests",
-			"UK3CB_Factions_Headgear"
-		};
+		requiredAddons[] = {"ofcra_vests"};
 		units[] = {};
-		weapons[] = {"OFCRA_UK3CB_H_Beanie_02_BLK"};
+		weapons[] = {};
 		ammo[]={};
-	};
-};
-
-class cfgWeapons
-{
-	class rhs_beanie;
-	class UK3CB_H_Beanie_02_BLK : rhs_beanie {
-		class ItemInfo;
-	};
-	class OFCRA_UK3CB_H_Beanie_02_BLK : UK3CB_H_Beanie_02_BLK
-	{
-		author="wombat";
-		displayName="OFCRA Beanie (Black)";
-		nameSound = "";
-		class ItemInfo : ItemInfo {
-			mass= 20;
-			class HitpointsProtectionInfo {
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=6;
-					passThrough=0.5;
-				};
-			};
-		};
 	};
 };

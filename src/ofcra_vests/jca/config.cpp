@@ -15,7 +15,8 @@ class CfgPatches
 			"OFCRA_JCA_H_Beanie_01_headset_sand_F",
 			"OFCRA_JCA_H_balaclava_01_headset_sand_F",
 			"OFCRA_JCA_H_Cap_01_headset_sand_F",
-			"OFCRA_JCA_H_Cap_01_headset_black_F"
+			"OFCRA_JCA_H_Cap_01_headset_black_F",
+			"OFCRA_JCA_H_Beanie_01_headset_black_F"
 		};
 		ammo[]={};
 	};
@@ -31,6 +32,27 @@ class cfgWeapons
 	{
 		author="wombat";
 		displayName="OFCRA Beanie (Sand, Headset)";
+		nameSound = "";
+		class ItemInfo : ItemInfo {
+			mass= 20;
+			class HitpointsProtectionInfo {
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		};
+	};
+
+	class JCA_H_Beanie_01_headset_black_F : JCA_H_Beanie_01_headset_base_F {
+		class ItemInfo;
+	};
+	class OFCRA_JCA_H_Beanie_01_headset_black_F : JCA_H_Beanie_01_headset_black_F
+	{
+		author="wombat";
+		displayName="OFCRA Beanie (Black, Headset)";
 		nameSound = "";
 		class ItemInfo : ItemInfo {
 			mass= 20;
