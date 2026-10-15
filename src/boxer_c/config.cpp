@@ -5079,7 +5079,8 @@ class Mode_FullAuto;
 class Mode_SemiAuto;
 class cfgWeapons
 {
-	class cannon_120mm
+	class CannonCore;
+	class cannon_120mm: CannonCore
 	{
 		class player;
 		class close;
@@ -5468,7 +5469,7 @@ class CfgMagazines
 	};
 	class lem_smoke_b_8rnd_mag: rhs_mag_3d17_12
 	{
-		count=8
+		count=8;
 	};
 	class lem_smoke_b_18rnd_mag: rhs_mag_3d17_12
 	{
