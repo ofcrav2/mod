@@ -50,7 +50,7 @@ class CfgVehicles
 				{
 					class pylon1
 					{
-						attachment = "rhs_mag_fueltank_UH60";
+						attachment = "";
 						hardpoints[] = {"RHS_HP_HELLFIRE_RACK", "RHS_HP_FFAR_ARMY", "RHS_HP_Fuel_ARMY", "RHS_HP_ATAS"};
 						maxweight = 1200;
 						priority = 2;
@@ -78,7 +78,7 @@ class CfgVehicles
 					};
 					class pylon4
 					{
-						attachment = "rhs_mag_fueltank_UH60";
+						attachment = "";
 						hardpoints[] = {"RHS_HP_HELLFIRE_RACK", "RHS_HP_FFAR_ARMY", "RHS_HP_Fuel_ARMY", "RHS_HP_ATAS"};
 						maxweight = 1200;
 						priority = 2;
@@ -125,7 +125,7 @@ class CfgVehicles
 				{
 					class pylon1
 					{
-						attachment = "rhs_mag_fueltank_UH60";
+						attachment = "";
 						hardpoints[] = {"RHS_HP_HELLFIRE_RACK", "RHS_HP_FFAR_ARMY", "RHS_HP_Fuel_ARMY", "RHS_HP_ATAS"};
 						maxweight = 1200;
 						priority = 2;
@@ -153,7 +153,7 @@ class CfgVehicles
 					};
 					class pylon4
 					{
-						attachment = "rhs_mag_fueltank_UH60";
+						attachment = "";
 						hardpoints[] = {"RHS_HP_HELLFIRE_RACK", "RHS_HP_FFAR_ARMY", "RHS_HP_Fuel_ARMY", "RHS_HP_ATAS"};
 						maxweight = 1200;
 						priority = 2;

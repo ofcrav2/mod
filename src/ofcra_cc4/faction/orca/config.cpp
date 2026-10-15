@@ -48,6 +48,7 @@ class CfgVehicles
 		faction = "OFCRA_CC4_B";
 		crew = "B_Helipilot_F";
 		typicalCargo[] = {"B_Helipilot_F"};
+		displayName = "PO-30 Orca (.50 cal)";
 		textureList[] = {"OFCRA_CC4", 1};
 		hiddenSelectionsTextures[] =
 		{
@@ -96,6 +97,7 @@ class CfgVehicles
 		faction = "OFCRA_CC4_O";
 		crew = "O_helipilot_F";
 		typicalCargo[] = {"O_helipilot_F"};
+		displayName = "PO-30 Orca (.50 cal)";
 		textureList[] = {"OFCRA_CC4", 1};
 		hiddenSelectionsTextures[] =
 		{
