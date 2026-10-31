@@ -53,11 +53,13 @@ class CfgWeapons
 {
 
 	class CannonCore;
+	// OFCRA shells only ("=" replaces BWMod's list)
 	class BWA3_RH155mm_AMOS: CannonCore
 	{
-		magazines[]+={
-			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32",	"OFCRA_SMOKE_MAGAZINE"
+		magazines[]={
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
 		};
+		magazineWell[]={};
 
 		modes[]=
 		{
@@ -123,12 +125,18 @@ class CfgVehicles
 
 	class Tank;
 	class Tank_F: Tank {
-		class Turrets;
+		class Turrets {
+			class MainTurret;
+		};
 	}
+	// both BWMod PzH 2000s inherit this: OFCRA shells only
 	class BWA3_Panzerhaubitze2000_base : Tank_F{
 		class Turrets : Turrets {
-			class MainTurret;
-		}
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"OFCRA_ARTILLERY_HE_MAG_32","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE","OFCRA_SMOKE_MAGAZINE"};
+			};
+		};
 	}
 
 	class BWA3_Panzerhaubitze2000_Fleck: BWA3_Panzerhaubitze2000_base{};

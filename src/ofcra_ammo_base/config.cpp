@@ -298,7 +298,7 @@ class CfgWeapons
 	class mortar_155mm_AMOS: CannonCore
 	{
 		magazines[]+={
-			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_30"
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32"
 		};
 		class Single1: Mode_SemiAuto
 		{

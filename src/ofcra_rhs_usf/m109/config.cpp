@@ -30,11 +30,13 @@ class CfgWeapons
 	{
 		class Single1;
 	};
+	// OFCRA shells only: "=" replaces RHS's list and the empty magazineWell stops RHS / ACE shells
 	class rhs_weap_m284: cannon_155mm
 	{
-		magazines[]+={
-			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32",	"OFCRA_SMOKE_MAGAZINE"
+		magazines[]={
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
 		};
+		magazineWell[]={};
 
 		modes[]=
 		{
@@ -84,6 +86,15 @@ class CfgWeapons
 		};
 	};
 
+	// M119 105mm (RHS USAF, 3CB)
+	class RHS_weap_M119: mortar_155mm_AMOS
+	{
+		magazines[]={
+			"OFCRA_ARTILLERY_HE_MAG_SINGLE","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE"
+		};
+		magazineWell[]={};
+	};
+
 	class OFCRA_weap_m284: rhs_weap_m284
 	{
 		displayName = "OFCRA 155mm Howitzer"; 
@@ -96,16 +107,103 @@ class CfgWeapons
 
 class CfgVehicles
 {
-	class MBT_01_base_F;
+	// declarations the M109's turrets / optics inherit from (the same ones RHS's own M109 config uses)
+	class LandVehicle;
+	class Tank: LandVehicle
+	{
+		class NewTurret;
+	};
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+		class ViewOptics;
+	};
+	class MBT_01_base_F: Tank_F
+	{
+	};
 	class MBT_01_arty_base_F: MBT_01_base_F
 	{
-		class Turrets;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+					};
+				};
+			};
+		};
 	};
+	// every faction's M109 (RHS, 3CB, ...) inherits this: OFCRA shells only
 	class rhsusf_m109tank_base : MBT_01_arty_base_F
 	{
 		class Turrets : Turrets {
-			class MainTurret;
-		}
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"OFCRA_ARTILLERY_HE_MAG_32","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE","OFCRA_SMOKE_MAGAZINE"};
+
+				// Gunner sights: RHS's Wide / Medium / Narrow (fixed to the turret, not the gun's elevation), then two
+				// looking along the barrel (9x and 18x) - like the 2S1's OP5 sight. Config can only use points that exist
+				// in the model, so the camera sits on the gun's recoil axis (recoilhlaven_axis, 1.6 m forward of the
+				// trunnion, past the turret front) looking at the muzzle (usti hlavne3): both move with the gun's elevation.
+				// (konec hlavne3 is the trunnion, inside the turret - that's what blocked the first try.)
+				// No thermals on any M109 sight: the gunner's Wide (Medium / Narrow and the barrel sights inherit it)
+				// and the commander's sight
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewOptics: ViewOptics
+						{
+							visionMode[]={"Normal"};
+							thermalMode[]={};
+						};
+					};
+				};
+				class OpticsIn
+				{
+					class Wide: ViewOptics
+					{
+						visionMode[]={"Normal"};
+						thermalMode[]={};
+					};
+					class Medium;
+					class Narrow;
+					// barrel sights at high zoom only - the camera is inside the barrel, so at lower zoom the barrel and
+					// muzzle brake fill the view: 9x is clear top to bottom, 18x completely clear (zoom = 0.25 / fov:
+					// RHS's Wide 0.8x, Medium 3.6x, Narrow 8.9x)
+					class Barrel_9x: Narrow
+					{
+						opticsDisplayName="BARREL 9x";
+						camPos="recoilhlaven_axis";
+						camDir="usti hlavne3";
+						initFov=0.0278;
+						minFov=0.0278;
+						maxFov=0.0278;
+					};
+					class Barrel_18x: Narrow
+					{
+						opticsDisplayName="BARREL 18x";
+						camPos="recoilhlaven_axis";
+						camDir="usti hlavne3";
+						initFov=0.0139;
+						minFov=0.0139;
+						maxFov=0.0139;
+					};
+				};
+			};
+		};
 
 
 		class textureSources
@@ -166,6 +264,32 @@ class CfgVehicles
 
 
 	};
+	// M119 105mm: every faction's M119 inherits this
+	class StaticWeapon: LandVehicle
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class StaticCannon: StaticWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class RHS_M119_base: StaticCannon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"OFCRA_ARTILLERY_HE_MAG_32","OFCRA_ARTILLERY_HE_MAG_32","OFCRA_SMOKE_MAGAZINE","OFCRA_SMOKE_MAGAZINE"};
+			};
+		};
+	};
+
 	class rhsusf_m109_usarmy: rhsusf_m109tank_base{};
 	class rhsusf_m109d_usarmy: rhsusf_m109_usarmy{};
 	class OFCRA_m109tank: rhsusf_m109_usarmy

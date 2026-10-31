@@ -92,20 +92,21 @@ class CfgVehicles
 	class TFAR_rt1523g_big;
 	class rhs_r148;
 
+//~30Kg
 	class UK3CB_B_Backpack_Pocket: B_Bergen_Base              // Small Pack (Tan)
 	{
-		maximumLoad = 4410;
+		maximumLoad = 661.5;
 	};
 	class UK3CB_B_Invisible: B_Bergen_Base                    // Backpack (invisible)
 	{
-		maximumLoad = 4410;
+		maximumLoad = 661.5;
 	};
 	class UK3CB_B_B_Backpack_Radio_Chem: TFAR_rt1523g_big     // Small Radio Pack RT1523g (Tan)
 	{
-		maximumLoad = 4410;
+		maximumLoad = 661.5;
 	};
 	class UK3CB_PLM_O_B_R148_RADIO: rhs_r148                  // R-148 Radio MR3000
 	{
-		maximumLoad = 4410;
+		maximumLoad = 661.5;
 	};
 };
