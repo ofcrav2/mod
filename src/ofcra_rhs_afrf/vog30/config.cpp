@@ -51,6 +51,25 @@ class CfgAmmo
 		indirectHitRange=3.466; // OFCRA smaller grenade standard (VOG17m is smaller caliber)
 		submunitionAmmo="";
 	};
+
+	// OFCRA copies for the AGS-30 magazines: the real AGS-30 muzzle speed (185 m/s on the magazines) and drag
+	// for its real max range (~1700 m; RHS's -0.001 only reached ~1150 m).
+	// The RHS ammo above is left as is (the MMM GUV-1 pod still uses rhs_ammo_VOG17m).
+	class OFCRA_ammo_VOG30: rhs_ammo_VOG30
+	{
+		airFriction=-0.00046;
+		typicalSpeed=185;       // = the magazines' initSpeed
+	};
+	class OFCRA_ammo_GPD30: rhs_ammo_GPD30
+	{
+		airFriction=-0.00046;
+		typicalSpeed=185;       // = the magazines' initSpeed
+	};
+	class OFCRA_ammo_VOG17m: rhs_ammo_VOG17m
+	{
+		airFriction=-0.00046;
+		typicalSpeed=185;       // = the magazines' initSpeed
+	};
 };
 
 
@@ -61,15 +80,21 @@ class CfgMagazines
 	{
 		displayName="OFCRA VOG30";
 		displayNameShort="OFCRA VOG30";
+		ammo="OFCRA_ammo_VOG30";
+		initSpeed=185;          // see OFCRA_ammo_VOG30
 	};
 	class RHS_mag_GPD30_30: RHS_mag_VOG30_30
 	{
 		displayName="OFCRA GPD30";
 		displayNameShort="OFCRA GPD30";
+		ammo="OFCRA_ammo_GPD30";
+		initSpeed=185;
 	};
 	class RHS_mag_VOG17m_30: RHS_mag_VOG30_30
 	{
 		displayName="OFCRA VOG17m";
 		displayNameShort="OFCRA VOG17m";
+		ammo="OFCRA_ammo_VOG17m";
+		initSpeed=185;
 	};
 };
