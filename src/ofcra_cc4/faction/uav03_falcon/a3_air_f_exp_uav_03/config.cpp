@@ -130,25 +130,25 @@ class CfgVehicles
 						maxweight = 300;
 						priority = 5;
 						UIposition[] = {0.0500000007450581, 0.300000011920929};
-						turret[] = {0};
+						turret[] = {};
 					};
 					class Pylons2
-					{
-						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
-						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
-						maxweight = 300;
-						priority = 4;
-						UIposition[] = {0.100000001490116, 0.379999995231628};
-						turret[] = {0};
-					};
-					class Pylons3
 					{
 						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
 						maxweight = 300;
 						priority = 4;
+						UIposition[] = {0.100000001490116, 0.379999995231628};
+						turret[] = {};
+					};
+					class Pylons3
+					{
+						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.529999971389771, 0.379999995231628};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 2;
 					};
 					class Pylons4
@@ -158,7 +158,7 @@ class CfgVehicles
 						maxweight = 300;
 						priority = 5;
 						UIposition[] = {0.579999983310699, 0.300000011920929};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 1;
 					};
 				};
@@ -227,25 +227,25 @@ class CfgVehicles
 						maxweight = 300;
 						priority = 5;
 						UIposition[] = {0.0500000007450581, 0.300000011920929};
-						turret[] = {0};
+						turret[] = {};
 					};
 					class Pylons2
-					{
-						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
-						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
-						maxweight = 300;
-						priority = 4;
-						UIposition[] = {0.100000001490116, 0.379999995231628};
-						turret[] = {0};
-					};
-					class Pylons3
 					{
 						attachment = "";
 						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
 						maxweight = 300;
 						priority = 4;
+						UIposition[] = {0.100000001490116, 0.379999995231628};
+						turret[] = {};
+					};
+					class Pylons3
+					{
+						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
+						hardpoints[] = {"DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL"};
+						maxweight = 300;
+						priority = 4;
 						UIposition[] = {0.529999971389771, 0.379999995231628};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 2;
 					};
 					class Pylons4
@@ -255,7 +255,7 @@ class CfgVehicles
 						maxweight = 300;
 						priority = 5;
 						UIposition[] = {0.579999983310699, 0.300000011920929};
-						turret[] = {0};
+						turret[] = {};
 						mirroredMissilePos = 1;
 					};
 				};
