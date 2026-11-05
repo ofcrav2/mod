@@ -7,9 +7,15 @@
 //  - one round every 5 s, like the OFCRA grenade drone (BombDemine_01_F reloadTime = 5)
 //  - the 1x 120mm and 1x TM-62M pylon options are hidden from the pylon menu
 //  - thermal removed from the camera (Normal + NV only)
-//  - small arms: the engine's own bullet damage is blocked (handleDamage) and every bullet instead adds
-//    its CfgAmmo hit / 54 (hitPart): 6 hits from a 5.56 (hit 9), about 4-5 from a 7.62, 2 from a .50.
-//    Explosions, crashes and fire still do the normal damage. Armour is MMM's own (1.5 / 5).
+//  - damage: armour 1.5 (MMM's), armorStructural 5, explosionShielding 1.6 (over 1 = MORE blast damage; bullets
+//    unaffected). MMM's blast shielding was 0.04 (4% of blast damage): it shrugged off proximity missiles and demo
+//    charges. Tested round by round: about 2 hits from the OFCRA anti-drone missile, several 5.56 at point blank.
+//  - flight damage: each hit also damages the tail rotor hit point (hitvrotor), which makes it yaw / lose control
+//    (tested: 0.3 just noticeable, 0.67 only just flyable): +0.4 per explosive hit, +0.1 per bullet, up to 0.95.
+//    Rifle hits alone don't damage any of its parts (no part has a selection in the model), so this is scripted
+//    (handleDamage, once per hit, where the drone is local; setHitPointDamage is global).
+//  - heat signature on (irTarget = 1): MMM's drone inherits irTarget = 0, so heat-seekers (the OFCRA anti-drone
+//    Igla) couldn't lock it; other small drones have 1
 //  - the original MMM_UAV_Vampire is hidden from the editor; place the three Baba Yaga presets instead
 //    (vampire_payload\faction, in the CC4 factions)
 class CfgPatches
@@ -128,6 +134,9 @@ class CfgVehicles
 		displayName = "Baba Yaga";
 		scope = 1;
 		scopeCurator = 0;
+		irTarget = 1;          // heat-seekers can lock it, like other small drones (MMM inherits 0)
+		explosionShielding = 1.7; // blast damage 
+		armorStructural = 5;      // MMM's own
 		class PilotCamera
 		{
 			class OpticsIn
@@ -144,16 +153,17 @@ class CfgVehicles
 			visionMode[] = {"Normal", "NVG"};
 			thermalMode[] = {};
 		};
+
+
 		class EventHandlers: EventHandlers
 		{
-			class OFCRA_SmallArms
+			class ofcra_flight_damage
 			{
-				// runs where the vehicle is local: bullets (non-explosive ammo) do no engine damage
-				handleDamage = "params ['_v', '_sel', '_dmg', '', '_ammo', '_hi']; if (_ammo != '' && {getNumber (configFile >> 'CfgAmmo' >> _ammo >> 'explosive') < 0.5}) then { if (_sel == '') then { damage _v } else { _v getHitIndex _hi } } else { _dmg }";
-				// runs on the shooter's machine, once per bullet: damage = ammo hit / 54 (setDamage is global)
-				hitPart = "(_this select 0) params ['_v','','','','','','_a']; if (alive _v && {(_a param [3, 0]) < 0.5}) then { _v setDamage (((damage _v) + ((_a param [0, 0]) / 54)) min 1) };";
+				// once per hit (context 0 = the total-damage call), where the drone is local: the tail rotor hit point
+				// takes ++++ per explosive hit, ++ per bullet (crashes / fire, no ammo: nothing). Returns nothing,
+				// so the engine's damage is unchanged.
+				handleDamage = "params ['_v', '', '', '', ['_ammo', ''], '', '', '', '', ['_ctx', -1]]; if (_ctx == 0 && {_ammo != ''} && {alive _v}) then { private _add = [0.05, 0.2] select (getNumber (configFile >> 'CfgAmmo' >> _ammo >> 'explosive') >= 0.5); _v setHitPointDamage ['hitvrotor', ((_v getHitPointDamage 'hitvrotor') + _add) min 0.95, false]; }; nil";
 			};
 		};
-		class Components;
 	};
 };
