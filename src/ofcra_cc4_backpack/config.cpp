@@ -1,6 +1,7 @@
 // ofcra_cc4_backpack - the CC4 mission exporter puts all of a soldier's cargo into the backpack, and a dedicated
-// server drops what doesn't fit, so these backpacks get a load of about 200 kg (maximumLoad 4410 = 4410 x 0.1 / 2.2046 kg
-// in ACE). Only maximumLoad changes: each class keeps its own parent (checked with Find-ConfigInfo.ps1) and the parent
+// server drops what doesn't fit, so these backpacks get a bigger load: just under 21 kg (maximumLoad 460; ACE kg =
+// maximumLoad x 0.1 / 2.2046, so 460 = 20.9 kg). Was 661.5 (30 kg), and 4410 (200 kg) before that.
+// Only maximumLoad changes: each class keeps its own parent (checked with Find-ConfigInfo.ps1) and the parent
 // classes are not touched, so no other backpack changes. The backpack's own mass and the soldier's total weight stay
 // the same - the items only move between containers.
 //
@@ -92,21 +93,21 @@ class CfgVehicles
 	class TFAR_rt1523g_big;
 	class rhs_r148;
 
-//~30Kg
+//~20.9 kg (< 21 kg)
 	class UK3CB_B_Backpack_Pocket: B_Bergen_Base              // Small Pack (Tan)
 	{
-		maximumLoad = 661.5;
+		maximumLoad = 460;
 	};
 	class UK3CB_B_Invisible: B_Bergen_Base                    // Backpack (invisible)
 	{
-		maximumLoad = 661.5;
+		maximumLoad = 460;
 	};
 	class UK3CB_B_B_Backpack_Radio_Chem: TFAR_rt1523g_big     // Small Radio Pack RT1523g (Tan)
 	{
-		maximumLoad = 661.5;
+		maximumLoad = 460;
 	};
 	class UK3CB_PLM_O_B_R148_RADIO: rhs_r148                  // R-148 Radio MR3000
 	{
-		maximumLoad = 661.5;
+		maximumLoad = 460;
 	};
 };

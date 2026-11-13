@@ -6,6 +6,7 @@ class CfgPatches
 		author = "OFCRA Wombat";
 		skipWhenMissingDependencies=1;
 		requiredAddons[] = {
+			"A3_Weapons_F",
 			"ace_frag",
 		};
 		units[] = {};
@@ -195,6 +196,14 @@ class CfgAmmo
 
 
 
+	// 12 cm HE fragments: half the damage of OFCRA_MEDIUM_VEHICLE_DESTRUCTION and far less penetration, so 12 cm HE
+	// tracks / damages tanks but no longer kills them (OFCRA_MEDIUM_VEHICLE_DESTRUCTION stays as is for 15 cm, VLS, WW2).
+	class OFCRA_12cm_FRAG: OFCRA_MEDIUM_VEHICLE_DESTRUCTION
+	{
+		caliber=0.5;
+		hit=150;
+	};
+
 	class OFCRA_12cm_BASE: OFCRA_ARTILLERY_HE_BASE
 	{
 
@@ -203,10 +212,11 @@ class CfgAmmo
 			"randomupcone",
 			20
 		};
+		submunitionAmmo[]={"OFCRA_12cm_FRAG",0.75,"OFCRA_HE_LOW_DAMAGE",0.25};
 		hit=100;
 		indirectHit=10;
 		indirectHitRange=3;
-		caliber=12;
+		caliber=1;		// was 12: weaker vs vehicles
 	}
 
 	class OFCRA_8cm_LOW_ARMOUR_BASE: OFCRA_12cm_BASE
@@ -226,19 +236,55 @@ class CfgAmmo
 		indirectHitRange=9;
 	}
 
-	class OFCRA_12cm_HEAT: OFCRA_12cm_BASE
+	// 12 cm HEAT: no fragments. Shell direct hit + small, lethal blast (same radius as the OFCRA GMG, 3x its damage;
+	// Arma blast falls off with distance^4 out to ~4x the radius) + one penetrator ("jet") spawned on impact along
+	// the shell's line, the way vanilla 120 mm HEAT works. Based on vanilla Sh_120mm_HE so no fragment cone is inherited.
+	// Tested (variant F): M1A1 front - gun out in 1, immobile in 2-4, rarely destroyed; Leopard front destroyed in ~5;
+	// light vehicles destroyed in 1-2 direct hits; near misses do little to vehicles.
+	class OFCRA_12cm_HEAT_PENETRATOR: BulletBase
 	{
-		submunitionConeType[]=
-		{
-			"randomupcone",
-			10
-		};
-		submunitionInitSpeed=20; 
+		model="\A3\Weapons_f\empty";
+		caliber=100;		// penetration ~ caliber x speed
+		hit=500;
+		indirectHit=0;
+		indirectHitRange=0;
+		typicalSpeed=1000;
+		airFriction=0;
+		timeToLive=0.04;	// ~40 m. Must be longer than one frame or it does nothing
+		deflecting=0;
+		explosive=0;
+		warheadName="HEAT";
+		audibleFire=0;
+		visibleFire=0;
+		ace_frag_enabled=0;
+		ace_frag_force=0;
+	};
+
+	class Sh_120mm_HE;
+	class OFCRA_12cm_HEAT: Sh_120mm_HE
+	{
+		displayName="OFCRA 12cm HEAT";
+		displayNameShort="OFCRA 12cm HEAT";
 		hit=600;
-		indirectHit=8;
-		indirectHitRange=2;
 		caliber=40;
-	}
+		indirectHit=7;			// 3x OFCRA GMG
+		indirectHitRange=4.236;	// = OFCRA GMG
+		explosive=0.8;
+		deflecting=0;
+		warheadName="HEAT";
+		ace_frag_enabled=0;
+		ace_frag_force=0;
+		ExplosionEffects="OFCRA_EXPLOSION";
+		CraterEffects="OFCRA_CRATER";
+
+		triggerOnImpact=1;
+		deleteParentWhenTriggered=0;
+		submunitionAmmo="OFCRA_12cm_HEAT_PENETRATOR";
+		submunitionDirectionType="SubmunitionModelDirection";
+		submunitionInitSpeed=1000;
+		submunitionParentSpeedCoef=0;
+		submunitionInitialOffset[]={0,0,-0.2};
+	};
 
 	//Maybe should be in rhs afrf folder?
 	class B_35mm_AA;

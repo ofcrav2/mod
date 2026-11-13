@@ -53,23 +53,23 @@ class CfgMagazines
 	class rhs_mag_M1069: VehicleMagazine
 	{
 		displayNameShort="OFCRA 12cm HE";
-		ammo="OFCRA_12cm_HE";
+		ammo="OFCRA_12cm_BASE";   // OFCRA 120mm HE (was OFCRA_12cm_HE, which doesn't exist)
 	};
 	class rhs_mag_M1069_max: rhs_mag_M1069
 	{
 		displayNameShort="OFCRA 12cm HE";
-		ammo="OFCRA_12cm_HE";
-	}
+		ammo="OFCRA_12cm_BASE";   // OFCRA 120mm HE (was OFCRA_12cm_HE, which doesn't exist)
+	};
 
 	class rhs_mag_M1147: rhs_mag_M1069
 	{
 		displayNameShort="OFCRA 12cm HE";
-		ammo="OFCRA_12cm_HE";
+		ammo="OFCRA_12cm_BASE";   // OFCRA 120mm HE (was OFCRA_12cm_HE, which doesn't exist)
 	};
 	class rhs_mag_M1147_max: rhs_mag_M1069
 	{
 		displayNameShort="OFCRA 12cm HE";
-		ammo="OFCRA_12cm_HE";
+		ammo="OFCRA_12cm_BASE";   // OFCRA 120mm HE (was OFCRA_12cm_HE, which doesn't exist)
 	};
 
 	class rhs_mag_M830: rhs_mag_M1069
