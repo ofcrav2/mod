@@ -30,6 +30,23 @@ class CfgMagazines
 	};
 }
 
+class CfgWeapons
+{
+	// Spike LR: no thermal sight (was {"Normal","TI"}). OpticsModes / StepScope are PSZ's own classes (no parents),
+	// so only visionMode changes - everything else about the sight stays PSZ's.
+	class launch_Titan_short_base;
+	class PSZ_Spike_LR: launch_Titan_short_base
+	{
+		class OpticsModes
+		{
+			class StepScope
+			{
+				visionMode[]={"Normal"};
+			};
+		};
+	};
+};
+
 
 class RCWSOptics
 {

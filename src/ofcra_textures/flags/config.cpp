@@ -64,6 +64,24 @@ class CfgVehicles
 		};
 	};
 
+	class OFCRA_OTS_Flag_F: OFCRA_Scotland_Flag_F
+	{
+		displayName="Flag (OTS)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\ofcra_textures\flags\ots.paa'";
+		};
+	};
+
+	class OFCRA_PolandLithuania_Flag_F: OFCRA_Scotland_Flag_F
+	{
+		displayName="Flag (Poland Lithuania)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\ofcra_textures\flags\poland_lithuania.paa'";
+		};
+	};
+
 };
 
 
@@ -115,6 +133,20 @@ class CfgMarkers
 		name="Saudi Arabia Flag";
 		icon="\ofcra_textures\flags\saudi_arabia_marker.paa";
 		texture="\ofcra_textures\flags\saudi_arabia_marker.paa";
+	}
+
+	class OFCRA_OTS_Flag : OFCRA_Scotland_Flag
+	{
+		name="OTS Flag";
+		icon="\ofcra_textures\flags\ots_marker.paa";
+		texture="\ofcra_textures\flags\ots_marker.paa";
+	}
+
+	class OFCRA_PolandLithuania_Flag : OFCRA_Scotland_Flag
+	{
+		name="Poland Lithuania Flag";
+		icon="\ofcra_textures\flags\poland_lithuania_marker.paa";
+		texture="\ofcra_textures\flags\poland_lithuania_marker.paa";
 	}
 
 

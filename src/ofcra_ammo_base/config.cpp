@@ -317,15 +317,16 @@ class CfgMagazines
 	};
 
 
-	class 8Rnd_82mm_Mo_Smoke_white;
-	class OFCRA_SMOKE_MAGAZINE: 8Rnd_82mm_Mo_Smoke_white
+	// Smoke is a copy of the HE magazine with smoke ammo, so it leaves the barrel at exactly the HE speed on every gun
+	// (same range table / same artillery computer solution). It was based on the 82mm mortar smoke at 600 m/s, which
+	// gave smoke and HE different ranges on the same charge.
+	class OFCRA_SMOKE_MAGAZINE: OFCRA_ARTILLERY_HE_MAG_32
 	{
-		initSpeed=600;
 		displayName="OFCRA Smoke";
 		displayNameShort="OFCRA Smoke";
 		ammo="OFCRA_SMOKE_MAIN";
 		count=32; 
-	}
+	};
 
 	class 32Rnd_155mm_Mo_shells: VehicleMagazine
 	{
